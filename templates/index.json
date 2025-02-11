@@ -299,7 +299,7 @@
         "featured_collection_fL4UmQ"
       ],
       "custom_css": [
-        ".section-collection-list{margin-top:-20rem;}",
+        ".section-collection-list {margin-top: -20rem;}",
         ".collection-list li {padding: 2rem; background: var(--zekoki-primary); border: 1px solid var(--zekoki-secondary); border-radius: 4px;}",
         ".collection-list li:nth-child(odd) {background: #fff !important;}",
         ".collection-list li h3.card__heading a {color: var(--zekoki-white); text-align: center;}",
@@ -310,7 +310,7 @@
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 6,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
