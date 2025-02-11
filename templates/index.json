@@ -299,6 +299,7 @@
         "featured_collection_fL4UmQ"
       ],
       "custom_css": [
+        ".section-collection-list{margin-top:-20rem;}",
         ".collection-list li {padding: 2rem; background: var(--zekoki-primary); border: 1px solid var(--zekoki-secondary); border-radius: 4px;}",
         ".collection-list li:nth-child(odd) {background: #fff !important;}",
         ".collection-list li h3.card__heading a {color: var(--zekoki-white); text-align: center;}",
