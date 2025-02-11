@@ -11,7 +11,7 @@
 
 
 
-h1:not(.header__heading), h2, h3, h4, h5, h6, .buttons {
+h1:not(.header__heading), h2, h3, h4, h5, h6, .button--primary {
   transform: skew(-15deg);
   letter-spacing: -1px !important;
 }
