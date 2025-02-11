@@ -94,7 +94,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -332,11 +331,11 @@
   "order": [
     "image_banner",
     "rich_text",
-    "featured_collection",
     "collage",
     "video",
     "collection_list_T9BzEX",
     "rich_text_BFrVfk",
+    "featured_collection",
     "image_banner_QeNkzz"
   ]
 }
