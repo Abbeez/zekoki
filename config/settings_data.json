@@ -172,7 +172,7 @@
               "apply_h6": true,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": ".button"
+              "apply_custom": ".button, .list-menu >  li > a > span"
             }
           }
         },
