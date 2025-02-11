@@ -135,6 +135,29 @@
       },
       "custom-fonts": {
         "type": "custom-fonts",
+        "blocks": {
+          "image_H888ea": {
+            "type": "image",
+            "settings": {
+              "name": "square721",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "https://cdn.shopify.com/s/files/1/0895/9075/9790/files/square-721.ttf?v=1739276676",
+              "apply_h1": true,
+              "apply_h2": true,
+              "apply_h3": true,
+              "apply_h4": true,
+              "apply_h5": true,
+              "apply_h6": true,
+              "apply_span": false,
+              "apply_p": false,
+              "apply_custom": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_H888ea"
+        ],
         "settings": {
           "enable": true
         }
