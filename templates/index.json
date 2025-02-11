@@ -45,7 +45,7 @@
       ],
       "custom_css": [
         ".banner__buttons {display: inline-flex; flex-wrap: wrap; gap: 1rem; max-width: none !important; word-break: break-word;}",
-        ".banner__buttons a:list-child {background: var(--zekoki-primary) !important;}"
+        ".banner__buttons:list-child a {background: var(--zekoki-primary) !important;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Tools.png",
