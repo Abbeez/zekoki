@@ -236,24 +236,45 @@
         "featured_collection_rJVjke": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "electric-drills"
+          }
+        },
+        "featured_collection_WbGcwe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "planers"
+          }
+        },
+        "featured_collection_4e3mFB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "saw"
+          }
+        },
+        "featured_collection_HeKAfC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "angle-grinder-silver"
           }
         },
         "featured_collection_redFMa": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "angle-grinder-w-holder"
           }
         },
         "featured_collection_fL4UmQ": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "angle-grinders"
           }
         }
       },
       "block_order": [
         "featured_collection_rJVjke",
+        "featured_collection_WbGcwe",
+        "featured_collection_4e3mFB",
+        "featured_collection_HeKAfC",
         "featured_collection_redFMa",
         "featured_collection_fL4UmQ"
       ],
