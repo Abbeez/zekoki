@@ -281,6 +281,8 @@
       "custom_css": [
         ".collection-list li {padding: 2rem; background: var(--zekoki-primary); border: 1px solid var(--zekoki-secondary);}",
         ".collection-list li:nth-child(odd) {background: #fff !important;}",
+        ".collection-list li h3.card__heading a {color: var(--zekoki-white); text-align: center;}",
+        ".collection-list li:nth-child(odd) h3.card__heading a {color: var(--zekoki-secondary); text-align: center;}",
         ".card__inner.color-scheme-2.gradient.ratio {background: transparent;}"
       ],
       "settings": {
