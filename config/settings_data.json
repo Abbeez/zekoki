@@ -136,6 +136,24 @@
       "custom-fonts": {
         "type": "custom-fonts",
         "blocks": {
+          "image_nM8gER": {
+            "type": "image",
+            "settings": {
+              "name": "gotham",
+              "custom_font_weight": "none",
+              "custom_font_style": "none",
+              "custom_font_url": "https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Gotham-Book.otf?v=1739278108",
+              "apply_h1": false,
+              "apply_h2": false,
+              "apply_h3": false,
+              "apply_h4": false,
+              "apply_h5": false,
+              "apply_h6": false,
+              "apply_span": true,
+              "apply_p": true,
+              "apply_custom": ""
+            }
+          },
           "image_H888ea": {
             "type": "image",
             "settings": {
@@ -156,6 +174,7 @@
           }
         },
         "block_order": [
+          "image_nM8gER",
           "image_H888ea"
         ],
         "settings": {
