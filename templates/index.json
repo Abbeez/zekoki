@@ -279,6 +279,54 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_banner_QeNkzz": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_itVekM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_m9KFbq": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_gHfJwR": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_itVekM",
+        "text_m9KFbq",
+        "buttons_gHfJwR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Group_5.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
     }
   },
   "order": [
@@ -288,6 +336,7 @@
     "collage",
     "video",
     "collection_list_T9BzEX",
-    "rich_text_BFrVfk"
+    "rich_text_BFrVfk",
+    "image_banner_QeNkzz"
   ]
 }
