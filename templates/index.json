@@ -245,21 +245,21 @@
         "heading_ikAmGn": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Discover the Zekoki Advantage Today",
             "heading_size": "h1"
           }
         },
         "text_bNr8YN": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Choosing Zekoki means investing in high-quality tools that won't break the bank. Our extensive range ensures you find exactly what you need for any project.</p>"
           }
         },
         "button_7JUHXr": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
