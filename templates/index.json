@@ -15,24 +15,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Quality Tools That EmpowerYour Projects",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "At Zekoki, we believe in delivering exceptional power tools and machinery that combine quality with affordability. Explore our extensive range designed to elevate your craftsmanship and meet all your project needs.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Explore Our Products",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Deals",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -43,15 +43,15 @@
         "text",
         "button"
       ],
-      "disabled": true,
       "settings": {
+        "image": "shopify://shop_images/Zekoki_Tools.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
+        "color_scheme": "scheme-5",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
