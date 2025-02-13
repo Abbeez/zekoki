@@ -285,26 +285,26 @@
         "heading_itVekM": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Discover the Zekoki Advantage Today",
             "heading_size": "h1"
           }
         },
         "text_m9KFbq": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike.",
             "text_style": "body"
           }
         },
         "buttons_gHfJwR": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Learn More",
+            "button_link_2": "shopify://pages/about-us",
+            "button_style_secondary_2": true
           }
         }
       },
@@ -314,13 +314,13 @@
         "buttons_gHfJwR"
       ],
       "settings": {
-        "image": "shopify://shop_images/Group_5.png",
+        "image": "shopify://shop_images/Zekoki_Featured.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
