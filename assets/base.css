@@ -3628,3 +3628,21 @@ details-disclosure>details {
   justify-content: space-between;
   align-items: center;
 }
+
+.footer__content-top.page-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content-top.page-width div:first-child {
+    flex-grow: 1;
+}
+
+.footer__content-top.page-width h2 {
+    color: red;
+}
+
+.footer-block__newsletter h2 {
+    color: #fff !important;
+}
