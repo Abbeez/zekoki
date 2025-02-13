@@ -42,13 +42,21 @@
             "heading": "Quick links",
             "menu": "stay-connected"
           }
+        },
+        "text_eVkpFQ": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
         }
       },
       "block_order": [
         "image_BXtpDN",
         "footer-0",
         "footer-1",
-        "link_list_FijeDR"
+        "link_list_FijeDR",
+        "text_eVkpFQ"
       ],
       "settings": {
         "color_scheme": "scheme-4",
