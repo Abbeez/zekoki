@@ -144,12 +144,11 @@
 
     // Add to cart AJAX
 
-    document.querySelectorAll(".add-to-cart-form").forEach((form) => {
+   document.querySelectorAll(".add-to-cart-form").forEach((form) => {
         form.addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent page reload
 
             let formData = new FormData(this);
-            let productId = this.querySelector("input[name='id']").value;
             let button = this.querySelector(".add-to-cart-btn");
 
             // Change button text to indicate loading
@@ -171,7 +170,10 @@
                     button.disabled = false;
                 }, 1500);
 
-                // Optional: Update cart count
+                // ✅ TRIGGER DAWN’S CART NOTIFICATION
+                window.dispatchEvent(new Event('cart:refresh'));
+
+                // ✅ Optional: Manually refresh the cart count
                 updateCartCount();
             })
             .catch(error => {
@@ -185,7 +187,7 @@
         });
     });
 
-    // Function to update cart count in header
+    // ✅ FUNCTION TO UPDATE THE CART COUNT
     function updateCartCount() {
         fetch("/cart.js")
             .then(response => response.json())
