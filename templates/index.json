@@ -174,12 +174,6 @@
             "collection": "outdoor-equipment"
           }
         },
-        "featured_collection_pXLA86": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "equipment"
-          }
-        },
         "featured_collection_fL4UmQ": {
           "type": "featured_collection",
           "settings": {
@@ -192,7 +186,6 @@
         "featured_collection_WbGcwe",
         "featured_collection_4e3mFB",
         "featured_collection_HeKAfC",
-        "featured_collection_pXLA86",
         "featured_collection_fL4UmQ"
       ],
       "custom_css": [
