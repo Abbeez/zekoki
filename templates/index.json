@@ -128,35 +128,19 @@
       "blocks": {
         "blurb_UQEcR3": {
           "type": "blurb",
-          "settings": {
-            "label": "",
-            "title": "Reliable Machinery for Your Needs",
-            "description": "Our machinery is built to enhance productivity and efficiency."
-          }
+          "settings": {}
         },
         "blurb_hjFYbV": {
           "type": "blurb",
-          "settings": {
-            "label": "",
-            "title": "Essential Accessories to Complete Your Toolkit",
-            "description": "Find the perfect accessories to elevate your projects."
-          }
+          "settings": {}
         },
         "blurb_Hc8FHY": {
           "type": "blurb",
-          "settings": {
-            "label": "",
-            "title": "Join Our Community of Tool Enthusiasts",
-            "description": "Connect with us for tips, updates, and exclusive offers."
-          }
+          "settings": {}
         },
         "blurb_FUpHtP": {
           "type": "blurb",
-          "settings": {
-            "label": "",
-            "title": "Power Tools for Every Project",
-            "description": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
-          }
+          "settings": {}
         }
       },
       "block_order": [
