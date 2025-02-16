@@ -26,7 +26,12 @@
         <div class="product-slider">
           <div class="product-card">
             <a href="{{ product.url }}" class="product-image">
-              <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}">
+              <img
+                src="{{ product.featured_image | image_url: width: 400 }}"
+                alt="{{ product.title }}"
+                width="400"
+                height="{{ 400 | divided_by: product.featured_image.aspect_ratio | round }}"
+              >
             </a>
           </div>
           <div class="product-info">
@@ -101,7 +106,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
       $('.custom_featured__body').slick({
-          slidesToShow: 6,
+          slidesToShow: 5,
           slidesToScroll: 1,
           autoplay: true,
           autoplaySpeed: 3000,
