@@ -43,43 +43,54 @@
     </div>
 
     <div class="zekoki-blurp__container blurp-second">
-      <div class="blurp-items">
-        <span>Quality</span>
-        <h3 class=" title">Power Tools for EveryProject</h3>
-        <p>Discover our high-performance tools tailored for professionals and DIY enthusiasts alike.</p>
-      </div>
-      <div class="blurp-items">
-        <span>Quality</span>
-        <h3>Power Tools for EveryProject</h3>
-        <p>Discover our high-performance tools tailored for professionals and DIY enthusiasts alike.</p>
-      </div>
-      <div class="blurp-items">
-        <span>Quality</span>
-        <h3>Power Tools for EveryProject</h3>
-        <p>Discover our high-performance tools tailored for professionals and DIY enthusiasts alike.</p>
-      </div>
-      <div class="blurp-items">
-        <span>Quality</span>
-        <h3>Power Tools for EveryProject</h3>
-        <p>Discover our high-performance tools tailored for professionals and DIY enthusiasts alike.</p>
-      </div>
+      {% for block in section.blocks %}
+        <div class="blurp-items">
+          <span>{{ block.settings.icon }}</span>
+          <h3 class=" title">{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Zekoki Blurp Section",
-  "settings": [
+  "name": "Zekoki Blurb Section",
+  "max_blocks": 4,
+  "settings": [],
+  "blocks": [
     {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading"
+      "type": "blurb",
+      "name": "Blurb",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Emoji or HTML)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Custom Section "
+      "name": "Blurb Section",
+      "blocks": [
+        { "type": "blurb", "settings": { "icon": "⭐", "title": "Quality", "description": "We provide high-quality products." } },
+        { "type": "blurb", "settings": { "icon": "🚀", "title": "Fast Delivery", "description": "Speedy shipping worldwide." } },
+        { "type": "blurb", "settings": { "icon": "💰", "title": "Best Price", "description": "Affordable yet premium." } },
+        { "type": "blurb", "settings": { "icon": "❤️", "title": "Customer Love", "description": "We care about our customers." } }
+      ]
     }
   ]
 }
