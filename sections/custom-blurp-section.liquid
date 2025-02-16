@@ -1,5 +1,5 @@
 {%- style -%}
-    .Zekoki.Blurp.Section,
+    .zekoki-blurp__section,
     .zekoki-blurp__container.blurp-second{
       display: flex;
       flex-direction: row;
@@ -8,12 +8,12 @@
       gap:35px;
   }
 
-    .Zekoki.Blurp.Section > div:first-child {
+    .zekoki-blurp__section > div:first-child {
       width:35%;
       flex-grow: 1;
     }
 
-    .Zekoki.Blurp.Section > div:last-child {
+    .zekoki-blurp__section > div:last-child {
       width:55%;
       flex-grow: 1;
     }
@@ -26,7 +26,7 @@
 
 <div
   id=""
-  class="Zekoki Blurp Section page-width"
+  class="zekoki-blurp__section page-width"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
