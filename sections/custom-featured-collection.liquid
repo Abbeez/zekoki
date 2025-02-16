@@ -27,8 +27,10 @@
           <div class="product-card">
             <a href="{{ product.url }}" class="product-image">
               <img
-                src="{{ product.featured_image | image_url: 'medium' }}"
+                src="{{ product.featured_image | image_url: width: 400 }}"
                 alt="{{ product.title }}"
+                width="auto"
+                height="auto"
               >
             </a>
           </div>
