@@ -26,7 +26,7 @@
 
 <h2>{{ section.settings.heading }}</h2>
 <div class="page-width">
-  <div class="Zekoki Blurp Section padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div id="shopify-section-[id]" class="Zekoki Blurp Section">
     <div class="zekoki-blurp__container blurp-first">
       <span>Quality</span>
       <h2 class="h1">Explore Our Diverse Product Categories</h2>
@@ -42,15 +42,17 @@
       </div>
     </div>
 
-    <div class="zekoki-blurp__container blurp-second">
-      {% for block in section.blocks %}
-        <div class="blurp-items">
-          <span>{{ block.settings.blurp_label }}</span>
-          <h3 class=" title">{{ block.settings.blurp_title }}</h3>
-          <p>{{ block.settings.blurp_description }}</p>
-        </div>
-      {% endfor %}
-    </div>
+    <!--
+      <div class="zekoki-blurp__container blurp-second">
+        {% for block in section.blocks %}
+          <div class="blurp-items">
+            <span>{{ block.settings.blurp_label }}</span>
+            <h3 class=" title">{{ block.settings.blurp_title }}</h3>
+            <p>{{ block.settings.blurp_description }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    -->
   </div>
 </div>
 
