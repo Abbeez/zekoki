@@ -26,14 +26,19 @@
 
 <h2>{{ section.settings.heading }}</h2>
 <div class="page-width">
-  <div id="shopify-section-[id]" class="Zekoki Blurp Section">
+  <div id="" class="Zekoki Blurp Section">
     <div class="zekoki-blurp__container blurp-first">
       <span>{{ section.settings.category_subtitlesubtitle }}</span>
       <h2 class="h1">{{ section.settings.category_heading }}</h2>
       <p>{{ section.settings.category_description }}</p>
+
       <div class="banner__buttons banner__buttons--multiple">
-        <a href="{{ section.settings.category_button_url_primary }}" class="button button--primary">{{ section.settings.category_button_text_primary }}</a
-        ><a href="{{ section.settings.category_button_url_secondary }}" class="button button--secondary"{{ section.settings.category_button_text_secondary}}</a>
+        <a href="{{ section.settings.category_button_url_primary }}" class="button button--primary">
+          {{- section.settings.category_button_text_primary -}}
+        </a>
+        <a href="{{ section.settings.category_button_url_secondary }}" class="button button--secondary">
+          {{- section.settings.category_button_text_secondary -}}
+        </a>
       </div>
     </div>
 
