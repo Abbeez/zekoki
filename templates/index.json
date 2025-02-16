@@ -123,34 +123,6 @@
         "padding_bottom": 4
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Power Tools",
-        "heading_size": "h1",
-        "description": "<p>Explore our high-quality accessories for every project.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "accessories",
-        "products_to_show": 16,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 36
-      }
-    },
     "custom_blurp_section_NJcKyq": {
       "type": "custom-blurp-section",
       "blocks": {
@@ -194,8 +166,8 @@
         "blurps_itkDtG"
       ],
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "padding_top": 90,
+        "padding_bottom": 60,
         "category_subtitle": "Your Subtitle Here",
         "category_heading": "Your Heading Here",
         "category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -203,6 +175,34 @@
         "category_button_url_primary": "",
         "category_button_text_secondary": "Shop Now",
         "category_button_url_secondary": ""
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Power Tools",
+        "heading_size": "h1",
+        "description": "<p>Explore our high-quality accessories for every project.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "accessories",
+        "products_to_show": 16,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 36
       }
     },
     "rich_text_BFrVfk": {
