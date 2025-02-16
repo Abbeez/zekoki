@@ -125,14 +125,25 @@
     },
     "zekoki_blurp_section_nzDYcB": {
       "type": "zekoki-blurp-section",
+      "blocks": {
+        "heading_wxDVfN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hello, world!"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wxDVfN"
+      ],
       "settings": {
-        "subtitle": "Quality",
-        "heading": "Explore Our Diverse Product Categories",
-        "description": "At Zekoki, we provide an extensive range of power tools, machinery, and accessories designed to meet your needs. Our commitment to quality and affordability ensures you get the best value for your investment.",
-        "button_1_text": "Learn More",
-        "button_1_link": "",
-        "button_2_text": "Shop Now",
-        "button_2_link": ""
+        "category_subtitle": "Your Subtitle Here",
+        "category_heading": "Your Heading Here",
+        "category_description": "This is a customizable description. Change this text in the theme editor.",
+        "category_button_text_primary": "Learn More",
+        "category_button_url_primary": "",
+        "category_button_text_secondary": "Shop Now",
+        "category_button_url_secondary": ""
       }
     },
     "featured_collection": {
