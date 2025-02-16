@@ -297,6 +297,14 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "custom_featured_collection_Rgrrpe": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "custom-collection__sub": "Your Subtitle Here",
+        "custom-collection__title": "Your Title Here",
+        "custom-collection__description": "Your Details Here"
+      }
     }
   },
   "order": [
@@ -305,6 +313,7 @@
     "custom_blurp_section_NJcKyq",
     "featured_collection",
     "rich_text_BFrVfk",
-    "image_banner_QeNkzz"
+    "image_banner_QeNkzz",
+    "custom_featured_collection_Rgrrpe"
   ]
 }
