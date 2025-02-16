@@ -45,7 +45,7 @@
     <div class="zekoki-blurp__container blurp-second">
       {% for block in section.blocks %}
         <div class="blurp-items">
-          <span>{{ block.settings.blurp_label }}</span>
+          <span>{{ block.settings['blurp-label'] }}</span>
           <h3 class=" title">{{ block.settings.blurp_title }}</h3>
           <p>{{ block.settings.blurp_description }}</p>
         </div>
@@ -87,7 +87,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "blurp_label",
+          "id": "blurp-label",
           "label": "Label (Text Only)"
         },
         {
