@@ -46,9 +46,11 @@
               {% endif %}
               <span class="current-price">{{ product.price | money }}</span>
             </p>
-            <form method="post" action="/cart/add">
+            <form method="post" action="/cart/add" class="add-to-cart-form">
               <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-              <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+              <button type="submit" class="add-to-cart-btn" data-product-id="{{ product.variants.first.id }}">
+                Add to Cart
+              </button>
             </form>
           </div>
         </div>
