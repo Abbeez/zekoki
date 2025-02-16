@@ -22,7 +22,7 @@
     </div>
 
     <div class="custom_featured__body">
-      {% for product in collections[section.settings['custom-featured__collection']].products limit: 2 %}
+      {% for product in collections[section.settings['custom-featured__collection']].products limit: 6 %}
         <div class="product-slider">
           <div class="product-card">
             <a href="{{ product.url }}" class="product-image">
