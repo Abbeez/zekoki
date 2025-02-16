@@ -42,17 +42,15 @@
       </div>
     </div>
 
-    <!--
-      <div class="zekoki-blurp__container blurp-second">
-        {% for block in section.blocks %}
-          <div class="blurp-items">
-            <span>{{ block.settings.blurp_label }}</span>
-            <h3 class=" title">{{ block.settings.blurp_title }}</h3>
-            <p>{{ block.settings.blurp_description }}</p>
-          </div>
-        {% endfor %}
-      </div>
-    -->
+    <div class="zekoki-blurp__container blurp-second">
+      {% for block in section.blocks %}
+        <div class="blurp-items">
+          <span>{{ block.settings.sub_category_subheading }}</span>
+          <h3 class=" title">{{ block.settings.sub_category_title }}</h3>
+          <p>{{ block.settings.sub_category_description }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
