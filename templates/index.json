@@ -174,7 +174,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Power Tools",
         "heading_size": "h1",
@@ -235,6 +234,7 @@
         "text_m9KFbq",
         "buttons_gHfJwR"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/ZEKOKING_6.png",
         "image_overlay_opacity": 0,
@@ -283,8 +283,8 @@
     "image_banner",
     "collection_list_T9BzEX",
     "zekoki_blurp_section_nzDYcB",
-    "rich_text_BFrVfk",
     "featured_collection",
+    "rich_text_BFrVfk",
     "image_banner_QeNkzz",
     "featured_collection_xB6PY3"
   ]
