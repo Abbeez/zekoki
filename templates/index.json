@@ -179,6 +179,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Power Tools",
         "heading_size": "h1",
