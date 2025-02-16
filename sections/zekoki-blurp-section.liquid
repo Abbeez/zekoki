@@ -1,109 +1,154 @@
-{%- style -%}
-    .Zekoki.Blurp.Section,
-    .zekoki-blurp__container.blurp-second{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: wrap;
-      gap:20px;
-  }
-
-    .Zekoki.Blurp.Section > div:first-child {
-      width:35%;
-      flex-grow: 1;
-    }
-
-    .Zekoki.Blurp.Section > div:last-child {
-      width:55%;
-      flex-grow: 1;
-    }
-
-  .zekoki-blurp__container.blurp-second > div.blurp-items{
-    width: 45%;
-    flex-grow: 1;
-  }
-{%- endstyle -%}
-
-<h2>{{ section.settings.heading }}</h2>
-<div class="page-width">
-  <div id="shopify-section-[id]" class="Zekoki Blurp Section">
-    <div class="zekoki-blurp__container blurp-first">
-      <span>Quality</span>
-      <h2 class="h1">Explore Our Diverse Product Categories</h2>
-      <p>
-        At Zekoki, we provide an extensive range of power tools, machinery, and accessories designed to meet your needs.
-        Our commitment to quality and affordability ensures you get the best value for your investment.At Zekoki, we
-        provide an extensive range of power tools, machinery, and accessories designed to meet your needs. Our
-        commitment to quality and affordability ensures you get the best value for your investment.
-      </p>
-      <div class="banner__buttons banner__buttons--multiple">
-        <a href="/collections/all" class="button button--primary">Shop Now</a
-        ><a href="/pages/about-us" class="button button--secondary">Learn More</a>
+<section
+  class="product-categories"
+  style="padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="container">
+    <div class="intro">
+      <p class="quality">Quality</p>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.subheading }}</p>
+      <div class="buttons">
+        <a href="{{ section.settings.shop_link }}" class="btn primary">{{ section.settings.shop_text }}</a>
+        <a href="{{ section.settings.learn_link }}" class="btn secondary">{{ section.settings.learn_text }}</a>
       </div>
     </div>
-
-    <!--
-      <div class="zekoki-blurp__container blurp-second">
-        {% for block in section.blocks %}
-          <div class="blurp-items">
-            <span>{{ block.settings.blurp_label }}</span>
-            <h3 class=" title">{{ block.settings.blurp_title }}</h3>
-            <p>{{ block.settings.blurp_description }}</p>
-          </div>
-        {% endfor %}
-      </div>
-    -->
+    
+    <div class="grid">
+      {% for block in section.blocks %}
+        <div class="grid-item">
+          <p class="quality">Quality</p>
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
 
 {% schema %}
 {
-  "name": "Blurb Section",
-  "max_blocks": 4,
+  "name": "Product Categories",
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Explore Our Diverse Product Categories"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "At Zekoki, we provide an extensive range of power tools, machinery, and accessories designed to meet your needs."
+    },
+    {
+      "type": "text",
+      "id": "shop_text",
+      "label": "Shop Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "shop_link",
+      "label": "Shop Button Link"
+    },
+    {
+      "type": "text",
+      "id": "learn_text",
+      "label": "Learn More Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "learn_link",
+      "label": "Learn More Button Link"
+    },
     {
       "type": "range",
       "id": "padding_top",
-      "label": "Padding Top",
+      "label": "Padding Top (px)",
       "min": 0,
       "max": 100,
-      "step": 5,
-      "unit": "px",
       "default": 40
     },
     {
       "type": "range",
       "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "label": "Padding Bottom (px)",
       "min": 0,
       "max": 100,
-      "step": 5,
-      "unit": "px",
       "default": 40
     }
   ],
   "blocks": [
     {
-      "type": "blurb",
-      "name": "Blurb",
+      "type": "category",
+      "name": "Category",
       "settings": [
         {
           "type": "text",
-          "id": "blurp-label",
-          "label": "Label (Text Only)"
-        },
-        {
-          "type": "text",
-          "id": "blurp_title",
-          "label": "Title"
+          "id": "title",
+          "label": "Title",
+          "default": "Power Tools for Every Project"
         },
         {
           "type": "textarea",
-          "id": "blurp_description",
-          "label": "Description"
+          "id": "description",
+          "label": "Description",
+          "default": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Categories",
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "title": "Power Tools for Every Project",
+            "description": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Reliable Machinery for Your Needs",
+            "description": "Our machinery is built to enhance productivity and efficiency."
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Essential Accessories to Complete Your Toolkit",
+            "description": "Find the perfect accessories to elevate your projects."
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Join Our Community of Tool Enthusiasts",
+            "description": "Connect with us for tips, updates, and exclusive offers."
+          }
         }
       ]
     }
   ]
 }
 {% endschema %}
+
+<style>
+  .product-categories {
+    text-align: left;
+    background: white;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  .intro {
+    margin-bottom: 40px;
+  }
+  .
