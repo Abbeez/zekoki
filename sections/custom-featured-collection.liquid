@@ -12,9 +12,9 @@
   <div class="custom-featured__container">
     <div class="custom-featured__header">
       <div class="custom_featured__header--container">
-        <span>Lorem</span>
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing</p>
+        <span>{{ section.settings['custom-collection__sub'] }}</span>
+        <h2>{{ section.settings['custom-collection__title'] }}</h2>
+        <p>{{ section.settings['custom-collection__description'] }}</p>
       </div>
       <div class="custom_featured__header--container">
         <a href="" class="button button--primary" style="background: var(--zekoki-primary);">View All</a>
@@ -72,6 +72,21 @@
       "label": "Collection Description",
       "default": "Your Details Here"
     },
+    {
+      "type": "text",
+      "id": "custom-collection__viewall",
+      "label": "Collection Button Caption",
+      "default": "Explore"
+    },
+    {
+      "type": "header",
+      "content": "Select Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
   ],
   "presets": [
     {
