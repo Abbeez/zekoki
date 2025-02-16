@@ -123,6 +123,12 @@
         "padding_bottom": 4
       }
     },
+    "zekoki_blurp_section_nzDYcB": {
+      "type": "zekoki-blurp-section",
+      "settings": {
+        "heading": "Explore"
+      }
+    },
     "rich_text_BFrVfk": {
       "type": "rich-text",
       "blocks": {
@@ -277,6 +283,7 @@
   "order": [
     "image_banner",
     "collection_list_T9BzEX",
+    "zekoki_blurp_section_nzDYcB",
     "rich_text_BFrVfk",
     "featured_collection",
     "image_banner_QeNkzz",
