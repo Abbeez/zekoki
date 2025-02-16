@@ -129,7 +129,7 @@
         "blurb_UQEcR3": {
           "type": "blurb",
           "settings": {
-            "icon": "",
+            "label": "",
             "title": "Reliable Machinery for Your Needs",
             "description": "Our machinery is built to enhance productivity and efficiency."
           }
@@ -137,7 +137,7 @@
         "blurb_hjFYbV": {
           "type": "blurb",
           "settings": {
-            "icon": "",
+            "label": "",
             "title": "Essential Accessories to Complete Your Toolkit",
             "description": "Find the perfect accessories to elevate your projects."
           }
@@ -145,7 +145,7 @@
         "blurb_Hc8FHY": {
           "type": "blurb",
           "settings": {
-            "icon": "",
+            "label": "",
             "title": "Join Our Community of Tool Enthusiasts",
             "description": "Connect with us for tips, updates, and exclusive offers."
           }
@@ -153,7 +153,7 @@
         "blurb_FUpHtP": {
           "type": "blurb",
           "settings": {
-            "icon": "",
+            "label": "",
             "title": "Power Tools for Every Project",
             "description": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
           }
@@ -165,7 +165,10 @@
         "blurb_Hc8FHY",
         "blurb_FUpHtP"
       ],
-      "settings": {}
+      "settings": {
+        "padding_top": 55,
+        "padding_bottom": 55
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
