@@ -303,7 +303,9 @@
       "settings": {
         "custom-collection__sub": "Your Subtitle Here",
         "custom-collection__title": "Your Title Here",
-        "custom-collection__description": "Your Details Here"
+        "custom-collection__description": "Your Details Here",
+        "custom-collection__viewall": "Explore",
+        "collection": "power-tools"
       }
     }
   },
