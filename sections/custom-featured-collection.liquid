@@ -22,26 +22,28 @@
     </div>
 
     <div class="custom_featured__body">
-      <div class="product-slider">
-        <div class="product-card">
-          <a href="{{ product.url }}" class="product-image">
-            <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}">
-          </a>
+      {% for product in collections[section.settings['custom-featured__collection']].products %}
+        <div class="product-slider">
+          <div class="product-card">
+            <a href="{{ product.url }}" class="product-image">
+              <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}">
+            </a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">{{ product.title }}</h3>
+            <p class="product-price">
+              {% if product.compare_at_price > product.price %}
+                <span class="old-price">{{ product.compare_at_price | money }}</span>
+              {% endif %}
+              <span class="current-price">{{ product.price | money }}</span>
+            </p>
+            <form method="post" action="/cart/add">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+          </div>
         </div>
-        <div class="product-info">
-          <h3 class="product-title">{{ product.title }}</h3>
-          <p class="product-price">
-            {% if product.compare_at_price > product.price %}
-              <span class="old-price">{{ product.compare_at_price | money }}</span>
-            {% endif %}
-            <span class="current-price">{{ product.price | money }}</span>
-          </p>
-          <form method="post" action="/cart/add">
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-            <button type="submit" class="add-to-cart-btn">Add to Cart</button>
-          </form>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -84,7 +86,7 @@
     },
     {
       "type": "collection",
-      "id": "collection",
+      "id": "custom-featured__collection",
       "label": "Select Collection"
     }
   ],
