@@ -24,39 +24,37 @@
   }
 {%- endstyle -%}
 
-<div class="">
-  <div
-    id=""
-    class="Zekoki Blurp Section page-width"
-    style="
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    "
-  >
-    <div class="zekoki-blurp__container blurp-first">
-      <span>{{ section.settings.category_subtitle | strip_html }}</span>
-      <h2>{{ section.settings.category_heading | strip_html }}</h2>
-      <p>{{ section.settings.category_description | strip_html }}</p>
+<div
+  id=""
+  class="Zekoki Blurp Section page-width"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="zekoki-blurp__container blurp-first">
+    <span>{{ section.settings.category_subtitle | strip_html }}</span>
+    <h2>{{ section.settings.category_heading | strip_html }}</h2>
+    <p>{{ section.settings.category_description | strip_html }}</p>
 
-      <div class="banner__buttons banner__buttons--multiple">
-        <a href="{{ section.settings.category_button_url_primary | strip_html }}" class="button button--primary">
-          {{- section.settings.category_button_text_primary | strip_html -}}
-        </a>
-        <a href="{{ section.settings.category_button_url_secondary | strip_html }}" class="button button--secondary">
-          {{- section.settings.category_button_text_secondary | strip_html -}}
-        </a>
+    <div class="banner__buttons banner__buttons--multiple">
+      <a href="{{ section.settings.category_button_url_primary | strip_html }}" class="button button--primary">
+        {{- section.settings.category_button_text_primary | strip_html -}}
+      </a>
+      <a href="{{ section.settings.category_button_url_secondary | strip_html }}" class="button button--secondary">
+        {{- section.settings.category_button_text_secondary | strip_html -}}
+      </a>
+    </div>
+  </div>
+
+  <div class="zekoki-blurp__container blurp-second">
+    {% for block in section.blocks %}
+      <div class="blurp-items">
+        <span>{{ block.settings.sub_category_subheading | strip_html }}</span>
+        <h3>{{ block.settings.sub_category_title | strip_html }}</h3>
+        <p>{{ block.settings.sub_category_description | strip_html }}</p>
       </div>
-    </div>
-
-    <div class="zekoki-blurp__container blurp-second">
-      {% for block in section.blocks %}
-        <div class="blurp-items">
-          <span>{{ block.settings.sub_category_subheading | strip_html }}</span>
-          <h3>{{ block.settings.sub_category_title | strip_html }}</h3>
-          <p>{{ block.settings.sub_category_description | strip_html }}</p>
-        </div>
-      {% endfor %}
-    </div>
+    {% endfor %}
   </div>
 </div>
 
