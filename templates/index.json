@@ -123,60 +123,6 @@
         "padding_bottom": 4
       }
     },
-    "zekoki_blurp_section_nzDYcB": {
-      "type": "zekoki-blurp-section",
-      "blocks": {
-        "blurps_FdGTkf": {
-          "type": "blurps",
-          "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          }
-        },
-        "blurps_VRPfEF": {
-          "type": "blurps",
-          "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          }
-        },
-        "blurps_gCzG8d": {
-          "type": "blurps",
-          "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          }
-        },
-        "blurps_87znqM": {
-          "type": "blurps",
-          "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-          }
-        }
-      },
-      "block_order": [
-        "blurps_FdGTkf",
-        "blurps_VRPfEF",
-        "blurps_gCzG8d",
-        "blurps_87znqM"
-      ],
-      "settings": {
-        "padding_top": 90,
-        "padding_bottom": 70,
-        "category_subtitle": "Your Subtitle Here",
-        "category_heading": "Your Heading Here",
-        "category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-        "category_button_text_primary": "Learn More",
-        "category_button_url_primary": "",
-        "category_button_text_secondary": "Shop Now",
-        "category_button_url_secondary": ""
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -325,15 +271,69 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "custom_blurp_section_NJcKyq": {
+      "type": "custom-blurp-section",
+      "blocks": {
+        "blurps_VJk3pK": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_mgzpgX": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_3XeV8W": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_itkDtG": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        }
+      },
+      "block_order": [
+        "blurps_VJk3pK",
+        "blurps_mgzpgX",
+        "blurps_3XeV8W",
+        "blurps_itkDtG"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "category_subtitle": "Your Subtitle Here",
+        "category_heading": "Your Heading Here",
+        "category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "category_button_text_primary": "Learn More",
+        "category_button_url_primary": "",
+        "category_button_text_secondary": "Shop Now",
+        "category_button_url_secondary": ""
+      }
     }
   },
   "order": [
     "image_banner",
     "collection_list_T9BzEX",
-    "zekoki_blurp_section_nzDYcB",
     "featured_collection",
     "rich_text_BFrVfk",
     "image_banner_QeNkzz",
-    "featured_collection_xB6PY3"
+    "featured_collection_xB6PY3",
+    "custom_blurp_section_NJcKyq"
   ]
 }
