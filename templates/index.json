@@ -126,15 +126,44 @@
     "zekoki_blurp_section_nzDYcB": {
       "type": "zekoki-blurp-section",
       "blocks": {
-        "heading_wxDVfN": {
-          "type": "heading",
+        "blurps_FdGTkf": {
+          "type": "blurps",
           "settings": {
-            "heading": "Hello, world!"
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_VRPfEF": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_gCzG8d": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_87znqM": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
           }
         }
       },
       "block_order": [
-        "heading_wxDVfN"
+        "blurps_FdGTkf",
+        "blurps_VRPfEF",
+        "blurps_gCzG8d",
+        "blurps_87znqM"
       ],
       "settings": {
         "category_subtitle": "Your Subtitle Here",
