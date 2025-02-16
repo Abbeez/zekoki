@@ -26,7 +26,7 @@
 
 <h2>{{ section.settings.heading }}</h2>
 <div class="page-width">
-  <div class="Zekoki Blurp Section">
+  <div class="Zekoki Blurp Section padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
     <div class="zekoki-blurp__container blurp-first">
       <span>Quality</span>
       <h2 class="h1">Explore Our Diverse Product Categories</h2>
@@ -56,9 +56,30 @@
 
 {% schema %}
 {
-  "name": "Zekoki Blurb Section",
+  "name": "Blurb Section",
   "max_blocks": 4,
-  "settings": [],
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    }
+  ],
   "blocks": [
     {
       "type": "blurb",
@@ -66,8 +87,8 @@
       "settings": [
         {
           "type": "text",
-          "id": "icon",
-          "label": "Icon (Emoji or HTML)"
+          "id": "label",
+          "label": "Label (Text Only)"
         },
         {
           "type": "text",
@@ -85,11 +106,15 @@
   "presets": [
     {
       "name": "Blurb Section",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40
+      },
       "blocks": [
-        { "type": "blurb", "settings": { "icon": "⭐", "title": "Quality", "description": "We provide high-quality products." } },
-        { "type": "blurb", "settings": { "icon": "🚀", "title": "Fast Delivery", "description": "Speedy shipping worldwide." } },
-        { "type": "blurb", "settings": { "icon": "💰", "title": "Best Price", "description": "Affordable yet premium." } },
-        { "type": "blurb", "settings": { "icon": "❤️", "title": "Customer Love", "description": "We care about our customers." } }
+        { "type": "blurb", "settings": { "label": "Step 1", "title": "Quality", "description": "We provide high-quality products." } },
+        { "type": "blurb", "settings": { "label": "Step 2", "title": "Fast Delivery", "description": "Speedy shipping worldwide." } },
+        { "type": "blurb", "settings": { "label": "Step 3", "title": "Best Price", "description": "Affordable yet premium." } },
+        { "type": "blurb", "settings": { "label": "Step 4", "title": "Customer Love", "description": "We care about our customers." } }
       ]
     }
   ]
