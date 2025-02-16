@@ -1,6 +1,55 @@
+<div class="page-width custom-featured__collection">
+  <div class="custom-featured__container">
+    <div class="custom-featured__header">
+      <div class="custom_featured__header--container">
+        <span>Lorem</span>
+        <h2>{{ collection.title }}</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing</p>
+      </div>
+      <div class="custom_featured__header--container">
+        <a href=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="featured-collection-slider">
+  <div class="container">
+    <h2>{{ section.settings.collection_title }}</h2>
+
+    <div class="product-slider">
+      {% for product in collections[section.settings.collection].products %}
+        <div class="product-card">
+          <a href="{{ product.url }}" class="product-image">
+            <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}">
+          </a>
+          <div class="product-info">
+            <h3 class="product-title">{{ product.title }}</h3>
+            <p class="product-price">
+              {% if product.compare_at_price > product.price %}
+                <span class="old-price">{{ product.compare_at_price | money }}</span>
+              {% endif %}
+              <span class="current-price">{{ product.price | money }}</span>
+            </p>
+            <form method="post" action="/cart/add">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Collection",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Custom Collection Details"
+    }
+  ]
+}
 {% endschema %}
