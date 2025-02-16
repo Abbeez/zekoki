@@ -1,20 +1,12 @@
-{% schema %}
-{
-  "name": "Zekoki Blurp Section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Custom Section "
-    }
-  ]
-}
-{% endschema %}
+{%- style -%}
+    .Zekoki.Blurp.Section {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+{%- endstyle -%}
 
 <h2>{{ section.settings.heading }}</h2>
 <div class="page-width">
@@ -58,3 +50,21 @@
     </div>
   </div>
 </div>
+
+{% schema %}
+{
+  "name": "Zekoki Blurp Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Section "
+    }
+  ]
+}
+{% endschema %}
