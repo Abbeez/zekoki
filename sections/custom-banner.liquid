@@ -1,7 +1,10 @@
 {%- style -%}
 {%- endstyle -%}
 
-<section class="custom-banner__section page-width">
+<section
+  class="custom-banner__section page-width"
+  style=""
+>
   <div class="custom_banner__container">
     <div class="custom_banner__body">
       <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
@@ -24,6 +27,28 @@
 {
   "name": "Custom Banner",
   "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
     {
       "type": "header",
       "content": "Banner Details"
