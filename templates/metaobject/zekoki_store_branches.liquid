@@ -1,0 +1,14 @@
+{% comment %}
+  <div class="branch-details">
+    <h1>{{ shop.metaobject.title }}</h1>
+    <p><strong>Company:</strong> {{ shop.metaobject.company }}</p>
+    <p><strong>Location:</strong> {{ shop.metaobject.location }}</p>
+
+    {% if shop.metaobject.photo != blank %}
+      <img src="{{ shop.metaobject.photo | image_url }}" alt="{{ shop.metaobject.title }}">
+    {% endif %}
+
+    <!-- Back to All Branches -->
+    <a href="/pages/zekoki-store-branches" class="btn">Back to Branches</a>
+  </div>
+{% endcomment %}
