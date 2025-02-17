@@ -251,11 +251,11 @@
     "custom_featured_collection_Wde8fb": {
       "type": "custom-featured-collection",
       "settings": {
-        "custom-collection__sub": "Your Subtitle Here",
-        "custom-collection__title": "Your Title Here",
-        "custom-collection__description": "Your Details Here",
+        "custom-collection__sub": "Power Tools",
+        "custom-collection__title": "Zekoki Tools",
+        "custom-collection__description": "Discover our premium range of power tools today!",
         "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "accessories",
+        "custom-featured__collection": "power-tools",
         "padding_top": 70,
         "padding_bottom": 70
       }
@@ -266,15 +266,15 @@
         "blurps_6FPd8G": {
           "type": "blurps",
           "settings": {
-            "sub_about_title": "Title Lorem Ipsum",
-            "sub_about_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_about_title": "93%",
+            "sub_about_description": "Customer satisfaction rate across all product categories."
           }
         },
         "blurps_kXiHYw": {
           "type": "blurps",
           "settings": {
-            "sub_about_title": "Title Lorem Ipsum",
-            "sub_about_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_about_title": "100%",
+            "sub_about_description": "Quality assurance on every tool we sell."
           }
         }
       },
@@ -286,8 +286,8 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "custom-about_image": "shopify://shop_images/Milestone_Image_1.png",
-        "custom-about__title": "Quality Products",
-        "custom-about__description": "Product that you will truly love"
+        "custom-about__title": "Discover Our Impressive Achievements and Milestones in the Industry",
+        "custom-about__description": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike."
       }
     }
   },
