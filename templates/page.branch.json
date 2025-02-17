@@ -26,7 +26,7 @@
           "settings": {
             "image": "{{ block.repeater.photo.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<ul><li>{{ block.repeater.location.value }}</li><li>{{ block.repeater.company.value }}</li></ul>",
+            "text": "<ul><li><strong>Business Name:  </strong>{{ block.repeater.company.value }}</li><li><strong>Location: </strong>{{ block.repeater.location.value }}</li></ul>",
             "link_label": "View Details",
             "link": "{{ block.repeater.system.url }}"
           }
