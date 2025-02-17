@@ -28,6 +28,19 @@
         <p>{{ section.settings['custom-branch__description'] }}</p>
       </div>
     </div>
+
+    <div class="custom-branch__body">
+      {% for branch in shop.metaobjects.zekoki_store_branches.values %}
+        <div class="branch">
+          <h2>{{ branch.title }}</h2>
+          <p><strong>Company:</strong> {{ branch.company }}</p>
+          <p><strong>Location:</strong> {{ branch.location }}</p>
+          {% if branch.photo != blank %}
+            <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
