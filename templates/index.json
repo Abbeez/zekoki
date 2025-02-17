@@ -223,11 +223,11 @@
     "custom_featured_collection_Rgrrpe": {
       "type": "custom-featured-collection",
       "settings": {
-        "custom-collection__sub": "Your Subtitle Here",
-        "custom-collection__title": "Your Title Here",
-        "custom-collection__description": "Your Details Here",
+        "custom-collection__sub": "Essentials",
+        "custom-collection__title": "Zekoki Accessories",
+        "custom-collection__description": "Explore our high-quality accessories for every project.",
         "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "power-tools",
+        "custom-featured__collection": "accessories",
         "padding_top": 70,
         "padding_bottom": 70
       }
