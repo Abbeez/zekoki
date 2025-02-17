@@ -177,35 +177,6 @@
         "category_button_url_secondary": ""
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Power Tools",
-        "heading_size": "h1",
-        "description": "<p>Explore our high-quality accessories for every project.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "accessories",
-        "products_to_show": 16,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_BFrVfk": {
       "type": "rich-text",
       "blocks": {
@@ -247,55 +218,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "image_banner_QeNkzz": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_itVekM": {
-          "type": "heading",
-          "settings": {
-            "heading": "Discover the Zekoki Advantage Today",
-            "heading_size": "h1"
-          }
-        },
-        "text_m9KFbq": {
-          "type": "text",
-          "settings": {
-            "text": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike.",
-            "text_style": "body"
-          }
-        },
-        "buttons_gHfJwR": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "Learn More",
-            "button_link_2": "shopify://pages/about-us",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_itVekM",
-        "text_m9KFbq",
-        "buttons_gHfJwR"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/ZEKOKING_6.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "scheme-4",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
     "custom_featured_collection_Rgrrpe": {
@@ -342,9 +264,7 @@
     "image_banner",
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
-    "featured_collection",
     "rich_text_BFrVfk",
-    "image_banner_QeNkzz",
     "custom_featured_collection_Rgrrpe",
     "custom_banner_3WPHj7",
     "custom_featured_collection_Wde8fb"
