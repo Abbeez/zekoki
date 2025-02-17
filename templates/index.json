@@ -313,6 +313,7 @@
       "settings": {
         "padding_top": 80,
         "padding_bottom": 80,
+        "custom-banner_background": "shopify://shop_images/ZEKOKING_6.png",
         "custom-banner__sub": "Quality",
         "custom-banner__title": "Quality Products",
         "custom-banner__description": "Product that you will truly love",
