@@ -31,13 +31,17 @@
 
     <div class="custom-branch__body">
       {% for branch in shop.metaobjects.zekoki_store_branches.values %}
-        <div class="branch">
-          <h2>{{ branch.title }}</h2>
-          <p><strong>Company:</strong> {{ branch.company }}</p>
+        <div class="custom-branch__items">
+          <div class="custom-branch__items_wrapper">
+            {% if branch.photo != blank %}
+              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
+            {% endif %}
+            <h2>{{ branch.title }}</h2>
+          </div>
           <p><strong>Location:</strong> {{ branch.location }}</p>
-          {% if branch.photo != blank %}
-            <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
-          {% endif %}
+          <a href="{{ section.settings.banner_button_url_primary | strip_html }}" class="button button--primary">
+            {{- section.settings.banner_button_text_primary | strip_html -}}
+          </a>
         </div>
       {% endfor %}
     </div>
