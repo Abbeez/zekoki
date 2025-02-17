@@ -1,6 +1,50 @@
 {% schema %}
+{
+  "name": "Custom Branches Section",
+  "settings": [
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "type": "header",
+    "content": "Section Spacing"
+  },
+  {
+    "type": "range",
+    "id": "padding_top",
+    "label": "Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "label": "Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "header",
+    "content": "About Details"
+  },
+  {
+    "type": "text",
+    "id": "custom-about__title",
+    "label": "About Title",
+    "default": "Quality Products"
+  },
+  {
+    "type": "textarea",
+    "id": "custom-about__description",
+    "label": "About Description",
+    "default": "Product that you will truly love"
+  },
+  ],
+  "presets": [
+    {
+      "name": "Custom Store Branches Section"
+    }
+  ]
+}
 {% endschema %}
