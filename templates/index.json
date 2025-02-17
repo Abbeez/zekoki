@@ -239,13 +239,13 @@
         "padding_bottom": 0,
         "custom-banner_background": "shopify://shop_images/Zekoki_Mascot.png",
         "custom-banner_image": "shopify://shop_images/Mascot_Zekoki.png",
-        "custom-banner__sub": "Quality",
-        "custom-banner__title": "Quality Products",
-        "custom-banner__description": "Product that you will truly love",
-        "banner_button_text_primary": "Learn More",
-        "banner_button_url_primary": "",
-        "banner_button_text_secondary": "Shop Now",
-        "banner_button_url_secondary": ""
+        "custom-banner__sub": "About Us",
+        "custom-banner__title": "Discover the Zekoki Advantage Today",
+        "custom-banner__description": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike.",
+        "banner_button_text_primary": "Shop Now",
+        "banner_button_url_primary": "shopify://collections/all",
+        "banner_button_text_secondary": "Learn More",
+        "banner_button_url_secondary": "shopify://pages/about-us"
       }
     },
     "custom_featured_collection_Wde8fb": {
