@@ -1,67 +1,87 @@
 {%- style -%}
-    .custom-about__section,
-    .custom-about__container.about-second{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: wrap;
-      gap:35px;
-  }
+      .custom-about__section {
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          min-height: 585px;
+          display: flex;
+          align-items: center;
+      }
 
-    .custom-about__section > div:first-child {
+    .custom_about__main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-between; */
+        max-width: 1500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .custom_about__main > div:first-child {
+      width:50%;
+      flex-grow: 1;
+    }
+
+     .custom_about__main > div:last-child {
       width:35%;
       flex-grow: 1;
     }
 
-    .custom-about__section > div:last-child {
-      width:55%;
-      flex-grow: 1;
-    }
+  .custom_about__body{
+    color: var(--zekoki-white) !important;
+  }
 
-  .custom-about__container.about-second > div.about-items{
-    width: 45%;
-    flex-grow: 1;
+  .custom_about__container img {
+      margin-top: -50px;
+      margin-bottom: -10px;
   }
 {%- endstyle -%}
 
 <section
-  id=""
-  class="custom-about__section page-width"
+  class="custom-about__section"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-image: url('{{ section.settings.custom-about_background | image_url }}');
   "
 >
-  <div class="custom-about__container about-first">
-    <span>{{ section.settings.about_subtitle | strip_html }}</span>
-    <h2 class="h1">{{ section.settings.about_heading | strip_html }}</h2>
-    <p>{{ section.settings.about_description | strip_html }}</p>
-
-    <div class="banner__buttons banner__buttons--multiple">
-      <a href="{{ section.settings.about_button_url_primary | strip_html }}" class="button button--primary">
-        {{- section.settings.about_button_text_primary | strip_html -}}
-      </a>
-      <a href="{{ section.settings.about_button_url_secondary | strip_html }}" class="button button--secondary">
-        {{- section.settings.about_button_text_secondary | strip_html -}}
-      </a>
-    </div>
-  </div>
-
-  <div class="custom-about__container about-second">
-    {% for block in section.blocks %}
-      <div class="about-items">
-        <span>{{ block.settings.sub_about_subheading | strip_html }}</span>
-        <h3>{{ block.settings.sub_about_title | strip_html }}</h3>
-        <p>{{ block.settings.sub_about_description | strip_html }}</p>
+  <div class="custom_about__main">
+    <div class="custom_about__container">
+      <div class="custom_about__body">
+        <span>{{ section.settings['custom-about__sub'] | strip_html }}</span>
+        <h2 class="h1" style="color: var(--zekoki-white);">
+          {{ section.settings['custom-about__title'] | strip_html }}
+        </h2>
+        <p>{{ section.settings['custom-about__description'] | strip_html }}</p>
       </div>
-    {% endfor %}
+
+      <div class="about__buttons about__buttons--multiple">
+        <a href="{{ section.settings.about_button_url_primary | strip_html }}" class="button button--primary">
+          {{- section.settings.about_button_text_primary | strip_html -}}
+        </a>
+        <a href="{{ section.settings.about_button_url_secondary | strip_html }}" class="button button--secondary">
+          {{- section.settings.about_button_text_secondary | strip_html -}}
+        </a>
+      </div>
+    </div>
+
+    <div class="custom_about__container">
+      <img
+        src="{{ section.settings.custom-about_image | image_url: width: 585 }}"
+        alt="{{ section.settings.custom-about__title }}"
+        width="450"
+        height="auto"
+      >
+    </div>
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Custom About Us Section",
-  "tag": "section",
+  "name": "Custom About Section",
   "settings": [
     {
       "type": "header",
@@ -87,25 +107,39 @@
     },
     {
       "type": "header",
-      "content": "Section Details"
+      "content": "About Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom-about_background",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom-about_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "About Details"
     },
     {
       "type": "text",
-      "id": "about_subtitle",
-      "label": "Subtitle",
-      "default": "Your Subtitle Here"
+      "id": "custom-about__sub",
+      "label": "About Sub Title",
+      "default": "Quality"
     },
     {
       "type": "text",
-      "id": "about_heading",
-      "label": "Heading",
-      "default": "Your Heading Here"
+      "id": "custom-about__title",
+      "label": "About Title",
+      "default": "Quality Products"
     },
     {
       "type": "textarea",
-      "id": "about_description",
-      "label": "Description",
-      "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "id": "custom-about__description",
+      "label": "About Description",
+      "default": "Product that you will truly love"
     },
     {
       "type": "text",
@@ -130,36 +164,9 @@
       "label": "Button 2 Link"
     }
   ],
-    "blocks": [
-    {
-      "type": "abouts",
-      "name": "Sub about",
-      "limit": 4,
-      "settings": [
-        {
-          "type": "text",
-          "id": "sub_about_subheading",
-          "label": "Sub Heading",
-          "default": "Quality Lorem Ipsum"
-        },
-        {
-          "type": "text",
-          "id": "sub_about_title",
-          "label": "Heading",
-          "default": "Title Lorem Ipsum"
-        },
-        {
-          "type": "textarea",
-          "id": "sub_about_description",
-          "label": "Heading",
-          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Custom About Us Section"
+      "name": "Custom About Section"
     }
   ]
 }
