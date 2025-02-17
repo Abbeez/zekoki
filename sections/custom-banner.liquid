@@ -52,7 +52,9 @@
     <div class="custom_banner__container">
       <div class="custom_banner__body">
         <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
-        <h2 style="color: var(--zekoki-white);">{{ section.settings['custom-banner__title'] | strip_html }}</h2>
+        <h2 class="h1" style="color: var(--zekoki-white);">
+          {{ section.settings['custom-banner__title'] | strip_html }}
+        </h2>
         <p>{{ section.settings['custom-banner__description'] | strip_html }}</p>
       </div>
 
