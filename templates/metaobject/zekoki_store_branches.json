@@ -30,7 +30,7 @@
           "type": "button",
           "settings": {
             "button_label": "View on Map",
-            "button_link": "{{ metaobject.system.url }}",
+            "button_link": "",
             "button_style_secondary": false
           }
         }
