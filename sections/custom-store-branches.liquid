@@ -75,9 +75,7 @@
             <h2>{{ branch.title }}</h2>
           </div>
           <p><strong>Location:</strong> {{ branch.location }}</p>
-          <a href="{{ section.settings.banner_button_url_primary | strip_html }}" class="button button--primary">
-            {{- section.settings.banner_button_text_primary | strip_html -}}
-          </a>
+          <a href="{{ branch.url }}" class="button button--primary"> Branch Details </a>
         </div>
       {% endfor %}
     </div>
