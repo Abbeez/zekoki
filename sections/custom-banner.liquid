@@ -39,6 +39,15 @@
         </a>
       </div>
     </div>
+
+    <div class="custom_banner__container">
+      <img
+        src="{{ section.settings.custom-banner_image | image_url: width: 585 }}"
+        alt="{{ section.settings.custom-banner__title }}"
+        width="auto"
+        height="auto"
+      >
+    </div>
   </div>
 </section>
 
@@ -75,6 +84,11 @@
     {
       "type": "image_picker",
       "id": "custom-banner_background",
+      "label": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom-banner_image",
       "label": "Background Image"
     },
     {
