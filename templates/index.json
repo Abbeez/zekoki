@@ -289,6 +289,15 @@
         "custom-about__title": "Discover Our Impressive Achievements and Milestones in the Industry",
         "custom-about__description": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike."
       }
+    },
+    "custom_store_branches_pX6QHt": {
+      "type": "custom-store-branches",
+      "settings": {
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom-about__title": "Quality Products",
+        "custom-about__description": "Product that you will truly love"
+      }
     }
   },
   "order": [
@@ -299,6 +308,7 @@
     "custom_featured_collection_Rgrrpe",
     "custom_banner_3WPHj7",
     "custom_featured_collection_Wde8fb",
-    "custom_about_section_V8UCVN"
+    "custom_about_section_V8UCVN",
+    "custom_store_branches_pX6QHt"
   ]
 }
