@@ -1,7 +1,24 @@
 {%- style -%}
 {%- endstyle -%}
 
-<section class="page-width"></section>
+<section class="custom-banner__section page-width">
+  <div class="custom_banner__container">
+    <div class="custom_banner__body">
+      <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
+      <h2>{{ section.settings['custom-banner__title'] | strip_html }}</h2>
+      <p>{{ section.settings['custom-banner__description'] | strip_html }}</p>
+    </div>
+
+    <div class="banner__buttons banner__buttons--multiple">
+      <a href="{{ section.settings.banner_button_url_primary | strip_html }}" class="button button--primary">
+        {{- section.settings.banner_button_text_primary | strip_html -}}
+      </a>
+      <a href="{{ section.settings.banner_button_url_secondary | strip_html }}" class="button button--secondary">
+        {{- section.settings.banner_button_text_secondary | strip_html -}}
+      </a>
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
