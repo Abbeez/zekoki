@@ -310,7 +310,17 @@
     },
     "custom_banner_3WPHj7": {
       "type": "custom-banner",
-      "settings": {}
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "custom-banner__sub": "Quality",
+        "custom-banner__title": "Quality Products",
+        "custom-banner__description": "Product that you will truly love",
+        "banner_button_text_primary": "Learn More",
+        "banner_button_url_primary": "",
+        "banner_button_text_secondary": "Shop Now",
+        "banner_button_url_secondary": ""
+      }
     }
   },
   "order": [
