@@ -763,6 +763,9 @@
             "label": "Uppercase"
           }
         },
+        "header_collection": {
+          "content": "Featured Collection Header"
+        },        
         "collection": {
           "label": "Collection"
         },
