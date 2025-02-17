@@ -1,3 +1,36 @@
+{%- style -%}
+  .custom-branch__header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+  }
+
+  .custom_branch__body {
+    padding-top:30px; padding-bottom:30px;
+  }
+{%- endstyle -%}
+
+<section
+  class="page-width custom-branch__section"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="custom-branch__container">
+    <div class="custom-branch__header">
+      <div class="custom_branch__header--container">
+        <h2 class="h1">{{ section.settings['custom-branch__title'] }}</h2>
+      </div>
+      <div class="custom_branch__header--container">
+        <p>{{ section.settings['custom-branch__description'] }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% schema %}
 {
   "name": "Custom Branches Section",
@@ -26,18 +59,18 @@
   },
   {
     "type": "header",
-    "content": "About Details"
+    "content": "branch Details"
   },
   {
     "type": "text",
-    "id": "custom-about__title",
-    "label": "About Title",
+    "id": "custom-branch__title",
+    "label": "branch Title",
     "default": "Quality Products"
   },
   {
     "type": "textarea",
-    "id": "custom-about__description",
-    "label": "About Description",
+    "id": "custom-branch__description",
+    "label": "branch Description",
     "default": "Product that you will truly love"
   },
   ],
