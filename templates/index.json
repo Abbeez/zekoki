@@ -322,6 +322,16 @@
         "banner_button_text_secondary": "Shop Now",
         "banner_button_url_secondary": ""
       }
+    },
+    "custom_featured_collection_Wde8fb": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "custom-collection__sub": "Your Subtitle Here",
+        "custom-collection__title": "Your Title Here",
+        "custom-collection__description": "Your Details Here",
+        "custom-collection__viewall": "Explore",
+        "custom-featured__collection": "accessories"
+      }
     }
   },
   "order": [
@@ -332,6 +342,7 @@
     "rich_text_BFrVfk",
     "image_banner_QeNkzz",
     "custom_featured_collection_Rgrrpe",
-    "custom_banner_3WPHj7"
+    "custom_banner_3WPHj7",
+    "custom_featured_collection_Wde8fb"
   ]
 }
