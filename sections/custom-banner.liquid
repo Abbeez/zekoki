@@ -1,8 +1,12 @@
 {%- style -%}
-  .custom-banner__section{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+  .custom-banner__section {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 585px;
+      display: flex;
+      align-items: center;
   }
 {%- endstyle -%}
 
@@ -14,20 +18,22 @@
     background-image: url('{{ section.settings.custom-banner_background | image_url }}');
   "
 >
-  <div class="custom_banner__container page-width">
-    <div class="custom_banner__body">
-      <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
-      <h2>{{ section.settings['custom-banner__title'] | strip_html }}</h2>
-      <p>{{ section.settings['custom-banner__description'] | strip_html }}</p>
-    </div>
+  <div class="page-width">
+    <div class="custom_banner__container">
+      <div class="custom_banner__body">
+        <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
+        <h2>{{ section.settings['custom-banner__title'] | strip_html }}</h2>
+        <p>{{ section.settings['custom-banner__description'] | strip_html }}</p>
+      </div>
 
-    <div class="banner__buttons banner__buttons--multiple">
-      <a href="{{ section.settings.banner_button_url_primary | strip_html }}" class="button button--primary">
-        {{- section.settings.banner_button_text_primary | strip_html -}}
-      </a>
-      <a href="{{ section.settings.banner_button_url_secondary | strip_html }}" class="button button--secondary">
-        {{- section.settings.banner_button_text_secondary | strip_html -}}
-      </a>
+      <div class="banner__buttons banner__buttons--multiple">
+        <a href="{{ section.settings.banner_button_url_primary | strip_html }}" class="button button--primary">
+          {{- section.settings.banner_button_text_primary | strip_html -}}
+        </a>
+        <a href="{{ section.settings.banner_button_url_secondary | strip_html }}" class="button button--secondary">
+          {{- section.settings.banner_button_text_secondary | strip_html -}}
+        </a>
+      </div>
     </div>
   </div>
 </section>
