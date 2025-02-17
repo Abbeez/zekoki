@@ -56,15 +56,6 @@
         </h2>
         <p>{{ section.settings['custom-about__description'] | strip_html }}</p>
       </div>
-
-      <div class="about__buttons about__buttons--multiple">
-        <a href="{{ section.settings.about_button_url_primary | strip_html }}" class="button button--primary">
-          {{- section.settings.about_button_text_primary | strip_html -}}
-        </a>
-        <a href="{{ section.settings.about_button_url_secondary | strip_html }}" class="button button--secondary">
-          {{- section.settings.about_button_text_secondary | strip_html -}}
-        </a>
-      </div>
     </div>
 
     <div class="custom_about__container">
@@ -140,28 +131,6 @@
       "label": "About Description",
       "default": "Product that you will truly love"
     },
-    {
-      "type": "text",
-      "id": "about_button_text_primary",
-      "label": "Button 1 Text",
-      "default": "Learn More"
-    },
-    {
-      "type": "url",
-      "id": "about_button_url_primary",
-      "label": "Button 1 Link"
-    },
-    {
-      "type": "text",
-      "id": "about_button_text_secondary",
-      "label": "Button 2 Text",
-      "default": "Shop Now"
-    },
-    {
-      "type": "url",
-      "id": "about_button_url_secondary",
-      "label": "Button 2 Link"
-    }
   ],
   "presets": [
     {
