@@ -177,51 +177,68 @@
         "category_button_url_secondary": ""
       }
     },
-    "rich_text_BFrVfk": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_ikAmGn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Discover the Zekoki Advantage Today",
-            "heading_size": "h1"
-          }
-        },
-        "text_bNr8YN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Choosing Zekoki means investing in high-quality tools that won't break the bank. Our extensive range ensures you find exactly what you need for any project.</p>"
-          }
-        },
-        "button_7JUHXr": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false,
-            "button_label_2": "Learn More",
-            "button_link_2": "#",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_ikAmGn",
-        "text_bNr8YN",
-        "button_7JUHXr"
+    "featured_collection_ekcpPa": {
+      "type": "featured-collection",
+      "custom_css": [
+        "slider-component ul li:first-child {margin-left: 0;}"
       ],
-      "disabled": true,
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
+        "collection": "accessories",
+        "products_to_show": 5,
+        "title": "Accessories",
+        "heading_size": "h1",
+        "description": "<p>Explore our high-quality accessories for every project.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_Yd9XN3": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "power-tools",
+        "products_to_show": 5,
+        "title": "Power Tools",
+        "heading_size": "h1",
+        "description": "<p>Explore our high-quality accessories for every project.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_featured_collection_Rgrrpe": {
       "type": "custom-featured-collection",
+      "disabled": true,
       "settings": {
         "custom-collection__sub": "Essentials",
         "custom-collection__title": "Zekoki Accessories",
@@ -298,49 +315,18 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
-    },
-    "featured_collection_ekcpPa": {
-      "type": "featured-collection",
-      "custom_css": [
-        "slider-component ul li:first-child {margin-left: 0;}"
-      ],
-      "settings": {
-        "collection": "accessories",
-        "products_to_show": 5,
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "<p>Explore our high-quality accessories for every project.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 5,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
-    "rich_text_BFrVfk",
+    "featured_collection_ekcpPa",
+    "featured_collection_Yd9XN3",
     "custom_featured_collection_Rgrrpe",
     "custom_banner_3WPHj7",
     "custom_featured_collection_Wde8fb",
     "custom_about_section_V8UCVN",
-    "custom_store_branches_pX6QHt",
-    "featured_collection_ekcpPa"
+    "custom_store_branches_pX6QHt"
   ]
 }
