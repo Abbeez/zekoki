@@ -34,7 +34,7 @@
         <div class="custom-branch__items">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
-              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="400" width="400">
+              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="auto" width="500">
             {% endif %}
             <h2>{{ branch.title }}</h2>
           </div>
