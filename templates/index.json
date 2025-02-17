@@ -262,17 +262,33 @@
     },
     "custom_about_section_V8UCVN": {
       "type": "custom-about-section",
+      "blocks": {
+        "blurps_6FPd8G": {
+          "type": "blurps",
+          "settings": {
+            "sub_about_title": "Title Lorem Ipsum",
+            "sub_about_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_kXiHYw": {
+          "type": "blurps",
+          "settings": {
+            "sub_about_title": "Title Lorem Ipsum",
+            "sub_about_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        }
+      },
+      "block_order": [
+        "blurps_6FPd8G",
+        "blurps_kXiHYw"
+      ],
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20,
         "custom-about_image": "shopify://shop_images/Milestone_Image_1.png",
         "custom-about__sub": "Quality",
         "custom-about__title": "Quality Products",
-        "custom-about__description": "Product that you will truly love",
-        "about_button_text_primary": "Learn More",
-        "about_button_url_primary": "",
-        "about_button_text_secondary": "Shop Now",
-        "about_button_url_secondary": ""
+        "custom-about__description": "Product that you will truly love"
       }
     }
   },
