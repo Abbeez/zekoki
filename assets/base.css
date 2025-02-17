@@ -22,6 +22,12 @@ a.button.button--primary {
     font-family: ;
 }
 
+img {
+  min-height:auto;
+  width:100%;
+  display:block;
+}
+
 
 
 .product-card-wrapper .card,
