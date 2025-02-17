@@ -1,4 +1,9 @@
 {%- style -%}
+  .custom-banner__section{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
 {%- endstyle -%}
 
 <section
@@ -6,6 +11,7 @@
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-image: url('{{ section.settings.custom-banner_background | image_url }}');
   "
 >
   <div class="custom_banner__container">
