@@ -262,7 +262,18 @@
     },
     "custom_about_section_V8UCVN": {
       "type": "custom-about-section",
-      "settings": {}
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-about_image": "shopify://shop_images/Milestone_Image_1.png",
+        "custom-about__sub": "Quality",
+        "custom-about__title": "Quality Products",
+        "custom-about__description": "Product that you will truly love",
+        "about_button_text_primary": "Learn More",
+        "about_button_url_primary": "",
+        "about_button_text_secondary": "Shop Now",
+        "about_button_url_secondary": ""
+      }
     }
   },
   "order": [
