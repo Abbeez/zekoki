@@ -1,6 +1,6 @@
 {%- style -%}
-    .zekoki-blurp__section,
-    .zekoki-blurp__container.blurp-second{
+    .custom-blurp__section,
+    .custom-blurp__container.blurp-second{
       display: flex;
       flex-direction: row;
       align-content: center;
@@ -8,17 +8,17 @@
       gap:35px;
   }
 
-    .zekoki-blurp__section > div:first-child {
+    .custom-blurp__section > div:first-child {
       width:35%;
       flex-grow: 1;
     }
 
-    .zekoki-blurp__section > div:last-child {
+    .custom-blurp__section > div:last-child {
       width:55%;
       flex-grow: 1;
     }
 
-  .zekoki-blurp__container.blurp-second > div.blurp-items{
+  .custom-blurp__container.blurp-second > div.blurp-items{
     width: 45%;
     flex-grow: 1;
   }
@@ -26,13 +26,13 @@
 
 <section
   id=""
-  class="zekoki-blurp__section page-width"
+  class="custom-blurp__section page-width"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="zekoki-blurp__container blurp-first">
+  <div class="custom-blurp__container blurp-first">
     <span>{{ section.settings.category_subtitle | strip_html }}</span>
     <h2>{{ section.settings.category_heading | strip_html }}</h2>
     <p>{{ section.settings.category_description | strip_html }}</p>
@@ -47,7 +47,7 @@
     </div>
   </div>
 
-  <div class="zekoki-blurp__container blurp-second">
+  <div class="custom-blurp__container blurp-second">
     {% for block in section.blocks %}
       <div class="blurp-items">
         <span>{{ block.settings.sub_category_subheading | strip_html }}</span>
