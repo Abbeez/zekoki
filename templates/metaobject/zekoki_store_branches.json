@@ -8,6 +8,56 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "image_with_text_NpWTHY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x7QG8R": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text{{ metaobject.title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_marPCq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.{{ metaobject.location.value }}</p>",
+            "text_style": "body"
+          }
+        },
+        "button_yxf3AV": {
+          "type": "button",
+          "settings": {
+            "button_label": "View on Map",
+            "button_link": "{{ metaobject.system.url }}",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x7QG8R",
+        "text_marPCq",
+        "button_yxf3AV"
+      ],
+      "settings": {
+        "image": "{{ metaobject.photo.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_with_text_NpWTHY"
+  ]
 }
