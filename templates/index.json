@@ -179,9 +179,7 @@
     },
     "featured_collection_ekcpPa": {
       "type": "featured-collection",
-      "custom_css": [
-        "slider-component ul li:first-child {margin-left: 0;}"
-      ],
+      "custom_css": [],
       "settings": {
         "collection": "accessories",
         "products_to_show": 5,
