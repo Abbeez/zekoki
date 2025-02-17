@@ -26,8 +26,8 @@
           "settings": {
             "image": "{{ block.repeater.photo.value }}",
             "title": "{{ block.repeater.title.value }}",
-            "text": "<p>{{ block.repeater.location.value }}</p>",
-            "link_label": "{{ block.repeater.company.value }}",
+            "text": "<ul><li>{{ block.repeater.location.value }}</li><li>{{ block.repeater.company.value }}</li></ul>",
+            "link_label": "View Details",
             "link": "{{ block.repeater.system.url }}"
           }
         }
