@@ -23,6 +23,12 @@
   .custom-branch__items {
     flex: 1 0 45%;
   }
+
+    .custom-branch__items img {
+    width:100%;
+      height:auto;
+      display:block;
+  }
 {%- endstyle -%}
 
 <section
@@ -47,7 +53,7 @@
         <div class="custom-branch__items">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
-              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="auto" width="500">
+              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="" width="">
             {% endif %}
             <h2>{{ branch.title }}</h2>
           </div>
