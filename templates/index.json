@@ -129,33 +129,33 @@
         "blurps_VJk3pK": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_category_subheading": "Power Tools",
+            "sub_category_title": "Power Tools for Every Project",
+            "sub_category_description": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
           }
         },
         "blurps_mgzpgX": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_category_subheading": "Machinery",
+            "sub_category_title": "Reliable Machinery for Your Needs",
+            "sub_category_description": "Our machinery is built to enhance productivity and efficiency."
           }
         },
         "blurps_3XeV8W": {
           "type": "blurps",
           "settings": {
             "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_category_title": "Essential Accessories to Complete Your Toolkit",
+            "sub_category_description": "Find the perfect accessories to elevate your projects."
           }
         },
         "blurps_itkDtG": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Title Lorem Ipsum",
-            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+            "sub_category_subheading": "Community",
+            "sub_category_title": "Join Our Community of Tool Enthusiasts",
+            "sub_category_description": "Connect with us for tips, updates, and exclusive offers."
           }
         }
       },
@@ -168,12 +168,12 @@
       "settings": {
         "padding_top": 90,
         "padding_bottom": 60,
-        "category_subtitle": "Your Subtitle Here",
-        "category_heading": "Your Heading Here",
-        "category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "category_button_text_primary": "Learn More",
+        "category_subtitle": "Accessories",
+        "category_heading": "Explore Our Diverse Product Categories",
+        "category_description": "At Zekoki, we provide an extensive range of power tools, machinery, and accessories designed to meet your needs. Our commitment to quality and affordability ensures you get the best value for your investment.",
+        "category_button_text_primary": "Shop Now",
         "category_button_url_primary": "",
-        "category_button_text_secondary": "Shop Now",
+        "category_button_text_secondary": "Learn More",
         "category_button_url_secondary": ""
       }
     },
@@ -286,7 +286,6 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "custom-about_image": "shopify://shop_images/Milestone_Image_1.png",
-        "custom-about__sub": "Quality",
         "custom-about__title": "Quality Products",
         "custom-about__description": "Product that you will truly love"
       }
