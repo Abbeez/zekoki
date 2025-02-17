@@ -301,6 +301,9 @@
     },
     "featured_collection_ekcpPa": {
       "type": "featured-collection",
+      "custom_css": [
+        "slider-component ul li:first-child{margin-left:-50%;}"
+      ],
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
