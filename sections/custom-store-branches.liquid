@@ -75,9 +75,7 @@
             <h2>{{ branch.title }}</h2>
           </div>
           <p><strong>Location:</strong> {{ branch.location }}</p>
-          <a href="/pages/zekoki-store-branches/{{ metaobjects.type.handle }}" class="button button--primary">
-            Branch Details
-          </a>
+          <a href="/pages/zekoki-store-branches/{{branch.handle }}" class="button button--primary"> Branch Details </a>
         </div>
       {% endfor %}
     </div>
