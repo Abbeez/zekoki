@@ -15,14 +15,14 @@
         "heading_x7QG8R": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text{{ metaobject.title.value }}",
+            "heading": "{{ metaobject.title.value }}",
             "heading_size": "h1"
           }
         },
         "text_marPCq": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.{{ metaobject.location.value }}</p>",
+            "text": "<p>{{ metaobject.location.value }}</p>",
             "text_style": "body"
           }
         },
