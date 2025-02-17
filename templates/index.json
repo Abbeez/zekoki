@@ -302,7 +302,7 @@
     "featured_collection_ekcpPa": {
       "type": "featured-collection",
       "custom_css": [
-        "slider-component ul li:first-child{margin-left:-50%;}"
+        "slider-component ul li:first-child {margin-left: 0;}"
       ],
       "settings": {
         "title": "Featured collection",
