@@ -56,6 +56,15 @@
         </h2>
         <p>{{ section.settings['custom-about__description'] | strip_html }}</p>
       </div>
+
+      <div class="custom_about__footer">
+        {% for block in section.blocks %}
+          <div class="custom_about__footer-items">
+            <h3>{{ block.settings.sub_about_title | strip_html }}</h3>
+            <p>{{ block.settings.sub_about_description | strip_html }}</p>
+          </div>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="custom_about__container">
@@ -131,6 +140,27 @@
       "label": "About Description",
       "default": "Product that you will truly love"
     },
+  ],
+    "blocks": [
+    {
+      "type": "blurps",
+      "name": "Sub About",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub_about_title",
+          "label": "Heading",
+          "default": "Title Lorem Ipsum"
+        },
+        {
+          "type": "textarea",
+          "id": "sub_about_description",
+          "label": "Heading",
+          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
+        }
+      ]
+    }
   ],
   "presets": [
     {
