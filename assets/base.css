@@ -28,6 +28,12 @@ img {
   display:block;
 }
 
+.center.collection__view-all.scroll-trigger.animate--slide-in {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
 
 
 .product-card-wrapper .card,
