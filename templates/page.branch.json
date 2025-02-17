@@ -21,36 +21,18 @@
       "blocks": {
         "column_AF8YMT": {
           "type": "column",
+          "repeater": "{{ page.metafields.custom.branches.value }}",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RY8xKx": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_MVUDN9": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "{{ block.repeater.photo.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "text": "<p>{{ block.repeater.location.value }}</p>",
+            "link_label": "{{ block.repeater.company.value }}",
+            "link": "{{ block.repeater.system.url }}"
           }
         }
       },
       "block_order": [
-        "column_AF8YMT",
-        "column_RY8xKx",
-        "column_MVUDN9"
+        "column_AF8YMT"
       ],
       "settings": {
         "title": "Multicolumn",
