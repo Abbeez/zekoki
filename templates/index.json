@@ -305,7 +305,9 @@
         "custom-collection__title": "Your Title Here",
         "custom-collection__description": "Your Details Here",
         "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "power-tools"
+        "custom-featured__collection": "power-tools",
+        "padding_top": 70,
+        "padding_bottom": 70
       }
     },
     "custom_banner_3WPHj7": {
@@ -330,7 +332,9 @@
         "custom-collection__title": "Your Title Here",
         "custom-collection__description": "Your Details Here",
         "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "accessories"
+        "custom-featured__collection": "accessories",
+        "padding_top": 70,
+        "padding_bottom": 70
       }
     }
   },
