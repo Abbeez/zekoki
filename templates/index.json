@@ -267,6 +267,7 @@
     },
     "custom_featured_collection_Wde8fb": {
       "type": "custom-featured-collection",
+      "disabled": true,
       "settings": {
         "custom-collection__sub": "Power Tools",
         "custom-collection__title": "Zekoki Tools",
@@ -322,9 +323,9 @@
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
     "featured_collection_ekcpPa",
-    "featured_collection_Yd9XN3",
     "custom_featured_collection_Rgrrpe",
     "custom_banner_3WPHj7",
+    "featured_collection_Yd9XN3",
     "custom_featured_collection_Wde8fb",
     "custom_about_section_V8UCVN",
     "custom_store_branches_pX6QHt"
