@@ -9,8 +9,8 @@
       align-items: center;
   }
 
-  .custom_banner__main.page-width {
-    margin: 0 !important;
+  .custom_banner__main {
+    max-width: var(--page-width);
   }
 {%- endstyle -%}
 
@@ -22,7 +22,7 @@
     background-image: url('{{ section.settings.custom-banner_background | image_url }}');
   "
 >
-  <div class="custom_banner__main page-width">
+  <div class="custom_banner__main">
     <div class="custom_banner__container">
       <div class="custom_banner__body">
         <span>{{ section.settings['custom-banner__sub'] | strip_html }}</span>
