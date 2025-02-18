@@ -42,19 +42,28 @@
     transform: scale(1.05);
   }
 {% endstyle %}
-
-<div class="custom-collection-list">
-  {% for block in section.blocks %}
-    {% assign collection_handle = block.settings.boxed_collection %}
-    {% if collection_handle != blank %}
-      {% assign collection = collections[collection_handle] %}
-      <div class="collection-card">
-        <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
-        <h3>{{ block.settings.boxed_collection__heading | default: collection.title }}</h3>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div>
+<section
+  class="custom-collection__section scroll-trigger animate--slide-in"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+  "
+>
+  <div class="custom-collection-list">
+    {% for block in section.blocks %}
+      {% assign collection_handle = block.settings.boxed_collection %}
+      {% if collection_handle != blank %}
+        {% assign collection = collections[collection_handle] %}
+        <div class="collection-card">
+          <img src="{{ collection.image | image_url: 'medium' }}" alt="{{ collection.title }}" width="" height="">
+          <h3>{{ block.settings.boxed_collection__heading | default: collection.title }}</h3>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
 
 {% schema %}
 {
