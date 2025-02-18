@@ -1,6 +1,191 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+    /* Mobile styles (default) */
+        .custom-cta__section {
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding:15px;
+      }
+
+      .custom_cta__main {
+        text-align: center;
+        color: var(--zekoki-white) !important;
+    }
+
+        .custom_cta__main > div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+
+
+  /* Tablet and small desktop */
+  @media screen and (min-width: 750px) {
+
   }
+
+  /* Large desktops */
+  @media screen and (min-width: 990px) {
+        .custom-cta__section {
+          min-height: 585px;
+          margin-top: -50px;
+      }
+
+          .custom_cta__main {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          max-width: 1500px;
+          width: 100%;
+          margin: 0 auto;
+          gap:20px;
+          text-align:left;
+      }
+
+        .custom_cta__main > div {
+      flex:1 0 45%;
+    }
+
+  }
+{%- endstyle -%}
+
+<section
+  class="custom-cta__section scroll-trigger animate--slide-in"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+    background-image: url('{{ section.settings.custom-cta_background | image_url }}');
+  "
+>
+  <div class="custom_cta__main">
+    <div class="custom_cta__container">
+      <div class="custom_cta__body">
+        <span>{{ section.settings['custom-cta__sub'] | strip_html }}</span>
+        <h2 class="h1 title" style="color: var(--zekoki-white);">
+          {{ section.settings['custom-cta__title'] | strip_html }}
+        </h2>
+        <p>{{ section.settings['custom-cta__description'] | strip_html }}</p>
+      </div>
+    </div>
+
+    <div class="custom_cta__container">
+      <div class="cta__buttons cta__buttons--multiple">
+        <a href="{{ section.settings.cta_button_url_primary | strip_html }}" class="button button--primary">
+          {{- section.settings.cta_button_text_primary | strip_html -}}
+        </a>
+        <a href="{{ section.settings.cta_button_url_secondary | strip_html }}" class="button button--secondary">
+          {{- section.settings.cta_button_text_secondary | strip_html -}}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom CTA Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "CTA Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom-cta_background",
+      "label": "Background"
+    },
+    {
+      "type": "header",
+      "content": "CTA Details"
+    },
+    {
+      "type": "text",
+      "id": "custom-cta__sub",
+      "label": "CTA Sub Title",
+      "default": "Quality"
+    },
+    {
+      "type": "text",
+      "id": "custom-cta__title",
+      "label": "CTA Title",
+      "default": "Quality Products"
+    },
+    {
+      "type": "textarea",
+      "id": "custom-cta__description",
+      "label": "CTA Description",
+      "default": "Product that you will truly love"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text_primary",
+      "label": "Button 1 Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "cta_button_url_primary",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text_secondary",
+      "label": "Button 2 Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "cta_button_url_secondary",
+      "label": "Button 2 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom CTA Section"
+    }
+  ]
+}
 {% endschema %}
