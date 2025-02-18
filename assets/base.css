@@ -22,6 +22,10 @@ a.button.button--primary {
     font-family: ;
 }
 
+.button-primary{
+  border:none;
+}
+
 img {
   min-height:auto;
   width:100%;
