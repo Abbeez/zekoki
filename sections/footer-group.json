@@ -11,6 +11,23 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_cta_hqpk76": {
+      "type": "custom-footer-cta",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "custom-cta_background": "shopify://shop_images/Try_Zekoki_Tools.png",
+        "custom-cta__sub": "Quality",
+        "custom-cta__title": "Quality Products",
+        "custom-cta__description": "Product that you will truly love",
+        "cta_button_text_primary": "Learn More",
+        "cta_button_url_primary": "",
+        "cta_button_text_secondary": "Shop Now",
+        "cta_button_url_secondary": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -66,6 +83,7 @@
     }
   },
   "order": [
+    "custom_footer_cta_hqpk76",
     "footer"
   ]
 }
