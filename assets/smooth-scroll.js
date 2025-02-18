@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("wheel", function (event) {
         event.preventDefault();
-        scrollSpeed += event.deltaY * 0.3; // Adjust this for more/less speed
+        scrollSpeed += event.deltaY * 5; // Adjust this for more/less speed
 
         if (!isScrolling) {
             isScrolling = true;
