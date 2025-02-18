@@ -105,14 +105,13 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Tools.png",
-        "image_2": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
         "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
-        "image_behavior": "zoom-in",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
