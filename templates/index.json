@@ -47,11 +47,29 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_pxebUQ": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_LYzgQr",
-        "slide_767fhg"
+        "slide_767fhg",
+        "slide_pxebUQ"
       ],
       "disabled": true,
       "settings": {
@@ -111,7 +129,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-5",
-        "image_behavior": "ambient",
+        "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
