@@ -11,6 +11,10 @@
   --zekoki-white: #ffffff;  
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   min-height:auto;
   width:100%;
