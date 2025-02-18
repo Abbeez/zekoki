@@ -367,6 +367,39 @@
         "custom-branch__title": "Discover Your Next Power Tool",
         "custom-branch__description": "Explore our extensive range of quality tools today!"
       }
+    },
+    "newsletter_Xb6yn6": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_WwBwjA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_tNEThA": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_xkcCqb": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_WwBwjA",
+        "paragraph_tNEThA",
+        "email_form_xkcCqb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -378,6 +411,7 @@
     "custom_banner_3WPHj7",
     "custom_product_list_DQ8Gk7",
     "custom_about_section_V8UCVN",
-    "custom_store_branches_pX6QHt"
+    "custom_store_branches_pX6QHt",
+    "newsletter_Xb6yn6"
   ]
 }
