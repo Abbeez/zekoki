@@ -11,9 +11,9 @@
   --zekoki-white: #ffffff;  
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 img {
   min-height:auto;
