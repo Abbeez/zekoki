@@ -63,7 +63,7 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="custom-blurp__container blurp-first">
+  <div class="custom-blurp__container blurp-first animate--slide-in">
     <span>{{ section.settings.category_subtitle | strip_html }}</span>
     <h2 class="title h1">{{ section.settings.category_heading | strip_html }}</h2>
     <p>{{ section.settings.category_description | strip_html }}</p>
@@ -82,7 +82,7 @@
     </div>
   </div>
 
-  <div class="custom-blurp__container blurp-second">
+  <div class="custom-blurp__container blurp-second animate--slide-in">
     {% for block in section.blocks %}
       <div class="blurp-items">
         <span>{{ block.settings.sub_category_subheading | strip_html }}</span>
