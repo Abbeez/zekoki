@@ -57,7 +57,7 @@
       {% if collection_handle != blank %}
         {% assign collection = collections[collection_handle] %}
         <div class="collection-card">
-          <img src="{{ collection.image | image_url: 'medium' }}" alt="{{ collection.title }}" width="" height="">
+          <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
           <h3>{{ block.settings.boxed_collection__heading | default: collection.title }}</h3>
         </div>
       {% endif %}
