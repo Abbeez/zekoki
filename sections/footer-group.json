@@ -14,12 +14,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "image_BXtpDN": {
-          "type": "image",
+        "brand_information_AnMY87": {
+          "type": "brand_information",
           "settings": {
-            "image": "shopify://shop_images/ZEKOKI_OFFICIAL_LOGO.png",
-            "image_width": 150,
-            "alignment": ""
+            "show_social": true
           }
         },
         "footer-0": {
@@ -45,7 +43,7 @@
         }
       },
       "block_order": [
-        "image_BXtpDN",
+        "brand_information_AnMY87",
         "footer-0",
         "footer-1",
         "link_list_FijeDR"
