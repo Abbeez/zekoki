@@ -75,7 +75,17 @@
             <h2>{{ branch.title }}</h2>
           </div>
           <p><strong>Location:</strong> {{ branch.location }}</p>
-          <a href="pages/zekoki-store-branches/{{ branch.system.handle }}" class="button button--primary">
+          <a
+            href="
+                {% if page.handle == 'branches' %}
+                    zekoki-store-branches/
+                {% else %}
+                   pages/zekoki-store-branches/
+                {% endif %}
+              {{ branch.system.handle }}
+            "
+            class="button button--primary"
+          >
             Branch Details
           </a>
           <p>{{ branch.system.handle }}</p>
