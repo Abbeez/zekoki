@@ -3654,11 +3654,11 @@ details-disclosure>details {
 
 /* Featured Collection */
 
-.center.collection__view-all.scroll-trigger.animate--slide-in {
+/* .center.collection__view-all.scroll-trigger.animate--slide-in {
 position: absolute;
     top: calc(10% + 5px);
     right: calc(2% + 2vw);;
-}
+} */
 
 .quick-add__submit {
   border: 1px solid var(--zekoki-secondary);
