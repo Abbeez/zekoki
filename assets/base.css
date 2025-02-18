@@ -3664,3 +3664,16 @@ a.button.button--secondary {
     background: transparent;
     color: var(--zekoki-white);
 }
+
+@media screen and (max-width: 750px) {
+.banner__buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word;
+    flex-direction: column;
+}
+}
+
