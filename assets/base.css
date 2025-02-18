@@ -3667,8 +3667,8 @@ a.button.button--secondary {
 
 @media screen and (max-width: 750px) {
 .banner__buttons {
+    display:block;
     max-width: 100% !important;
-
 }
 
   .banner__buttons .button {
