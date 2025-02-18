@@ -98,7 +98,7 @@
           <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             <a
               href="{{ section.settings.collection.url }}"
-              style="background:var(--zekoki-primary); color:var(--zekoki-secondary);"
+              style="background:var(--zekoki-primary); color:var(--zekoki-white);"
               class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--primary{% endif %}"
               aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
             >
