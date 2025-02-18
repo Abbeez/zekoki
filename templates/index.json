@@ -61,6 +61,27 @@
         "show_text_below": false
       }
     },
+    "custom_collection_list_tkQB8y": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "collections_YB4kf9": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "equipment",
+            "boxed_collection__heading": "Collection Title"
+          }
+        }
+      },
+      "block_order": [
+        "collections_YB4kf9"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
+    },
     "collection_list_T9BzEX": {
       "type": "collection-list",
       "blocks": {
@@ -289,15 +310,6 @@
         "padding_bottom": 70,
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
-      }
-    },
-    "custom_collection_list_tkQB8y": {
-      "type": "custom-collection-list",
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "margin_top": 20,
-        "margin_bottom": 20
       }
     }
   },
