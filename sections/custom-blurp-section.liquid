@@ -59,12 +59,11 @@
   id=""
   class="custom-blurp__section page-width scroll-trigger animate--slide-in"
   style="
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    --animation-order: 1;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="custom-blurp__container blurp-first animate--slide-in">
+  <div class="custom-blurp__container blurp-first">
     <span>{{ section.settings.category_subtitle | strip_html }}</span>
     <h2 class="title h1">{{ section.settings.category_heading | strip_html }}</h2>
     <p>{{ section.settings.category_description | strip_html }}</p>
