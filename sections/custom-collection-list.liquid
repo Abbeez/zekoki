@@ -69,7 +69,10 @@
 
   /* Tablet and small desktop */
   @media screen and (min-width: 750px) {
-
+      .custom-collection-list {
+      margin-left:auto;
+      margin-right:auto;
+    }
   }
 
   /* Large desktops */
@@ -198,13 +201,15 @@
                {
                    breakpoint: 750,
                    settings: {
-                       slidesToShow: 5
+                       slidesToShow: 4
                    }
-               },
-               {
-                   breakpoint: 480,
-                   settings: "unslick"
                }
+               // {
+               //     breakpoint: 480,
+               //     settings: {
+               //         slidesToShow: 2
+               //     }
+               // }
            ]
        });
 
