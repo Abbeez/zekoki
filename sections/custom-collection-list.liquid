@@ -98,7 +98,7 @@
         <div class="collection-card">
           <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
           <h3>
-            <a href="{{ colletcion.url }}">{{ collection.title | truncate: 15 }}</a>
+            <a href="{{ collection.url }}">{{ collection.title | truncate: 15 }}</a>
           </h3>
         </div>
       {% endif %}
@@ -203,7 +203,9 @@
                },
                {
                    breakpoint: 480,
-                   settings: "unslick"
+                   settings: {
+                       slidesToShow: 4
+                   }
                }
            ]
        });
