@@ -22,7 +22,7 @@ img {
 }
 
 h1:not(.header__heading), h2, h3, h4, h5, h6, .button {
-  font-style: oblique 15deg;
+  font-style: oblique 12deg !important;
   letter-spacing: -1px !important;
 }
 
