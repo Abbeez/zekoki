@@ -3670,5 +3670,10 @@ a.button.button--secondary {
     max-width: 100% !important;
 
 }
+
+  .banner__buttons .button {
+    width: 100% !important;
+
+}
 }
 
