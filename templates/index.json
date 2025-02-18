@@ -9,80 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_e77dgA": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_LYzgQr": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Zekoki_Tools.png",
-            "heading": "Quality Tools That EmpowerYour Projects",
-            "heading_size": "h0",
-            "subheading": "At Zekoki, we believe in delivering exceptional power tools and machinery that combine quality with affordability. Explore our extensive range designed to elevate your craftsmanship and meet all your project needs.",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 30,
-            "color_scheme": "scheme-5",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_767fhg": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_pxebUQ": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_LYzgQr",
-        "slide_767fhg",
-        "slide_pxebUQ"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -367,7 +293,6 @@
     }
   },
   "order": [
-    "slideshow_e77dgA",
     "image_banner",
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
