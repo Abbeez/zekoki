@@ -1,50 +1,52 @@
 {%- style -%}
-    /* Mobile styles (default) */
-        .custom-cta__section {
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          padding:15px;
+      /* Mobile styles (default) */
+          .custom-cta__section {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding:15px;
+        }
+
+        .custom_cta__main {
+          text-align: center;
+          color: var(--zekoki-white) !important;
       }
 
-      .custom_cta__main {
-        text-align: center;
-        color: var(--zekoki-white) !important;
-    }
-
-        .custom_cta__main > div:last-child {
-        display: flex;
-        justify-content: center;
-    }
-
-
-  /* Tablet and small desktop */
-  @media screen and (min-width: 750px) {
-
-  }
-
-  /* Large desktops */
-  @media screen and (min-width: 990px) {
-
-
-          .custom_cta__main {
+          .custom_cta__main > div:last-child {
           display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-items: center;
-          max-width: 1500px;
-          width: 100%;
-          margin: 0 auto;
-          gap:20px;
-          text-align:left;
+          justify-content: center;
       }
 
-        .custom_cta__main > div {
-      flex:1 0 45%;
+
+    /* Tablet and small desktop */
+    @media screen and (min-width: 750px) {
+
     }
 
+    /* Large desktops */
+    @media screen and (min-width: 990px) {
+  .custom-cta__section {
+    min-height:340px;
   }
+
+            .custom_cta__main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 1500px;
+            width: 100%;
+            margin: 0 auto;
+            gap:20px;
+            text-align:left;
+        }
+
+          .custom_cta__main > div {
+        flex:1 0 45%;
+      }
+
+    }
 {%- endstyle -%}
 
 <section
