@@ -1,45 +1,47 @@
 {%- style -%}
-    .custom-blurp__section,
-    .custom-blurp__container.blurp-second{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: wrap;
-      gap:35px;
+  .custom-blurp__section,
+  .custom-blurp__container.blurp-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
-  .custom-blurp__section > div{
-    flex:1 0 100%;
+  /* Safari Fix: Ensures proper flex behavior */
+  .custom-blurp__section > div,
+  .custom-blurp__container.blurp-second > div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    min-width: 0; /* Fixes flexbox shrinking issues in Safari */
+    margin-bottom: 35px; /* Fallback for gap support in older browsers */
   }
 
-    /* .custom-blurp__section > div:first-child {
-      width:35%;
-      flex-grow: 1;
-    }
-
-    .custom-blurp__section > div:last-child {
-      width:55%;
-      flex-grow: 1;
-    } */
-
-  /* .custom-blurp__container.blurp-second > div.blurp-items{
-    width: 45%;
-    flex-grow: 1;
-  } */
-
-
-    /* Tablet and small desktop */
+  /* Tablet and small desktop */
   @media screen and (min-width: 750px) {
-   .custom-blurp__container.blurp-second > div {
-     flex:1 0 45%;
-   }
+    .custom-blurp__container.blurp-second > div {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+      flex: 1 1 45%;
+    }
   }
 
   /* Large desktops */
   @media screen and (min-width: 990px) {
-  .custom-blurp__section > div{
-    flex:1 0 45%;
-  }
+    .custom-blurp__section > div {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+      flex: 1 1 45%;
+    }
   }
 {%- endstyle -%}
 
