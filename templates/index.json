@@ -252,9 +252,8 @@
         "category_button_url_secondary": ""
       }
     },
-    "featured_collection_ekcpPa": {
-      "type": "featured-collection",
-      "custom_css": [],
+    "custom_product_list_A3jbBy": {
+      "type": "custom-product-list",
       "settings": {
         "collection": "accessories",
         "products_to_show": 10,
@@ -271,27 +270,14 @@
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "standard",
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "custom_featured_collection_Rgrrpe": {
-      "type": "custom-featured-collection",
-      "disabled": true,
-      "settings": {
-        "custom-collection__sub": "Essentials",
-        "custom-collection__title": "Zekoki Accessories",
-        "custom-collection__description": "Explore our high-quality accessories for every project.",
-        "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "accessories",
-        "padding_top": 70,
-        "padding_bottom": 70
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_banner_3WPHj7": {
@@ -312,10 +298,10 @@
         "banner_button_url_secondary": "shopify://pages/about-us"
       }
     },
-    "featured_collection_Yd9XN3": {
-      "type": "featured-collection",
+    "custom_product_list_DQ8Gk7": {
+      "type": "custom-product-list",
       "settings": {
-        "collection": "power-tools",
+        "collection": "accessories",
         "products_to_show": 10,
         "title": "Power Tools",
         "heading_size": "h1",
@@ -330,27 +316,14 @@
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "standard",
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
-    "custom_featured_collection_Wde8fb": {
-      "type": "custom-featured-collection",
-      "disabled": true,
-      "settings": {
-        "custom-collection__sub": "Power Tools",
-        "custom-collection__title": "Zekoki Tools",
-        "custom-collection__description": "Discover our premium range of power tools today!",
-        "custom-collection__viewall": "Explore",
-        "custom-featured__collection": "power-tools",
-        "padding_top": 70,
-        "padding_bottom": 70
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_about_section_V8UCVN": {
@@ -391,34 +364,6 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
-    },
-    "custom_product_list_A3jbBy": {
-      "type": "custom-product-list",
-      "settings": {
-        "collection": "accessories",
-        "products_to_show": 10,
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "<p>dsadsadasdasdasdsadsadas das</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 5,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -426,13 +371,10 @@
     "image_banner",
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
-    "featured_collection_ekcpPa",
-    "custom_featured_collection_Rgrrpe",
+    "custom_product_list_A3jbBy",
     "custom_banner_3WPHj7",
-    "featured_collection_Yd9XN3",
-    "custom_featured_collection_Wde8fb",
+    "custom_product_list_DQ8Gk7",
     "custom_about_section_V8UCVN",
-    "custom_store_branches_pX6QHt",
-    "custom_product_list_A3jbBy"
+    "custom_store_branches_pX6QHt"
   ]
 }
