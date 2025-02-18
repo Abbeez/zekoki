@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let scrollY = window.scrollY;
+    let scrollPosition = window.scrollY;
+    let scrollSpeed = 0;
     let isScrolling = false;
 
     function smoothScroll() {
-        isScrolling = true;
-        let scrollStep = (scrollY - window.scrollY) * 0.1; // Adjust smoothness
-        window.scrollBy(0, scrollStep);
-
-        if (Math.abs(scrollStep) > 0.5) {
+        if (Math.abs(scrollSpeed) > 0.1) {
+            scrollPosition += scrollSpeed;
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: "smooth"
+            });
+            scrollSpeed *= 0.9; // Adjust this for more/less inertia
             requestAnimationFrame(smoothScroll);
         } else {
             isScrolling = false;
@@ -16,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.addEventListener("wheel", function (event) {
         event.preventDefault();
-        scrollY += event.deltaY * 0.8; // Adjust speed
+        scrollSpeed += event.deltaY * 0.3; // Adjust this for more/less speed
+
         if (!isScrolling) {
+            isScrolling = true;
             requestAnimationFrame(smoothScroll);
         }
     }, { passive: false });
