@@ -70,7 +70,6 @@
   <div class="custom_cta__main">
     <div class="custom_cta__container">
       <div class="custom_cta__body">
-        <span>{{ section.settings['custom-cta__sub'] | strip_html }}</span>
         <h2 class="h1 title" style="color: var(--zekoki-white);">
           {{ section.settings['custom-cta__title'] | strip_html }}
         </h2>
@@ -147,12 +146,6 @@
     {
       "type": "header",
       "content": "CTA Details"
-    },
-    {
-      "type": "text",
-      "id": "custom-cta__sub",
-      "label": "CTA Sub Title",
-      "default": "Quality"
     },
     {
       "type": "text",
