@@ -362,8 +362,8 @@
     "custom_store_branches_pX6QHt": {
       "type": "custom-store-branches",
       "settings": {
-        "padding_top": 70,
-        "padding_bottom": 70,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
