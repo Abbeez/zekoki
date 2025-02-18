@@ -61,13 +61,17 @@
 <section
   class="custom-collection__section scroll-trigger animate--slide-in"
   style="
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
   "
 >
-  <div class="custom-collection-list">
+  <div
+    class="custom-collection-list"
+    style="
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    "
+  >
     {% for block in section.blocks %}
       {% assign collection_handle = block.settings.boxed_collection %}
       {% if collection_handle != blank %}
