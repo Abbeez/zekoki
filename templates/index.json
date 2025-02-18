@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/Zekoki_Tools.png",
             "heading": "Quality Tools That EmpowerYour Projects",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "At Zekoki, we believe in delivering exceptional power tools and machinery that combine quality with affordability. Explore our extensive range designed to elevate your craftsmanship and meet all your project needs.",
             "button_label": "Shop Now",
             "link": "shopify://collections/all",
@@ -54,7 +54,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -97,6 +97,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "custom_css": [
         ".banner__buttons {display: inline-flex; flex-wrap: wrap; gap: 1rem; max-width: none !important; word-break: break-word;}",
         ".banner__buttons.banner__buttons--multiple a:last-child {background: var(--zekoki-primary);}"
