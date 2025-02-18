@@ -168,15 +168,15 @@
               "custom_font_weight": "none",
               "custom_font_style": "none",
               "custom_font_url": "https://cdn.shopify.com/s/files/1/0895/9075/9790/files/square-721.ttf?v=1739276676",
-              "apply_h1": false,
-              "apply_h2": false,
-              "apply_h3": false,
-              "apply_h4": false,
-              "apply_h5": false,
-              "apply_h6": false,
+              "apply_h1": true,
+              "apply_h2": true,
+              "apply_h3": true,
+              "apply_h4": true,
+              "apply_h5": true,
+              "apply_h6": true,
               "apply_span": false,
               "apply_p": false,
-              "apply_custom": "[.button, .list-menu >  li > a > span]"
+              "apply_custom": ".button, .list-menu >  li > a > span"
             }
           }
         },
