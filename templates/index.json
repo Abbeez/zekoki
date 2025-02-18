@@ -399,7 +399,7 @@
         "products_to_show": 4,
         "title": "Featured collection",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>dsadsadasdasdasdsadsadas das</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 4,
