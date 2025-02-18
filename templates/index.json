@@ -64,6 +64,55 @@
     "custom_collection_list_tkQB8y": {
       "type": "custom-collection-list",
       "blocks": {
+        "collections_4xQbdg": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "equipment",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_TdjpHU": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "accessories",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_f7Radq": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "woodwork",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_XFXa6A": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "power-tools",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_GpWrXf": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "outdoor-equipment",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_ai8Gqa": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "accessories",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_HYX3TH": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "garden-tools",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
         "collections_YB4kf9": {
           "type": "Collections",
           "settings": {
@@ -73,6 +122,13 @@
         }
       },
       "block_order": [
+        "collections_4xQbdg",
+        "collections_TdjpHU",
+        "collections_f7Radq",
+        "collections_XFXa6A",
+        "collections_GpWrXf",
+        "collections_ai8Gqa",
+        "collections_HYX3TH",
         "collections_YB4kf9"
       ],
       "settings": {
