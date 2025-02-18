@@ -40,7 +40,7 @@
     <div class="custom-featured__header">
       <div class="custom_featured__header--container">
         <span>{{ section.settings['custom-collection__sub'] }}</span>
-        <h2 class="h1">{{ section.settings['custom-collection__title'] }}</h2>
+        <h2 class="h1 title">{{ section.settings['custom-collection__title'] }}</h2>
         <p>{{ section.settings['custom-collection__description'] }}</p>
       </div>
       <div class="custom_featured__header--container">
@@ -189,63 +189,6 @@
 
     // Add to cart AJAX
 
-   document.querySelectorAll(".add-to-cart-form").forEach((form) => {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent page reload
-
-            let formData = new FormData(this);
-            let button = this.querySelector(".add-to-cart-btn");
-
-            // Change button text to indicate loading
-            button.textContent = "Adding...";
-            button.disabled = true;
-
-            fetch("/cart/add.js", {
-                method: "POST",
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log("Product added:", data);
-
-                // Revert button text after adding
-                button.textContent = "Added!";
-                setTimeout(() => {
-                    button.textContent = "Add to Cart";
-                    button.disabled = false;
-                }, 1500);
-
-                // ✅ TRIGGER DAWN’S CART NOTIFICATION
-                window.dispatchEvent(new Event('cart:refresh'));
-
-                // ✅ Optional: Manually refresh the cart count
-                updateCartCount();
-            })
-            .catch(error => {
-                console.error("Error adding to cart:", error);
-                button.textContent = "Error!";
-                setTimeout(() => {
-                    button.textContent = "Add to Cart";
-                    button.disabled = false;
-                }, 1500);
-            });
-        });
-    });
-
-    // ✅ FUNCTION TO UPDATE THE CART COUNT
-    function updateCartCount() {
-        fetch("/cart.js")
-            .then(response => response.json())
-            .then(data => {
-                let cartCount = data.item_count;
-                let cartIcon = document.querySelector(".cart-count");
-                if (cartIcon) {
-                    cartIcon.textContent = cartCount;
-                    cartIcon.style.display = cartCount > 0 ? "inline-block" : "none";
-                }
-            })
-            .catch(error => console.error("Error updating cart count:", error));
-    }
 
   });
 </script>
