@@ -77,12 +77,11 @@
           <p><strong>Location:</strong> {{ branch.location }}</p>
           <a
             href="
-                {% if page.handle == 'branches' %}
-                    zekoki-store-branches/
-                {% else %}
-                   pages/zekoki-store-branches/
-                {% endif %}
-              {{ branch.system.handle }}
+              {% if page.handle == 'branches' %}
+                  zekoki-store-branches/{{ branch.system.handle }}
+              {% else %}
+                 pages/zekoki-store-branches/{{ branch.system.handle }}
+              {% endif %}
             "
             class="button button--primary"
           >
