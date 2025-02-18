@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const scrollSpeed = 100; // Adjust scrolling speed (higher = slower)
-  const easing = 0.5; // Adjust easing (0 = no easing, 1 = full easing)
+  const scrollSpeed = 500; // Adjust scrolling speed (higher = slower)
+  const easing = 1; // Adjust easing (0 = no easing, 1 = full easing)
 
   let isScrolling = false;
 
