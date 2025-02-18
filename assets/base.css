@@ -3654,12 +3654,12 @@ details-disclosure>details {
 
 /* Featured Collection */
 
-.center.collection__view-all.scroll-trigger.animate--slide-in {
+/* .center.collection__view-all.scroll-trigger.animate--slide-in {
 position: absolute;
     top: 10%;
     right: 10rem;
     padding: 0 10rem 0 0;
-}
+} */
 
 .quick-add__submit {
   border: 1px solid var(--zekoki-secondary);
