@@ -3656,9 +3656,9 @@ details-disclosure>details {
 
 .center.collection__view-all.scroll-trigger.animate--slide-in {
 position: absolute;
-    top: calc(10% + 5px);
-    right: calc(3% + 2vw);
-  padding: 0 5rem;
+    top: 10%;
+    right: 5rem;
+  /* padding: 0 5rem; */
 }
 
 .quick-add__submit {
