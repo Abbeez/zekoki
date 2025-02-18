@@ -391,6 +391,34 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
+    },
+    "custom_product_list_A3jbBy": {
+      "type": "custom-product-list",
+      "settings": {
+        "collection": "accessories",
+        "products_to_show": 4,
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -404,6 +432,7 @@
     "featured_collection_Yd9XN3",
     "custom_featured_collection_Wde8fb",
     "custom_about_section_V8UCVN",
-    "custom_store_branches_pX6QHt"
+    "custom_store_branches_pX6QHt",
+    "custom_product_list_A3jbBy"
   ]
 }
