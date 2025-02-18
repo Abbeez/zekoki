@@ -3629,6 +3629,9 @@ details-disclosure>details {
 
 /* Custom CSS */
 
+h2.title.h1 {
+    margin: 0;
+}
 
 
 .header{
@@ -3669,6 +3672,7 @@ a.button.button--secondary {
     background: transparent;
     color: var(--zekoki-white);
 }
+
 
 @media screen and (max-width: 750px) {
 .banner__buttons {
