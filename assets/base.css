@@ -3658,7 +3658,7 @@ details-disclosure>details {
 position: absolute;
     top: 10%;
     right: 5rem;
-  /* padding: 0 5rem; */
+    padding: 0 5rem 0 0;
 }
 
 .quick-add__submit {
