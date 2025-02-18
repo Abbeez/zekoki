@@ -290,10 +290,20 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
+    },
+    "custom_collection_list_tkQB8y": {
+      "type": "custom-collection-list",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 20,
+        "margin_bottom": 20
+      }
     }
   },
   "order": [
     "image_banner",
+    "custom_collection_list_tkQB8y",
     "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
     "custom_product_list_A3jbBy",
