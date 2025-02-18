@@ -3659,3 +3659,8 @@ details-disclosure>details {
 .quick-add__submit {
   border: 1px solid var(--zekoki-secondary);
 }
+
+a.button.button--secondary {
+    background: transparent;
+    color: var(--zekoki-white);
+}
