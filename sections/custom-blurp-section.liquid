@@ -64,7 +64,11 @@
     <p>{{ section.settings.category_description | strip_html }}</p>
 
     <div class="banner__buttons banner__buttons--multiple">
-      <a href="{{ section.settings.category_button_url_primary | strip_html }}" class="button button--primary">
+      <a
+        href="{{ section.settings.category_button_url_primary | strip_html }}"
+        class="button button--primary"
+        style="background: var(--zekoki-primary);"
+      >
         {{- section.settings.category_button_text_primary | strip_html -}}
       </a>
       <a href="{{ section.settings.category_button_url_secondary | strip_html }}" class="button button--secondary">
