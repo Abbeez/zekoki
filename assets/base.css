@@ -3655,9 +3655,9 @@ details-disclosure>details {
 /* Featured Collection */
 
 .center.collection__view-all.scroll-trigger.animate--slide-in {
-    position: absolute;
-    top: 10%;
-    right: 10%;
+position: absolute;
+    top: calc(10% + 5px);
+    right: calc(2% + 2vw);;
 }
 
 .quick-add__submit {
