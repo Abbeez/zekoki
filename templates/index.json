@@ -50,7 +50,7 @@
       "settings": {
         "image": "shopify://shop_images/Zekoki_Tools.png",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "top-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -102,6 +102,7 @@
         "featured_collection_HeKAfC",
         "featured_collection_fL4UmQ"
       ],
+      "disabled": true,
       "custom_css": [
         ".section-collection-list {margin-top: -20rem;}",
         ".collection-list li {padding: 2rem; background: var(--zekoki-primary); border: 1px solid var(--zekoki-secondary); border-radius: 4px;}",
