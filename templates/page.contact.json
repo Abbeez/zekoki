@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,10 +25,65 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_blurp_section_4nJhtn": {
+      "type": "custom-blurp-section",
+      "blocks": {
+        "blurps_9nMbNG": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_UhYRjD": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_WXexqa": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        },
+        "blurps_kLfA7q": {
+          "type": "blurps",
+          "settings": {
+            "sub_category_subheading": "Quality Lorem Ipsum",
+            "sub_category_title": "Title Lorem Ipsum",
+            "sub_category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          }
+        }
+      },
+      "block_order": [
+        "blurps_9nMbNG",
+        "blurps_UhYRjD",
+        "blurps_WXexqa",
+        "blurps_kLfA7q"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "category_subtitle": "Your Subtitle Here",
+        "category_heading": "Your Heading Here",
+        "category_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "category_button_text_primary": "Learn More",
+        "category_button_url_primary": "",
+        "category_button_text_secondary": "Shop Now",
+        "category_button_url_secondary": ""
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "custom_blurp_section_4nJhtn"
   ]
 }
