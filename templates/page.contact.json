@@ -167,6 +167,16 @@
         "category_button_text_secondary": "Shop Now",
         "category_button_url_secondary": ""
       }
+    },
+    "contact_form_pWzQB6": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -174,6 +184,7 @@
     "image_banner_cfDXbi",
     "get_in_touch_kgGhrF",
     "rich_text_TXe6XW",
-    "custom_blurp_section_4nJhtn"
+    "custom_blurp_section_4nJhtn",
+    "contact_form_pWzQB6"
   ]
 }
