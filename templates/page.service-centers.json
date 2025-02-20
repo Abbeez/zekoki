@@ -22,8 +22,8 @@
       "settings": {
         "padding_top": 70,
         "padding_bottom": 70,
-        "custom-servicecenter__title": "Service Centers",
-        "custom-servicecenter__description": "Zekoki Authorized Service Centers"
+        "custom-servicecenters__title": "Service Centers",
+        "custom-servicecenters__description": "Zekoki Authorized Service Centers"
       }
     }
   },
