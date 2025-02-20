@@ -33,23 +33,11 @@
             "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
           }
-        },
-        "buttons_UrQnFB": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Check FAQs",
-            "button_link_1": "#",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_j3eTg9",
-        "text_aRxAgR",
-        "buttons_UrQnFB"
+        "text_aRxAgR"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Info.png",
@@ -69,7 +57,8 @@
       "type": "get-in-touch",
       "settings": {
         "padding_top": 70,
-        "padding_bottom": 70
+        "padding_bottom": 70,
+        "custom_form__heading": "Contact Us"
       }
     }
   },
