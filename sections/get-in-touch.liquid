@@ -19,9 +19,8 @@
       padding: 1rem; */
   }
 
-  .custom_form_class .custom_field {
-    flex: 1 0 33%;
-  }
+  .custom_form_class .custom_field {flex: 1 0 33%;}
+  .custom_form_class .custom_field.custom_textarea {flex: 1 0 100%;}
 
     .custom_form_class .custom_field .custom_input_field {
       border: 1px solid var(--zekoki-secondary);
@@ -70,10 +69,10 @@
           </select>
         </div>
 
-        <div class="custom_field">
+        <div class="custom_field custom_textarea">
           <!-- Comment -->
           <label for="contact_message">Message</label>
-          <textarea id="contact_message" name="contact[body]" rows="5" required></textarea>
+          <textarea id="contact_message" class="custom_input_field" name="contact[body]" rows="5" required></textarea>
         </div>
 
         <div class="custom_field">
