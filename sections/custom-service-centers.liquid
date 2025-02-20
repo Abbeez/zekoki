@@ -77,7 +77,7 @@
 
           <!-- {% if centers.contact_number.value.size > 0 %} -->
           <ul>
-            {% for number in centers.contact_number %}
+            {% for number in centers.contact_number.values %}
               <li>{{ number }}</li>
             {% endfor %}
           </ul>
