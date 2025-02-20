@@ -1,5 +1,5 @@
 {%- style -%}
-      .custom-servicecenter__header {
+      .custom-servicecenters__header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -8,7 +8,7 @@
         gap: 20px;
     }
 
-    .custom-servicecenter__body {
+    .custom-servicecenters__body {
           display: flex;
           gap: 20px;
           justify-content: center;
@@ -16,20 +16,20 @@
           flex-wrap: wrap;
       }
 
-      .custom-servicecenter__items {
+      .custom-servicecenters__items {
         flex: 1 0 100%;
         text-align:center;
         /* min-wheight:500px; */
       }
 
-      .custom-servicecenter__items_wrapper{
+      .custom-servicecenters__items_wrapper{
       position: relative;
       padding: 1rem;
       background: var(--zekoki-primary);
       border-radius: 1rem;
     }
 
-      .custom-servicecenter__items_wrapper h2 {
+      .custom-servicecenters__items_wrapper h2 {
         background: var(--zekoki-primary);
         color: var(--zekoki-white);
         padding: 20px;
@@ -40,7 +40,7 @@
     /* Tablet and small desktop */
   @media screen and (min-width: 750px) {
 
-      .custom-servicecenter__items {
+      .custom-servicecenters__items {
         flex: 1 0 45%;
       }
   }
@@ -52,37 +52,32 @@
 {%- endstyle -%}
 
 <section
-  class="page-width custom-servicecenter__section scroll-trigger animate--slide-in"
+  class="page-width custom-servicecenters__section scroll-trigger animate--slide-in"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="custom-servicecenter__container">
-    <div class="custom-servicecenter__header">
-      <div class="custom_servicecenter__header--container">
-        <h2 class="h1 title">{{ section.settings['custom-servicecenter__title'] }}</h2>
+  <div class="custom-servicecenters__container">
+    <div class="custom-servicecenters__header">
+      <div class="custom_servicecenters__header--container">
+        <h2 class="h1 title">{{ section.settings['custom-servicecenters__title'] }}</h2>
       </div>
-      <div class="custom_servicecenter__header--container">
-        <p>{{ section.settings['custom-servicecenter__description'] }}</p>
+      <div class="custom_servicecenters__header--container">
+        <p>{{ section.settings['custom-servicecenters__description'] }}</p>
       </div>
     </div>
 
-    <div class="custom-servicecenter__body">
-      {% for servicecenter in shop.metaobjects['service-centers'].values %}
-        <div class="custom-servicecenter__items">
-          <!--
-            <div class="custom-servicecenter__items_wrapper">
-              <h2>{{ servicecenter.title }}</h2>
-            </div>
-          -->
-          <h2>{{ servicecenter.service_centers.service_center_name }}</h2>
+    <div class="custom-servicecenters__body">
+      {% for centers in shop.metaobjects['service-centers'].values %}
+        <div class="custom-servicecenters__items">
+          <h2>{{ centers.service_centers.service_center_name }}</h2>
           <a
             href="
-              {% if page.handle == 'servicecenteres' %}
-                  service-centers/{{ servicecenter.system.handle }}
+              {% if page.handle == 'servicecenterses' %}
+                  zekoki-store-servicecenterses/{{ servicecenters.system.handle }}
               {% else %}
-                 pages/service-centers/{{ servicecenter.system.handle }}
+                 pages/zekoki-store-servicecenterses/{{ servicecenters.system.handle }}
               {% endif %}
             "
             class="button button--primary"
@@ -97,7 +92,7 @@
 
 {% schema %}
 {
-  "name": "Custom Service Center",
+  "name": "Custom Branches Section",
   "settings": [
   {
     "type": "header",
@@ -123,24 +118,24 @@
   },
   {
     "type": "header",
-    "content": "service center Details"
+    "content": "servicecenters Details"
   },
   {
     "type": "text",
-    "id": "custom-service--center__title",
-    "label": "servicecenter Title",
+    "id": "custom-servicecenters__title",
+    "label": "servicecenters Title",
     "default": "Quality Products"
   },
   {
     "type": "textarea",
-    "id": "custom-service--center__description",
-    "label": "servicecenter Description",
+    "id": "custom-servicecenters__description",
+    "label": "servicecenters Description",
     "default": "Product that you will truly love"
   },
   ],
   "presets": [
     {
-      "name": "Custom Service Centers Section"
+      "name": "Custom Store Branches Section"
     }
   ]
 }
