@@ -38,7 +38,7 @@
 >
   <div class="custom-contact__container">
     <div class="custom-contact_container custom-form_main">
-      <h2>Get in Touch</h2>
+      <h2>{{ section.settings.custom_form__heading | strip_html }}</h2>
 
       {% form 'contact', id: 'contact_form', class: 'custom_form_class' %}
         <div class="custom_field">
@@ -233,7 +233,7 @@
     "type": "text",
     "id": "custom_form__heading",
     "label": "Form Heading",
-    "default": "Get in touch "
+    "default": "Get in touch mga ka-GenZ"
     }
   ],
   "presets": [
