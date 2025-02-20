@@ -138,69 +138,6 @@
         "margin_bottom": 20
       }
     },
-    "collection_list_T9BzEX": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_rJVjke": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "featured_collection_WbGcwe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "woodwork"
-          }
-        },
-        "featured_collection_4e3mFB": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "garden-tools"
-          }
-        },
-        "featured_collection_HeKAfC": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "outdoor-equipment"
-          }
-        },
-        "featured_collection_fL4UmQ": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "power-tools"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_rJVjke",
-        "featured_collection_WbGcwe",
-        "featured_collection_4e3mFB",
-        "featured_collection_HeKAfC",
-        "featured_collection_fL4UmQ"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".section-collection-list {margin-top: -20rem;}",
-        ".collection-list li {padding: 2rem; background: var(--zekoki-primary); border: 1px solid var(--zekoki-secondary); border-radius: 4px;}",
-        ".collection-list li:nth-child(odd) {background: #fff !important;}",
-        ".collection-list li h3.card__heading a {color: var(--zekoki-white); text-align: center;}",
-        ".collection-list li:nth-child(odd) h3.card__heading a {color: var(--zekoki-secondary); text-align: center;}",
-        ".card__inner.color-scheme-2.gradient.ratio {background: transparent;}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 5,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 4,
-        "padding_bottom": 4
-      }
-    },
     "custom_blurp_section_NJcKyq": {
       "type": "custom-blurp-section",
       "blocks": {
@@ -276,7 +213,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -322,7 +259,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -372,7 +309,6 @@
   "order": [
     "image_banner",
     "custom_collection_list_tkQB8y",
-    "collection_list_T9BzEX",
     "custom_blurp_section_NJcKyq",
     "custom_product_list_A3jbBy",
     "custom_banner_3WPHj7",
