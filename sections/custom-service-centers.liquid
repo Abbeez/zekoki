@@ -71,7 +71,7 @@
     <div class="custom-servicecenters__body">
       {% for centers in shop.metaobjects['service-centers'].values %}
         <div class="custom-servicecenters__items">
-          <h2>{{ centers.service_centers.service_center_name }}</h2>
+          <h2>{{ centers.service_center_name }}</h2>
           <a
             href="
               {% if page.handle == 'servicecenterses' %}
