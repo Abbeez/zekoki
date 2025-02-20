@@ -72,7 +72,7 @@
       {% for centers in shop.metaobjects.service_centers.values %}
         <div class="custom-servicecenters__items">
           <h2>{{ centers.service_location }}</h2>
-          <p>{{ centers.service_center_name }}</p>
+          <p>{{ centers.service_center_name | strip_html }}</p>
           <p>{{ centers.address }}</p>
           <p>{{ centers.contact_number }}</p>
           <a
