@@ -82,7 +82,7 @@
               {% endfor %}
             </ul>
           {% else %}
-            <a href="tel:{{ centers.contact_number | metafield_tag | remove:'-'}}">
+            <a href="tel:{{ centers.contact_number | metafield_text }}">
               {{- centers.contact_number | metafield_tag -}}
             </a>
           {% endif %}
