@@ -127,13 +127,14 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("contact_form");
     const modal = document.getElementById("successModal");
     const closeBtn = document.querySelector(".close");
 
-    {% if form.posted_successfully? %}
+    // Check if form was submitted successfully
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("contact_posted")) {
       modal.style.display = "flex";
-    {% endif %}
+    }
 
     closeBtn.addEventListener("click", function() {
       modal.style.display = "none";
