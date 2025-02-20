@@ -76,17 +76,17 @@
           <p>{{ centers.address | metafield_tag }}</p>
           <p>{{ centers.contact_number | metafield_tag }}</p>
 
-          {% comment %} Assuming you have access to the metaobject {% endcomment %}
-          {% assign ascnumber = shop.metaobjects.service_centers.values.first %}
+          <!-- {% assign ascnumber = shop.metaobjects.service_centers.values.first %} -->
 
-          {% if ascnumber.contact_number %}
+          {% if centers.contact_number %}
             <ul>
-              {% for number in ascnumber.contact_number %}
+              {% for number in centers.contact_number %}
                 <li>{{ number }}</li>
               {% endfor %}
             </ul>
           {% else %}
             <p>No contact numbers available.</p>
+            r
           {% endif %}
 
           <a href="" class="button button--primary">
