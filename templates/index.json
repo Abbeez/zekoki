@@ -49,7 +49,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Tools.png",
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 60,
         "image_height": "large",
         "desktop_content_position": "top-center",
         "show_text_box": false,
