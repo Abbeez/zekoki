@@ -67,7 +67,10 @@
     },
     "get_in_touch_kgGhrF": {
       "type": "get-in-touch",
-      "settings": {}
+      "settings": {
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
     },
     "rich_text_TXe6XW": {
       "type": "rich-text",
