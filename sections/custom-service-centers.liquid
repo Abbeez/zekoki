@@ -74,7 +74,15 @@
           <h2>{{ centers.service_location }}</h2>
           <p>{{ centers.service_center_name | strip_html }}</p>
           <p>{{ centers.address }}</p>
-          <p>{{ centers.contact_number }}</p>
+
+          {% if centers.contact_number.size > 0 %}
+            <ul>
+              {% for number in centers.contact_number %}
+                <li>{{ number }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
           <a
             href="
               {% if page.handle == 'service_centers' %}
