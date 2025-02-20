@@ -97,26 +97,10 @@
               {% endfor %}
             </ul>
           {% else %}
-            <a href="tel:{{ centers.contact_number | metafield_text | remove:'-' }}">
-              {{- centers.contact_number | metafield_tag -}}
+            <a href="tel:{{ centers.contact_number | metafield_text | remove:'-' }}" class="button button--primary">
+              Inquire
             </a>
           {% endif %}
-
-          <a href="" class="button button--primary">
-            <!--
-              <a
-                href="
-                  {% if page.handle == 'service_centers' %}
-                      service_centers/{{ centers.system.handle }}
-                  {% else %}
-                     pages/service_centers/{{ centers.system.handle }}
-                  {% endif %}
-                "
-                class="button button--primary"
-              >
-            -->
-            Inquire
-          </a>
         </div>
       {% endfor %}
     </div>
