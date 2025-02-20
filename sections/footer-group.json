@@ -66,6 +66,7 @@
       ],
       "custom_css": [],
       "settings": {
+        "footer_background": "shopify://shop_images/Zekoki_Background.png",
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
