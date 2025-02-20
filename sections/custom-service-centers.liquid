@@ -75,14 +75,14 @@
           <a
             href="
               {% if page.handle == 'servicecenterses' %}
-                  zekoki-store-servicecenterses/{{ servicecenters.system.handle }}
+                  zekoki-store-servicecenterses/{{ centers.system.handle }}
               {% else %}
-                 pages/zekoki-store-servicecenterses/{{ servicecenters.system.handle }}
+                 pages/zekoki-store-servicecenterses/{{ centers.system.handle }}
               {% endif %}
             "
             class="button button--primary"
           >
-            Branch Details
+            Service Details
           </a>
         </div>
       {% endfor %}
