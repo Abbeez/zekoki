@@ -20,7 +20,7 @@
   }
 
   .custom_form_class .custom_field {flex: 1 0 33%;}
-  .custom_form_class .custom_field.custom_textarea {flex: 1 0 100%;}
+  .custom_form_class .custom_field.custom_field_full {flex: 1 0 100%;}
 
     .custom_form_class .custom_field .custom_input_field {
       border: 1px solid var(--zekoki-secondary);
@@ -69,15 +69,15 @@
           </select>
         </div>
 
-        <div class="custom_field custom_textarea">
+        <div class="custom_field custom_field_full">
           <!-- Comment -->
           <label for="contact_message">Message</label>
           <textarea id="contact_message" class="custom_input_field" name="contact[body]" rows="5" required></textarea>
         </div>
 
-        <div class="custom_field">
+        <div class="custom_field custom_field_full">
           <!-- Preferred Contact Method -->
-          <fieldset>
+          <fieldset class="custom_input_field">
             <legend>Preferred Contact Method:</legend>
             <label><input type="radio" name="contact[preferred_contact]" value="Email" checked> Email</label>
             <label><input type="radio" name="contact[preferred_contact]" value="Phone"> Phone</label>
