@@ -71,8 +71,8 @@
     <div class="custom-servicecenters__body">
       {% for centers in shop.metaobjects.service_centers.values %}
         <div class="custom-servicecenters__items">
-          <h2>{{ centers.location }}</h2>
-          <p>{{ centers.service_center_name }}</p>
+          <p>{{ centers.location }}</p>
+          <h2>{{ centers.service_center_name }}</h2>
           <p>{{ centers.address | metafield_tag }}</p>
 
           {% if centers.contact_number.size > 0 %}
