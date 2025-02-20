@@ -65,6 +65,10 @@
         "show_text_below": true
       }
     },
+    "get_in_touch_kgGhrF": {
+      "type": "get-in-touch",
+      "settings": {}
+    },
     "rich_text_TXe6XW": {
       "type": "rich-text",
       "blocks": {
@@ -160,17 +164,13 @@
         "category_button_text_secondary": "Shop Now",
         "category_button_url_secondary": ""
       }
-    },
-    "get_in_touch_kgGhrF": {
-      "type": "get-in-touch",
-      "settings": {}
     }
   },
   "order": [
     "main",
     "image_banner_cfDXbi",
+    "get_in_touch_kgGhrF",
     "rich_text_TXe6XW",
-    "custom_blurp_section_4nJhtn",
-    "get_in_touch_kgGhrF"
+    "custom_blurp_section_4nJhtn"
   ]
 }
