@@ -1,6 +1,148 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+      .custom-service_center__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .custom-service_center__body {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .custom-service_center__items {
+        flex: 1 0 100%;
+        text-align:center;
+        /* min-wheight:500px; */
+      }
+
+      .custom-service_center__items_wrapper{
+      position: relative;
+      padding: 1rem;
+      background: var(--zekoki-primary);
+      border-radius: 1rem;
+    }
+
+      .custom-service_center__items_wrapper h2 {
+        background: var(--zekoki-primary);
+        color: var(--zekoki-white);
+        padding: 20px;
+        width:100%;
+        margin: 0 !important;
+    }
+
+    /* Tablet and small desktop */
+  @media screen and (min-width: 750px) {
+
+      .custom-service_center__items {
+        flex: 1 0 45%;
+      }
   }
+
+  /* Large desktops */
+  @media screen and (min-width: 990px) {
+
+  }
+{%- endstyle -%}
+
+<section
+  class="page-width custom-service_center__section scroll-trigger animate--slide-in"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="custom-service_center__container">
+    <div class="custom-service_center__header">
+      <div class="custom_service_center__header--container">
+        <h2 class="h1 title">{{ section.settings['custom-service_center__title'] }}</h2>
+      </div>
+      <div class="custom_service_center__header--container">
+        <p>{{ section.settings['custom-service_center__description'] }}</p>
+      </div>
+    </div>
+
+    <div class="custom-service_center__body">
+      {% for service_center in shop.metaobjects.zekoki_store_service_centeres.values %}
+        <div class="custom-service_center__items">
+          <div class="custom-service_center__items_wrapper">
+            {% if service_center.photo != blank %}
+              <img src="{{ service_center.photo | image_url }}" alt="{{ service_center.title }}" height="" width="">
+            {% endif %}
+            <h2>{{ service_center.title }}</h2>
+          </div>
+          <p><strong>Location:</strong> {{ service_center.location }}</p>
+          <a
+            href="
+              {% if page.handle == 'service_centeres' %}
+                  zekoki-store-service_centeres/{{ service_center.system.handle }}
+              {% else %}
+                 pages/zekoki-store-service_centeres/{{ service_center.system.handle }}
+              {% endif %}
+            "
+            class="button button--primary"
+          >
+            Branch Details
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Service Center",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Spacing"
+  },
+  {
+    "type": "range",
+    "id": "padding_top",
+    "label": "Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "label": "Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "header",
+    "content": "service_center Details"
+  },
+  {
+    "type": "text",
+    "id": "custom-service_center__title",
+    "label": "service_center Title",
+    "default": "Quality Products"
+  },
+  {
+    "type": "textarea",
+    "id": "custom-service_center__description",
+    "label": "service_center Description",
+    "default": "Product that you will truly love"
+  },
+  ],
+  "presets": [
+    {
+      "name": "Custom Service Centers Section"
+    }
+  ]
+}
 {% endschema %}
