@@ -33,7 +33,13 @@
       width: 100%;
   }
 {%- endstyle -%}
-<section class="custom-contact__form scroll-trigger animate--slide-in page-width">
+<section
+  class="custom-contact__form scroll-trigger animate--slide-in page-width"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
   <div class="custom-contact__container">
     <div class="custom-contact_container custom-form_main">
       <!-- <h2>Get in Touch</h2> -->
@@ -195,7 +201,30 @@
 {% schema %}
 {
   "name": "Get in Touch",
-  "settings": [],
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+  ],
   "presets": [
     {
       "name": "Get in Touch"
