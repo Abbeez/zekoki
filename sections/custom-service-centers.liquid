@@ -71,13 +71,12 @@
     <div class="custom-servicecenter__body">
       {% for servicecenter in shop.metaobjects['service-centers'].values %}
         <div class="custom-servicecenter__items">
-          <div class="custom-servicecenter__items_wrapper">
-            {% if servicecenter.photo != blank %}
-              <img src="{{ servicecenter.photo | image_url }}" alt="{{ servicecenter.title }}" height="" width="">
-            {% endif %}
-            <h2>{{ servicecenter.title }}</h2>
-          </div>
-          <p><strong>Location:</strong> {{ servicecenter.location }}</p>
+          <!--
+            <div class="custom-servicecenter__items_wrapper">
+              <h2>{{ servicecenter.title }}</h2>
+            </div>
+          -->
+          <h2>{{ servicecenter.service_centers.service_center_name }}</h2>
           <a
             href="
               {% if page.handle == 'servicecenteres' %}
@@ -124,17 +123,17 @@
   },
   {
     "type": "header",
-    "content": "servicecenter Details"
+    "content": "service center Details"
   },
   {
     "type": "text",
-    "id": "custom-servicecenter__title",
+    "id": "custom-service--center__title",
     "label": "servicecenter Title",
     "default": "Quality Products"
   },
   {
     "type": "textarea",
-    "id": "custom-servicecenter__description",
+    "id": "custom-service--center__description",
     "label": "servicecenter Description",
     "default": "Product that you will truly love"
   },
