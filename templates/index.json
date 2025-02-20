@@ -119,6 +119,13 @@
             "boxed_collection": "equipment",
             "boxed_collection__heading": "Collection Title"
           }
+        },
+        "collections_H6NGdm": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "woodwork",
+            "boxed_collection__heading": "Collection Title"
+          }
         }
       },
       "block_order": [
@@ -129,7 +136,8 @@
         "collections_GpWrXf",
         "collections_ai8Gqa",
         "collections_HYX3TH",
-        "collections_YB4kf9"
+        "collections_YB4kf9",
+        "collections_H6NGdm"
       ],
       "settings": {
         "padding_top": 0,
