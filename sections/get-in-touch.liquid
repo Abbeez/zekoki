@@ -1,6 +1,101 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Get in Touch",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Get in Touch",
+    }
+  ]
+}
 {% endschema %}
+
+<section class="contact-form">
+  <div class="container">
+    <h2>Get in Touch</h2>
+
+    {% form 'contact' %}
+      <!-- Name -->
+      <label for="contact_name">Name</label>
+      <input type="text" id="contact_name" name="contact[name]" required>
+
+      <!-- Email -->
+      <label for="contact_email">Email</label>
+      <input type="email" id="contact_email" name="contact[email]" required>
+
+      <!-- Phone -->
+      <label for="contact_phone">Phone</label>
+      <input type="tel" id="contact_phone" name="contact[phone]">
+
+      <!-- Purpose Dropdown -->
+      <label for="contact_purpose">Purpose</label>
+      <select id="contact_purpose" name="contact[purpose]" required>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="After Sale Support">After Sale Support</option>
+        <option value="Defects & Returns">Defects & Returns</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <!-- Comment -->
+      <label for="contact_message">Message</label>
+      <textarea id="contact_message" name="contact[body]" rows="5" required></textarea>
+
+      <!-- Preferred Contact Method -->
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <label><input type="radio" name="contact[preferred_contact]" value="Email" checked> Email</label>
+        <label><input type="radio" name="contact[preferred_contact]" value="Phone"> Phone</label>
+        <label><input type="radio" name="contact[preferred_contact]" value="Any"> Any</label>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    {% endform %}
+
+    {% if form.posted_successfully? %}
+      <p class="success-message">Thank you! Your message has been sent successfully.</p>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  .contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact-form fieldset {
+    border: none;
+    margin-top: 10px;
+  }
+  .contact-form button {
+    margin-top: 15px;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .contact-form button:hover {
+    background: #555;
+  }
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+</style>
