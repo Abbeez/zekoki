@@ -72,9 +72,9 @@
       {% for centers in shop.metaobjects.service_centers.values %}
         <div class="custom-servicecenters__items">
           <h2>{{ centers.service_location }}</h2>
-          <h2>{{ centers.service_center_name }}</h2>
-          <h2>{{ centers.service_address }}</h2>
-          <h2>{{ centers.service_contact_number }}</h2>
+          <p>{{ centers.service_center_name }}</p>
+          <p>{{ centers.service_address }}</p>
+          <p>{{ centers.service_contact_number }}</p>
           <a
             href="
               {% if page.handle == 'service_centers' %}
