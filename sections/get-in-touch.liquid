@@ -1,8 +1,16 @@
 {%- style -%}
-    form#contact_form {
+    .custom-form_main {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      gap:2rem;
+  }
+
+    custom-form_main .custom_field .custom_input_field {
+      border: 1px solid var(--zekoki-secondary);
+      border-radius: 2px;
+      padding: 1rem;
+      width: 100%;
   }
 {%- endstyle -%}
 <section class="custom-contact__form scroll-trigger animate--slide-in page-width">
