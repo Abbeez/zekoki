@@ -73,7 +73,7 @@
         <div class="custom-servicecenters__items">
           <h2>{{ centers.service_location }}</h2>
           <p>{{ centers.service_center_name }}</p>
-          <p>{{ centers.address.value }}</p>
+          <p>{{ centers.address | structured_data }}</p>
 
           {% if centers.contact_number.size > 0 %}
             <ul>
