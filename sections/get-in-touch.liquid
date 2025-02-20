@@ -70,20 +70,25 @@
           </select>
         </div>
 
-        <!-- Comment -->
-        <label for="contact_message">Message</label>
-        <textarea id="contact_message" name="contact[body]" rows="5" required></textarea>
+        <div class="custom_field">
+          <!-- Comment -->
+          <label for="contact_message">Message</label>
+          <textarea id="contact_message" name="contact[body]" rows="5" required></textarea>
+        </div>
 
-        <!-- Preferred Contact Method -->
-        <fieldset>
-          <legend>Preferred Contact Method:</legend>
-          <label><input type="radio" name="contact[preferred_contact]" value="Email" checked> Email</label>
-          <label><input type="radio" name="contact[preferred_contact]" value="Phone"> Phone</label>
-          <label><input type="radio" name="contact[preferred_contact]" value="Any"> Any</label>
-        </fieldset>
-
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
+        <div class="custom_field">
+          <!-- Preferred Contact Method -->
+          <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <label><input type="radio" name="contact[preferred_contact]" value="Email" checked> Email</label>
+            <label><input type="radio" name="contact[preferred_contact]" value="Phone"> Phone</label>
+            <label><input type="radio" name="contact[preferred_contact]" value="Any"> Any</label>
+          </fieldset>
+        </div>
+        <div class="custom_field">
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </div>
       {% endform %}
 
       <!-- Success Popup Modal -->
