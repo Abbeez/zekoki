@@ -1,5 +1,5 @@
 {%- style -%}
-      .custom-service_center__header {
+      .custom-servicecenter__header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -8,7 +8,7 @@
         gap: 20px;
     }
 
-    .custom-service_center__body {
+    .custom-servicecenter__body {
           display: flex;
           gap: 20px;
           justify-content: center;
@@ -16,20 +16,20 @@
           flex-wrap: wrap;
       }
 
-      .custom-service_center__items {
+      .custom-servicecenter__items {
         flex: 1 0 100%;
         text-align:center;
         /* min-wheight:500px; */
       }
 
-      .custom-service_center__items_wrapper{
+      .custom-servicecenter__items_wrapper{
       position: relative;
       padding: 1rem;
       background: var(--zekoki-primary);
       border-radius: 1rem;
     }
 
-      .custom-service_center__items_wrapper h2 {
+      .custom-servicecenter__items_wrapper h2 {
         background: var(--zekoki-primary);
         color: var(--zekoki-white);
         padding: 20px;
@@ -40,7 +40,7 @@
     /* Tablet and small desktop */
   @media screen and (min-width: 750px) {
 
-      .custom-service_center__items {
+      .custom-servicecenter__items {
         flex: 1 0 45%;
       }
   }
@@ -52,38 +52,38 @@
 {%- endstyle -%}
 
 <section
-  class="page-width custom-service_center__section scroll-trigger animate--slide-in"
+  class="page-width custom-servicecenter__section scroll-trigger animate--slide-in"
   style="
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
   "
 >
-  <div class="custom-service_center__container">
-    <div class="custom-service_center__header">
-      <div class="custom_service_center__header--container">
-        <h2 class="h1 title">{{ section.settings['custom-service_center__title'] }}</h2>
+  <div class="custom-servicecenter__container">
+    <div class="custom-servicecenter__header">
+      <div class="custom_servicecenter__header--container">
+        <h2 class="h1 title">{{ section.settings['custom-servicecenter__title'] }}</h2>
       </div>
-      <div class="custom_service_center__header--container">
-        <p>{{ section.settings['custom-service_center__description'] }}</p>
+      <div class="custom_servicecenter__header--container">
+        <p>{{ section.settings['custom-servicecenter__description'] }}</p>
       </div>
     </div>
 
-    <div class="custom-service_center__body">
-      {% for service_center in shop.metaobjects.service_centeres.values %}
-        <div class="custom-service_center__items">
-          <div class="custom-service_center__items_wrapper">
-            {% if service_center.photo != blank %}
-              <img src="{{ service_center.photo | image_url }}" alt="{{ service_center.title }}" height="" width="">
+    <div class="custom-servicecenter__body">
+      {% for servicecenter in shop.metaobjects['service-centers'].values %}
+        <div class="custom-servicecenter__items">
+          <div class="custom-servicecenter__items_wrapper">
+            {% if servicecenter.photo != blank %}
+              <img src="{{ servicecenter.photo | image_url }}" alt="{{ servicecenter.title }}" height="" width="">
             {% endif %}
-            <h2>{{ service_center.title }}</h2>
+            <h2>{{ servicecenter.title }}</h2>
           </div>
-          <p><strong>Location:</strong> {{ service_center.location }}</p>
+          <p><strong>Location:</strong> {{ servicecenter.location }}</p>
           <a
             href="
-              {% if page.handle == 'service_centeres' %}
-                  service_centers/{{ service_center.system.handle }}
+              {% if page.handle == 'servicecenteres' %}
+                  servicecenters/{{ servicecenter.system.handle }}
               {% else %}
-                 pages/service_centers/{{ service_center.system.handle }}
+                 pages/servicecenters/{{ servicecenter.system.handle }}
               {% endif %}
             "
             class="button button--primary"
@@ -124,18 +124,18 @@
   },
   {
     "type": "header",
-    "content": "service_center Details"
+    "content": "servicecenter Details"
   },
   {
     "type": "text",
-    "id": "custom-service_center__title",
-    "label": "service_center Title",
+    "id": "custom-servicecenter__title",
+    "label": "servicecenter Title",
     "default": "Quality Products"
   },
   {
     "type": "textarea",
-    "id": "custom-service_center__description",
-    "label": "service_center Description",
+    "id": "custom-servicecenter__description",
+    "label": "servicecenter Description",
     "default": "Product that you will truly love"
   },
   ],
