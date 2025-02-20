@@ -20,10 +20,10 @@
     "custom_service_centers_nz79MQ": {
       "type": "custom-service-centers",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "custom-service_center__title": "Quality Products",
-        "custom-service_center__description": "Product that you will truly love"
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom-servicecenter__title": "Service Centers",
+        "custom-servicecenter__description": "Zekoki Authorized Service Centers"
       }
     }
   },
