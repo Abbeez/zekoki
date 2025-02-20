@@ -5,27 +5,33 @@
     <h2>Get in Touch</h2>
 
     {% form 'contact', id: 'contact_form' %}
-      <div class="field">
+      <div class="custom_field">
         <!-- Name -->
-        <label for="contact_name" class="field__label">Name</label>
-        <input type="text" id="contact_name" class="field__input" name="contact[name]" required>
+        <label for="contact_name">Name</label>
+        <input type="text" id="contact_name" name="contact[name]" required>
       </div>
-      <!-- Email -->
-      <label for="contact_email" class="field__label">Email</label>
-      <input type="email" id="contact_email" name="contact[email]" required>
 
-      <!-- Phone -->
-      <label for="contact_phone" class="field__label">Phone</label>
-      <input type="tel" id="contact_phone" name="contact[phone]">
+      <div class="custom_field">
+        <!-- Email -->
+        <label for="contact_email">Email</label>
+        <input type="email" id="contact_email" name="contact[email]" required>
+      </div>
 
-      <!-- Purpose Dropdown -->
-      <label for="contact_purpose">Purpose</label>
-      <select id="contact_purpose" name="contact[purpose]" required>
-        <option value="General Inquiry">General Inquiry</option>
-        <option value="After Sale Support">After Sale Support</option>
-        <option value="Defects & Returns">Defects & Returns</option>
-        <option value="Others">Others</option>
-      </select>
+      <div class="custom_field">
+        <!-- Phone -->
+        <label for="contact_phone">Phone</label>
+        <input type="tel" id="contact_phone" name="contact[phone]">
+      </div>
+      <div class="custom_field">
+        <!-- Purpose Dropdown -->
+        <label for="contact_purpose">Purpose</label>
+        <select id="contact_purpose" name="contact[purpose]" required>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="After Sale Support">After Sale Support</option>
+          <option value="Defects & Returns">Defects & Returns</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
 
       <!-- Comment -->
       <label for="contact_message">Message</label>
