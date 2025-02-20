@@ -78,7 +78,7 @@
 
           <!-- {% assign ascnumber = shop.metaobjects.service_centers.values.first %} -->
 
-          {% if centers.contact_number > 1 %}
+          {% if centers.contact_number.size > 1 %}
             <ul>
               {% for number in centers.contact_number %}
                 <li>{{ number }}</li>
@@ -86,7 +86,6 @@
             </ul>
           {% else %}
             <p>No contact numbers available.</p>
-            r
           {% endif %}
 
           <a href="" class="button button--primary">
