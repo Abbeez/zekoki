@@ -29,7 +29,7 @@
 
 <footer
   class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding"
-  style="  background: url('{{ section.settings.footer_background | image_url  }}') no-repeat !important;"
+  style="  background: url('{{ section.settings.footer_background | image_url  }}') no-repeat cover !important;"
 >
   {%- liquid
     assign has_social_icons = true
