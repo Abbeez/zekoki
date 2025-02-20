@@ -5,10 +5,11 @@
     <h2>Get in Touch</h2>
 
     {% form 'contact', id: 'contact_form' %}
-      <!-- Name -->
-      <label for="contact_name">Name</label>
-      <input type="text" id="contact_name" class="field__input" name="contact[name]" required>
-
+      <div class="field">
+        <!-- Name -->
+        <label for="contact_name">Name</label>
+        <input type="text" id="contact_name" class="field__input" name="contact[name]" required>
+      </div>
       <!-- Email -->
       <label for="contact_email">Email</label>
       <input type="email" id="contact_email" name="contact[email]" required>
