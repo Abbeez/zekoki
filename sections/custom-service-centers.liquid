@@ -1,54 +1,65 @@
 {%- style -%}
-      .custom-servicecenters__header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .custom-servicecenters__body {
+        .custom-servicecenters__header {
           display: flex;
-          gap: 20px;
-          justify-content: center;
-          align-items: center;
+          flex-direction: row;
           flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
       }
 
-      .custom-servicecenters__items {
-        flex: 1 0 100%;
-        text-align:center;
-        /* min-wheight:500px; */
-      }
+    .custom-servicecenters__header
+    ul.metafield-single_line_text_field-array {
+      margin: 0;
+      padding: 0;
+  }
 
-      .custom-servicecenters__items_wrapper{
-      position: relative;
-      padding: 1rem;
-      background: var(--zekoki-primary);
-      border-radius: 1rem;
-    }
+      .custom-servicecenters__header
+    ul.metafield-single_line_text_field-array li {
+    text-decoration:none;
+  }
 
-      .custom-servicecenters__items_wrapper h2 {
+      .custom-servicecenters__body {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .custom-servicecenters__items {
+          flex: 1 0 100%;
+          text-align:center;
+          /* min-wheight:500px; */
+        }
+
+        .custom-servicecenters__items_wrapper{
+        position: relative;
+        padding: 1rem;
         background: var(--zekoki-primary);
-        color: var(--zekoki-white);
-        padding: 20px;
-        width:100%;
-        margin: 0 !important;
+        border-radius: 1rem;
+      }
+
+        .custom-servicecenters__items_wrapper h2 {
+          background: var(--zekoki-primary);
+          color: var(--zekoki-white);
+          padding: 20px;
+          width:100%;
+          margin: 0 !important;
+      }
+
+      /* Tablet and small desktop */
+    @media screen and (min-width: 750px) {
+
+        .custom-servicecenters__items {
+          flex: 1 0 350px;
+        }
     }
 
-    /* Tablet and small desktop */
-  @media screen and (min-width: 750px) {
+    /* Large desktops */
+    @media screen and (min-width: 990px) {
 
-      .custom-servicecenters__items {
-        flex: 1 0 350px;
-      }
-  }
-
-  /* Large desktops */
-  @media screen and (min-width: 990px) {
-
-  }
+    }
 {%- endstyle -%}
 
 <section
