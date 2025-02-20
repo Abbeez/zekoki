@@ -73,7 +73,7 @@
         <div class="custom-servicecenters__items">
           <h2>{{ centers.location }}</h2>
           <p>{{ centers.service_center_name }}</p>
-          <p>{{ centers.address | handle | capitalize | replace: '-', ' ' }}</p>
+          <p>{{ centers.address.value.children }}</p>
 
           {% if centers.contact_number.size > 0 %}
             <ul>
