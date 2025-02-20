@@ -16,13 +16,43 @@
         "padding_bottom": 28
       }
     },
-    "get_in_touch_WhJLQA": {
-      "type": "get-in-touch",
-      "settings": {}
+    "multicolumn_LP9Uxf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Bmw6EL": {
+          "type": "column",
+          "repeater": "{{ page.metafields.custom.service_centers.value }}",
+          "settings": {
+            "title": "{{ block.repeater.contact_number | metafield_text }}",
+            "text": "<p>{{ block.repeater.service_center_name.value }}</p>",
+            "link_label": "{{ block.repeater.location.value }}",
+            "link": "{{ block.repeater.system.url }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_Bmw6EL"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "get_in_touch_WhJLQA"
+    "multicolumn_LP9Uxf"
   ]
 }
