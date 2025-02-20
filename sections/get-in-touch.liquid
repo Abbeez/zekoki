@@ -1,15 +1,5 @@
-{% schema %}
-{
-  "name": "Get in Touch",
-  "settings": [],
-  "presets": [
-    {
-      "name": "Get in Touch"
-    }
-  ]
-}
-{% endschema %}
-
+{%- style -%}
+{%- endstyle -%}
 <section class="custom-contact__form scroll-trigger animate--slide-in">
   <div class="custom-contact_container custom-form_main">
     <h2>Get in Touch</h2>
@@ -53,18 +43,20 @@
     {% endform %}
 
     <!-- Success Popup Modal -->
-    <div id="successModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Thank you! Your message has been sent successfully.</p>
+    <!--
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you! Your message has been sent successfully.</p>
+        </div>
       </div>
-    </div>
+    -->
   </div>
   <div class="custom-contact_container custom-form_side"></div>
 </section>
 
 <style>
-  .contact-form {
+  /* .contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -123,7 +115,7 @@
     float: right;
     font-size: 24px;
     cursor: pointer;
-  }
+  } */
 </style>
 
 <script>
@@ -148,3 +140,15 @@
     });
   });
 </script>
+
+{% schema %}
+{
+  "name": "Get in Touch",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Get in Touch"
+    }
+  ]
+}
+{% endschema %}
