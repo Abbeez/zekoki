@@ -75,13 +75,13 @@
           <h2>{{ centers.service_center_name }}</h2>
           <p>{{ centers.address | metafield_tag }}</p>
 
-          {% if centers.contact_number.value.size > 0 %}
-            <ul>
-              {% for number in centers.contact_number %}
-                <li>{{ number }}</li>
-              {% endfor %}
-            </ul>
-          {% endif %}
+          <!-- {% if centers.contact_number.value.size > 0 %} -->
+          <ul>
+            {% for number in centers.contact_number %}
+              <li>{{ number }}</li>
+            {% endfor %}
+          </ul>
+          <!-- {% endif %} -->
 
           <a
             href="
