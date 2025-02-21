@@ -73,11 +73,11 @@
         <div class="custom-branch__items">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
-              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="250" width="">
+              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="" width="">
             {% endif %}
             <h3 style="color: var(--zekoki-white);">{{ branch.title }}</h3>
           </div>
-          <p><strong>Location:</strong> {{ branch.location }}</p>
+          <p>{{ branch.location }}</p>
           <a
             href="
               {% if page.handle == 'branches' %}
