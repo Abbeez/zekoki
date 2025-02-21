@@ -327,7 +327,7 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "margin_top": 20,
-        "margin_bottom": 20,
+        "margin_bottom": 0,
         "custom-cta_background": "shopify://shop_images/Try_Zekoki_Tools.png",
         "custom-cta__title": "Discover Your Next Power Tool",
         "custom-cta__description": "Explore our extensive range of quality tools today!",
