@@ -52,17 +52,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "popup_8CVhdX": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "products"
-          }
-        },
         "inventory_FGwyR3": {
           "type": "inventory",
           "settings": {
@@ -92,8 +81,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "popup_8CVhdX",
         "inventory_FGwyR3",
         "sku_ecUHGd",
         "share"
@@ -112,44 +99,6 @@
         "enable_video_looping": false,
         "padding_top": 72,
         "padding_bottom": 72
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "multicolumn": {
@@ -212,12 +161,67 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_footer_cta_h8XTeg": {
+      "type": "custom-footer-cta",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 20,
+        "margin_bottom": 20,
+        "custom-cta_background": "shopify://shop_images/Zekoki_Mascot.png",
+        "custom-cta__title": "Get Your Tools Today!",
+        "custom-cta__description": "Don’t miss out on this amazing deal!",
+        "cta_button_text_primary": "Learn More",
+        "cta_button_url_primary": "",
+        "cta_button_text_secondary": "Shop Now",
+        "cta_button_url_secondary": ""
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "image-with-text-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "image-with-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "image-with-text-0",
+        "image-with-text-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "custom_footer_cta_h8XTeg",
+    "image-with-text"
   ]
 }
