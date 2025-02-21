@@ -3665,7 +3665,7 @@ position: absolute;
 } */
 
 .shopify-payment-button__button {
-  background: var(--zekoki-primary);
+  background: var(--zekoki-primary) !important;
 }
 
 .quick-add__submit, .product-form__submit {
