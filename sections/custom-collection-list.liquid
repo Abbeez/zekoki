@@ -95,8 +95,7 @@
       {% assign collection_handle = block.settings.boxed_collection %}
       {% if collection_handle != blank %}
         {% assign collection = collections[collection_handle] %}
-        <a href="{{ collection.url }}">
-          {{- collection.title }}>
+        <a href="{{ collection.url }}" alt="{{- collection.title }}">
           <div class="collection-card">
             <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
             <h3>
