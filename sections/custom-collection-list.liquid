@@ -95,12 +95,15 @@
       {% assign collection_handle = block.settings.boxed_collection %}
       {% if collection_handle != blank %}
         {% assign collection = collections[collection_handle] %}
-        <div class="collection-card">
-          <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
-          <h3>
-            <a href="{{ collection.url }}">{{ collection.title | truncate: 15 }}</a>
-          </h3>
-        </div>
+        <a href="{{ collection.url }}">
+          {{- collection.title }}>
+          <div class="collection-card">
+            <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
+            <h3>
+              <a href="{{ collection.url }}">{{ collection.title | truncate: 15 }}</a>
+            </h3>
+          </div>
+        </a>
       {% endif %}
     {% endfor %}
   </div>
