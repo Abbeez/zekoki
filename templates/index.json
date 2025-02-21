@@ -249,7 +249,7 @@
     "custom_product_list_DQ8Gk7": {
       "type": "custom-product-list",
       "settings": {
-        "collection": "accessories",
+        "collection": "power-tools",
         "products_to_show": 10,
         "title": "Power Tools",
         "heading_size": "h1",
