@@ -3668,6 +3668,10 @@ position: absolute;
   background: var(--zekoki-primary) !important;
 }
 
+.shopify-payment-button__button:hover {
+  background: var(--zekoki-secondary) !important;
+}
+
 .quick-add__submit, .product-form__submit {
   border: 1px solid var(--zekoki-secondary) !important;
 }
