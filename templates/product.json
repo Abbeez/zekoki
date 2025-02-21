@@ -209,7 +209,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -220,8 +220,8 @@
   "order": [
     "main",
     "multicolumn",
-    "related-products",
     "custom_footer_cta_h8XTeg",
-    "image-with-text"
+    "image-with-text",
+    "related-products"
   ]
 }
