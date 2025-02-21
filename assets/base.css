@@ -3664,6 +3664,10 @@ position: absolute;
     padding: 0 10rem 0 0;
 } */
 
+.shopify-payment-button__button {
+  background: var(--zekoki-primary);
+}
+
 .quick-add__submit, .product-form__submit {
   border: 1px solid var(--zekoki-secondary) !important;
 }
