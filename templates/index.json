@@ -67,7 +67,7 @@
         "collections_4xQbdg": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "equipment",
+            "boxed_collection": "pumps",
             "boxed_collection__heading": "Collection Title"
           }
         },
@@ -116,7 +116,7 @@
         "collections_YB4kf9": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "equipment",
+            "boxed_collection": "pumps",
             "boxed_collection__heading": "Collection Title"
           }
         },
