@@ -61,7 +61,7 @@
   <div class="custom-branch__container">
     <div class="custom-branch__header">
       <div class="custom_branch__header--container">
-        <h3 class="h1 title">{{ section.settings['custom-branch__title'] }}</h3>
+        <h2 class="h1 title">{{ section.settings['custom-branch__title'] }}</h2>
       </div>
       <div class="custom_branch__header--container">
         <p>{{ section.settings['custom-branch__description'] }}</p>
@@ -75,7 +75,7 @@
             {% if branch.photo != blank %}
               <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}" height="" width="">
             {% endif %}
-            <h2>{{ branch.title }}</h2>
+            <h3>{{ branch.title }}</h3>
           </div>
           <p><strong>Location:</strong> {{ branch.location }}</p>
           <a
