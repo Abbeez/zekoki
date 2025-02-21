@@ -71,6 +71,15 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "collapsible_tab_LKRccT": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "banana",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -83,7 +92,8 @@
         "buy_buttons",
         "inventory_FGwyR3",
         "sku_ecUHGd",
-        "share"
+        "share",
+        "collapsible_tab_LKRccT"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -107,7 +117,7 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
+            "title": "100% Authentic",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
@@ -116,7 +126,16 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
+            "title": "Heavy Duty",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f7dAUr": {
+          "type": "column",
+          "settings": {
+            "title": "Industrial Grade",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
@@ -125,14 +144,15 @@
       },
       "block_order": [
         "column-0",
-        "column-1"
+        "column-1",
+        "column_f7dAUr"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
+        "heading_size": "h2",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
@@ -142,24 +162,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "Related  Products",
-        "heading_size": "h2",
-        "products_to_show": 5,
-        "columns_desktop": 5,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     },
     "custom_footer_cta_h8XTeg": {
@@ -214,6 +216,24 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Related  Products",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     }
   },
