@@ -64,24 +64,10 @@
     "custom_collection_list_tkQB8y": {
       "type": "custom-collection-list",
       "blocks": {
-        "collections_4xQbdg": {
-          "type": "Collections",
-          "settings": {
-            "boxed_collection": "pumps",
-            "boxed_collection__heading": "Collection Title"
-          }
-        },
-        "collections_TdjpHU": {
-          "type": "Collections",
-          "settings": {
-            "boxed_collection": "accessories",
-            "boxed_collection__heading": "Collection Title"
-          }
-        },
         "collections_f7Radq": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "woodwork",
+            "boxed_collection": "pumps",
             "boxed_collection__heading": "Collection Title"
           }
         },
@@ -95,7 +81,7 @@
         "collections_GpWrXf": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "garden-tools-1",
+            "boxed_collection": "hand-tools",
             "boxed_collection__heading": "Collection Title"
           }
         },
@@ -109,18 +95,11 @@
         "collections_HYX3TH": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "hand-tools",
+            "boxed_collection": "garden-tools",
             "boxed_collection__heading": "Collection Title"
           }
         },
-        "collections_YB4kf9": {
-          "type": "Collections",
-          "settings": {
-            "boxed_collection": "pumps",
-            "boxed_collection__heading": "Collection Title"
-          }
-        },
-        "collections_H6NGdm": {
+        "collections_F7xHcN": {
           "type": "Collections",
           "settings": {
             "boxed_collection": "woodwork",
@@ -129,15 +108,12 @@
         }
       },
       "block_order": [
-        "collections_4xQbdg",
-        "collections_TdjpHU",
         "collections_f7Radq",
         "collections_XFXa6A",
         "collections_GpWrXf",
         "collections_ai8Gqa",
         "collections_HYX3TH",
-        "collections_YB4kf9",
-        "collections_H6NGdm"
+        "collections_F7xHcN"
       ],
       "settings": {
         "padding_top": 0,
