@@ -105,6 +105,27 @@
             "boxed_collection": "woodwork",
             "boxed_collection__heading": "Collection Title"
           }
+        },
+        "collections_iNMcYG": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "pumps",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_fMCWrB": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "power-tools",
+            "boxed_collection__heading": "Collection Title"
+          }
+        },
+        "collections_DprYGN": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "hand-tools",
+            "boxed_collection__heading": "Collection Title"
+          }
         }
       },
       "block_order": [
@@ -113,7 +134,10 @@
         "collections_GpWrXf",
         "collections_ai8Gqa",
         "collections_HYX3TH",
-        "collections_F7xHcN"
+        "collections_F7xHcN",
+        "collections_iNMcYG",
+        "collections_fMCWrB",
+        "collections_DprYGN"
       ],
       "settings": {
         "padding_top": 0,
