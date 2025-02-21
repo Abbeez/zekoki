@@ -3668,7 +3668,7 @@ position: absolute;
   border: 1px solid var(--zekoki-secondary);
 }
 
-a.button.button--secondary:not('product-form__submit') {
+a.button.button--secondary:not(.product-form__submit) {
     background: transparent;
     color: var(--zekoki-white);
 }
