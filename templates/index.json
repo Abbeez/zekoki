@@ -126,6 +126,13 @@
             "boxed_collection": "hand-tools",
             "boxed_collection__heading": "Collection Title"
           }
+        },
+        "collections_HGMxTp": {
+          "type": "Collections",
+          "settings": {
+            "boxed_collection": "accessories",
+            "boxed_collection__heading": "Collection Title"
+          }
         }
       },
       "block_order": [
@@ -137,7 +144,8 @@
         "collections_F7xHcN",
         "collections_iNMcYG",
         "collections_fMCWrB",
-        "collections_DprYGN"
+        "collections_DprYGN",
+        "collections_HGMxTp"
       ],
       "settings": {
         "padding_top": 0,
