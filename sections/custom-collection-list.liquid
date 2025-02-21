@@ -27,25 +27,25 @@
       margin-top: 10px;
     }
 
-    .collection-card:nth-child(odd) {
+    .collection-container:nth-child(odd) {
       background-color: var(--zekoki-primary);
     }
 
-    .collection-card:nth-child(even) {
+    .collection-container:nth-child(even) {
       background-color: var(--zekoki-white);
     }
 
-      .collection-card:nth-child(odd) h3 a {
+      .collection-container:nth-child(odd) h3 a {
       color: var(--zekoki-white);
       text-decoration:none;
     }
 
-    .collection-card:nth-child(even) h3 a {
+    .collection-container:nth-child(even) h3 a {
       color: var(--zekoki-secondary);
           text-decoration:none;
     }
 
-    .collection-card:hover {
+    .collection-container:hover {
       transform: scale(1.03);
     }
 
@@ -95,7 +95,7 @@
       {% assign collection_handle = block.settings.boxed_collection %}
       {% if collection_handle != blank %}
         {% assign collection = collections[collection_handle] %}
-        <div>
+        <div class="collection-container">
           <a href="{{ collection.url }}" alt="{{ collection.title }}">
             <div class="collection-card">
               <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
