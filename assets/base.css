@@ -3664,8 +3664,8 @@ position: absolute;
     padding: 0 10rem 0 0;
 } */
 
-.quick-add__submit:not(.product-form__submit) {
-  border: 1px solid var(--zekoki-secondary);
+.quick-add__submit {
+  border: 1px solid var(--zekoki-secondary) !important;
 }
 
 a.button.button--secondary {
