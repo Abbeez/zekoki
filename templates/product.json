@@ -56,6 +56,27 @@
           "type": "description",
           "settings": {}
         },
+        "popup_8CVhdX": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": ""
+          }
+        },
+        "inventory_FGwyR3": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "sku_ecUHGd": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -72,6 +93,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "popup_8CVhdX",
+        "inventory_FGwyR3",
+        "sku_ecUHGd",
         "share"
       ],
       "settings": {
