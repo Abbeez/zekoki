@@ -3640,29 +3640,23 @@ h2.title.h1 {
   align-items: center;
 }
 
-.footer__content-top.page-width {
+.footer__blocks-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer__content-top.page-width div:first-child {
+.footer__blocks-wrapper div:first-child {
     flex-grow: 1;
 }
 
-.footer__content-top.page-width h2 {
+.footer__blocks-wrapper h2 {
     color: red;
 }
 
 
 /* Featured Collection */
 
-/* .center.collection__view-all.scroll-trigger.animate--slide-in {
-position: absolute;
-    top: 10%;
-    right: 10rem;
-    padding: 0 10rem 0 0;
-} */
 
 .shopify-payment-button__button {
   background: var(--zekoki-primary) !important;
