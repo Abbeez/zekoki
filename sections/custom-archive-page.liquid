@@ -75,26 +75,27 @@
 
         {% if single_archive_handle_clean == archived.system.handle %}
           yes equal
+
+          <div class="custom-archived__items">
+            <div class="custom-archived__items_wrapper">
+              {% if archived.thumbnail != blank %}
+                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+              {% endif %}
+              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
+            </div>
+            <p>{{ archived.description }}</p>
+            <p>{{ single_archive_handle }}</p>
+            <p>{{ single_archive_handle_clean }}</p>
+            <a
+              href="{{ page.handle }}/{{ archived.system.handle }}"
+              class="button button--primary"
+            >
+              Learn More
+            </a>
+          </div>
+
           {% continue %}
         {% endif %}
-
-        <div class="custom-archived__items">
-          <div class="custom-archived__items_wrapper">
-            {% if archived.thumbnail != blank %}
-              <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-            {% endif %}
-            <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
-          </div>
-          <p>{{ archived.description }}</p>
-          <p>{{ single_archive_handle }}</p>
-          <p>{{ single_archive_handle_clean }}</p>
-          <a
-            href="{{ page.handle }}/{{ archived.system.handle }}"
-            class="button button--primary"
-          >
-            Learn More
-          </a>
-        </div>
       {% endfor %}
     </div>
 
