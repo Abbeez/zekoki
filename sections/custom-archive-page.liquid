@@ -95,7 +95,7 @@
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
 
-        {% unless single_archive_handle_clean != archived.system.handle %}
+        {% unless single_archive_handle_clean == archived.system.handle %}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
               {% if archived.thumbnail != blank %}
