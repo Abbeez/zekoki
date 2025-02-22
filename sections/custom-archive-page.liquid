@@ -79,15 +79,7 @@
           </div>
           <p>{{ archived.description }}</p>
           <a
-            href="
-              {% if page.handle  %}
-
-                {{ page.handle }}
-              {% else %}
-
-                {{ page.handle }}
-              {% endif %}
-            "
+            href="{{ page.handle | concat: "/" | concat: archived.system.handle }}"
             class="button button--primary"
           >
             Branch Details
