@@ -80,10 +80,11 @@
           <p>{{ archived.description }}</p>
           <a
             href="
-              {% if page.handle == 'archived' %}
-                  zekoki-store-archived/{{ archived.system.handle }}
+              {% if page.handle  %}
+                  <!-- zekoki-store-archived/{{ archived.system.handle }} -->
+                {{ page.handle }}
               {% else %}
-                 pages/zekoki-store-archived/{{ archived.system.handle }}
+                 <!-- pages/zekoki-store-archived/{{ archived.system.handle }} -->
               {% endif %}
             "
             class="button button--primary"
