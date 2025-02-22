@@ -69,7 +69,7 @@
     </div>
 
     <div class="custom-archived__body">
-      {% assign archive_handle = metaobjects.product_guides %}
+      {% assign archive_handle = shop.metaobjects.product_guides.values %}
 
       {% for archived in shop.metaobjects.product_guides.values %}
         <div class="custom-archived__items">
