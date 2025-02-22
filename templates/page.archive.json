@@ -56,10 +56,20 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "custom_archive_page_Tetr4Y": {
+      "type": "custom-archive-page",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-archived__title": "Quality Products",
+        "custom-archived__description": "Product that you will truly love"
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_jnF9Mn"
+    "rich_text_jnF9Mn",
+    "custom_archive_page_Tetr4Y"
   ]
 }
