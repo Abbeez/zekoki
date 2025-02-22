@@ -70,25 +70,25 @@
 
     <div class="custom-archived__body">
       {% assign archive_handle = shop.metaobjects.product_guides %}
-      {% if archive_handle.system.handle %}
-        {% for archived in shop.metaobjects.product_guides.values %}
-          <div class="custom-archived__items">
-            <div class="custom-archived__items_wrapper">
-              {% if archived.thumbnail != blank %}
-                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-              {% endif %}
-              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
-            </div>
-            <p>{{ archived.description }}</p>
-            <a
-              href="{{ page.handle }}/{{ archived.system.handle }}"
-              class="button button--primary"
-            >
-              Learn More
-            </a>
+      <!-- {% if archive_handle.system.handle %} -->
+      {% for archived in shop.metaobjects.product_guides.values %}
+        <div class="custom-archived__items">
+          <div class="custom-archived__items_wrapper">
+            {% if archived.thumbnail != blank %}
+              <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+            {% endif %}
+            <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
           </div>
-        {% endfor %}
-      {% endif %}
+          <p>{{ archived.description }}</p>
+          <a
+            href="{{ page.handle }}/{{ archived.system.handle }}"
+            class="button button--primary"
+          >
+            Learn More
+          </a>
+        </div>
+      {% endfor %}
+      <!-- {% endif %} -->
     </div>
 
     <!--
