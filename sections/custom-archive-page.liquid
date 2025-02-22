@@ -69,6 +69,8 @@
     </div>
 
     <div class="custom-archived__body">
+      {% assign archive_handle = shop.metaobjects.product_guides %}
+
       {% for archived in shop.metaobjects.product_guides.values %}
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
@@ -78,6 +80,7 @@
             <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
           </div>
           <p>{{ archived.description }}</p>
+          {{ archive_handle }}
           <a
             href="{{ page.handle }}/{{ archived.system.handle }}"
             class="button button--primary"
@@ -86,6 +89,8 @@
           </a>
         </div>
       {% endfor %}
+      {% if archive_handle.system.handle %}
+      {% endif %}
     </div>
 
     <!--
