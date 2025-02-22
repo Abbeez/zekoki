@@ -51,8 +51,6 @@
   }
 {%- endstyle -%}
 
-{% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-
 <section
   class="page-width custom-archived__section scroll-trigger animate--slide-in"
   style="
@@ -94,6 +92,7 @@
 
     <div class="custom-archived__body">
       {% for archived in shop.metaobjects.product_guides.values %}
+        {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% unless archived.system.handle == page.handle %}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
