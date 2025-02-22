@@ -51,6 +51,8 @@
   }
 {%- endstyle -%}
 
+{% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
+
 <section
   class="page-width custom-archived__section scroll-trigger animate--slide-in"
   style="
@@ -102,7 +104,7 @@
             </div>
             <p>{{ archived.description }}</p>
             <a
-              href="{{ page.handle }}/{{ archived.system.handle }}"
+              href="{{ single_archive_handle  }}"
               class="button button--primary"
             >
               Learn More
