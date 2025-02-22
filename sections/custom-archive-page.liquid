@@ -67,13 +67,13 @@
         <p>{{ section.settings['custom-archived__description'] }}</p>
       </div>
     </div>
-
+    {% assign arc_handle = shop.metaobjects.product_guides %}
     <div class="custom-archived__body">
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
 
-        {% if single_archive_handle_clean == archived.system.handle %}
+        {% if single_archive_handle_clean == arc_handle %}
           yes equal
 
           <div class="custom-archived__items">
