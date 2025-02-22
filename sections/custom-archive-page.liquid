@@ -69,8 +69,6 @@
     </div>
 
     <div class="custom-archived__body">
-      <!-- {% assign archive_handle = shop.metaobjects.product_guides %} -->
-      <!-- {% if archive_handle.system.handle %} -->
       {% for archived in shop.metaobjects.product_guides.values %}
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
@@ -88,7 +86,6 @@
           </a>
         </div>
       {% endfor %}
-      <!-- {% endif %} -->
     </div>
 
     <!--
