@@ -69,16 +69,10 @@
     </div>
 
     <div class="custom-archived__body">
-      {% assign archive_handle = shop.metaobjects.product_guides.system.handle %}
-
-      {% if shop.metaobjects.product_guides.system.handle %}
-        {% assign archive_handle = shop.metaobjects.product_guides.system.handle %}
-        <p>Handle: {{ archive_handle }}</p>
-      {% else %}
-        <p>No handle found.</p>
-      {% endif %}
-
       {% for archived in shop.metaobjects.product_guides.values %}
+        {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
+        {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
+
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
             {% if archived.thumbnail != blank %}
@@ -87,7 +81,8 @@
             <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
           </div>
           <p>{{ archived.description }}</p>
-          {{ archive_handle }}
+          <p>{{ single_archive_handle }}</p>
+          <p>{{ single_archive_handle_clean }}</p>
           <a
             href="{{ page.handle }}/{{ archived.system.handle }}"
             class="button button--primary"
@@ -96,8 +91,6 @@
           </a>
         </div>
       {% endfor %}
-      {% if archive_handle.system.handle %}
-      {% endif %}
     </div>
 
     <!--
