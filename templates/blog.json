@@ -51,8 +51,8 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "grid",
-        "show_image": false,
+        "layout": "collage",
+        "show_image": true,
         "image_height": "adapt",
         "show_date": true,
         "show_author": true,
