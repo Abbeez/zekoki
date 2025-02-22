@@ -117,7 +117,9 @@
             </a>
           </div>
           {% continue %}
-        {% else %}
+        {% endif %}
+
+        {% if archived.system.handle != single_archive_handle_clean %}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
               {% if archived.thumbnail != blank %}
