@@ -71,7 +71,11 @@
     <div class="custom-archived__body">
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-        <!-- {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %} -->
+        {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
+
+        {% if single_archive_handle == archived.system.handle %}
+          yes equal
+        {% endif %}
 
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
