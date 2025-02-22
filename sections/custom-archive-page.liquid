@@ -1,6 +1,148 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+      .custom-archived__header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .custom-archived__body {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+
+      .custom-archived__items {
+        flex: 1 0 100%;
+        text-align:center;
+        /* min-wheight:500px; */
+      }
+
+      .custom-archived__items_wrapper{
+      position: relative;
+      padding: 1rem;
+      background: var(--zekoki-primary);
+      border-radius: 1rem;
+    }
+
+      .custom-archived__items_wrapper h2 {
+        background: var(--zekoki-primary);
+        color: var(--zekoki-white);
+        padding: 20px;
+        width:100%;
+        margin: 0 !important;
+    }
+
+    /* Tablet and small desktop */
+  @media screen and (min-width: 750px) {
+
+      .custom-archived__items {
+        flex: 1 0 30%;
+      }
   }
+
+  /* Large desktops */
+  @media screen and (min-width: 990px) {
+
+  }
+{%- endstyle -%}
+
+<section
+  class="page-width custom-archived__section scroll-trigger animate--slide-in"
+  style="
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="custom-archived__container">
+    <div class="custom-archived__header">
+      <div class="custom_archived__header--container">
+        <h2 class="h1 title">{{ section.settings['custom-archived__title'] }}</h2>
+      </div>
+      <div class="custom_archived__header--container">
+        <p>{{ section.settings['custom-archived__description'] }}</p>
+      </div>
+    </div>
+
+    <div class="custom-archived__body">
+      {% for archived in shop.metaobjects.zekoki_store_archived.values limit: 3 %}
+        <div class="custom-archived__items">
+          <div class="custom-archived__items_wrapper">
+            {% if archived.photo != blank %}
+              <img src="{{ archived.photo | image_url }}" alt="{{ archived.title }}" height="" width="">
+            {% endif %}
+            <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
+          </div>
+          <p>{{ archived.location }}</p>
+          <a
+            href="
+              {% if page.handle == 'archived' %}
+                  zekoki-store-archived/{{ archived.system.handle }}
+              {% else %}
+                 pages/zekoki-store-archived/{{ archived.system.handle }}
+              {% endif %}
+            "
+            class="button button--primary"
+          >
+            Branch Details
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Archives Section",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Spacing"
+  },
+  {
+    "type": "range",
+    "id": "padding_top",
+    "label": "Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "label": "Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "header",
+    "content": "archived Details"
+  },
+  {
+    "type": "text",
+    "id": "custom-archived__title",
+    "label": "archived Title",
+    "default": "Quality Products"
+  },
+  {
+    "type": "textarea",
+    "id": "custom-archived__description",
+    "label": "archived Description",
+    "default": "Product that you will truly love"
+  },
+  ],
+  "presets": [
+    {
+      "name": "Custom Store Archives Section"
+    }
+  ]
+}
 {% endschema %}
