@@ -59,10 +59,10 @@
     "custom_archive_page_xTRmzg": {
       "type": "custom-archive-page",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "custom-archived__title": "Quality Products",
-        "custom-archived__description": "Product that you will truly love"
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom-archived__title": "Zekoki Academy",
+        "custom-archived__description": "Learn more about Zekoki Products"
       }
     }
   },
