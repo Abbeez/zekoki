@@ -93,7 +93,7 @@
     <div class="custom-archived__body">
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-        {% unless page.handle == archived.system.handle %}
+        {% if page.handle != archived.system.handle %}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
               {% if archived.thumbnail != blank %}
@@ -114,7 +114,7 @@
               Learn More
             </a>
           </div>
-        {% endunless %}
+        {% endif %}
       {% endfor %}
     </div>
   </div>
