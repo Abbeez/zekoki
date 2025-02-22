@@ -60,10 +60,6 @@
 >
   <div
     class="custom-archived__container"
-    style="
-      padding-top: calc({{ section.settings.padding_top }}/2)px;
-      padding-bottom: calc({{ section.settings.padding_bottom }}/2)px;
-    "
   >
     <div class="custom-archived__header">
       <div class="custom_archived__header--container">
@@ -75,7 +71,13 @@
     </div>
     {{ shop.metaobjects.product_guides.system.handle }}
 
-    <div class="custom-archived__body">
+    <div
+      class="custom-archived__body"
+      style="
+        padding-top: calc({{ section.settings.padding_top }}/2)px;
+        padding-bottom: calc({{ section.settings.padding_bottom }}/2)px;
+      "
+    >
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
