@@ -50,6 +50,9 @@
     },
     "main": {
       "type": "main-blog",
+      "custom_css": [
+        "h1.title--primary.scroll-trigger.animate--fade-in {display: none;}"
+      ],
       "settings": {
         "layout": "grid",
         "show_image": true,
