@@ -9,12 +9,51 @@
  */
 {
   "sections": {
+    "rich_text_T3xnJM": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_LwMRAp": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ blog.title }}",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "heading_nDAE6q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore Our Latest {{ blog.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_GTQQmD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stay updated with our expert tips and trends.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_LwMRAp",
+        "heading_nDAE6q",
+        "text_GTQQmD"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
         "layout": "grid",
         "show_image": true,
-        "image_height": "small",
+        "image_height": "adapt",
         "show_date": true,
         "show_author": true,
         "padding_top": 36,
@@ -23,6 +62,7 @@
     }
   },
   "order": [
+    "rich_text_T3xnJM",
     "main"
   ]
 }
