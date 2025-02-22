@@ -94,6 +94,9 @@
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% unless archived.system.handle == single_archive_handle %}
+          {{ archived.system.handle }}
+          <br>
+          {{ single_archive_handle }}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
               {% if archived.thumbnail != blank %}
