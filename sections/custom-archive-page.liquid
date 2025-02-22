@@ -68,7 +68,7 @@
       </div>
     </div>
     {% assign arc_handle = shop.metaobjects.product_guides %}
-
+    {{ arc_handle }}
     <div class="custom-archived__body">
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
