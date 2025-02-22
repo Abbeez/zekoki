@@ -104,7 +104,7 @@
             <p>{{ archived.description }}</p>
             {{ archived.system.handle }}
             <br>
-            {{ single_archive_handle }}
+            {{ single_archive_handle | remove: '/' }}
             <br>
             {{ page.handle }}
             <a
