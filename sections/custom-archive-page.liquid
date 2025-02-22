@@ -118,7 +118,20 @@
           </div>
           {% break %}
         {% else %}
-
+          <div class="custom-archived__items">
+            <div class="custom-archived__items_wrapper">
+              {% if archived.thumbnail != blank %}
+                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+              {% endif %}
+              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
+            </div>
+            <a
+              href="{{ single_archive_handle  }}"
+              class="button button--primary"
+            >
+              Learn More
+            </a>
+          </div>
         {% endif %}
       {% endfor %}
     </div>
