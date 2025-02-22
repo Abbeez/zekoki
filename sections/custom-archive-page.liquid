@@ -69,15 +69,15 @@
     </div>
 
     <div class="custom-archived__body">
-      {% for archived in shop.metaobjects.zekoki_store_archived.values limit: 3 %}
+      {% for archived in shop.metaobjects.product_guides.values %}
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
             {% if archived.photo != blank %}
-              <img src="{{ archived.photo | image_url }}" alt="{{ archived.title }}" height="" width="">
+              <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
             {% endif %}
             <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
           </div>
-          <p>{{ archived.location }}</p>
+          <p>{{ archived.description }}</p>
           <a
             href="
               {% if page.handle == 'archived' %}
