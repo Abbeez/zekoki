@@ -73,15 +73,11 @@
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
 
-        <!--
-          {% if single_archive_handle_clean == archived.system.handle %}
-            yes equal
-          {% endif %}
-        -->
+        {% if single_archive_handle_clean == archived.system.handle %}
+          yes equal
+          {% continue %}
+        {% endif %}
 
-        {% for arc in archived %}
-          <p>{{ arc.description }}</p>
-        {% endfor %}
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
             {% if archived.thumbnail != blank %}
