@@ -95,28 +95,28 @@
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
 
-        {% if archived.system.handle != single_archive_handle_clean %}
-          <div class="custom-archived__items">
-            <div class="custom-archived__items_wrapper">
-              {% if archived.thumbnail != blank %}
-                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-              {% endif %}
-              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
-            </div>
-            <p>{{ archived.description }}</p>
-            {{ archived.system.handle }}
-            <br>
-            {{ single_archive_handle | remove: '/' }}
-            <br>
-            {{ page.handle }}
-            <a
-              href="{{ single_archive_handle  }}"
-              class="button button--primary"
-            >
-              Learn More
-            </a>
+        <!-- {% if archived.system.handle != single_archive_handle_clean %} -->
+        <div class="custom-archived__items">
+          <div class="custom-archived__items_wrapper">
+            {% if archived.thumbnail != blank %}
+              <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+            {% endif %}
+            <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
           </div>
-        {% endif %}
+          <p>{{ archived.description }}</p>
+          {{ archived.system.handle }}
+          <br>
+          {{ single_archive_handle | remove: '/' }}
+          <br>
+          {{ page.handle }}
+          <a
+            href="{{ single_archive_handle  }}"
+            class="button button--primary"
+          >
+            Learn More
+          </a>
+        </div>
+        <!-- {% endif %} -->
       {% endfor %}
     </div>
   </div>
