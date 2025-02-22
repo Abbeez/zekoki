@@ -69,12 +69,11 @@
     </div>
     {{ shop.metaobjects.product_guides.system.handle }}
 
-    <div class="custom-archived__body">
-      {% for archived in shop.metaobjects.product_guides.values %}
-        {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-        {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
-
-        {% if archived.system.handle == page.handle %}
+    <!--
+      <div class="custom-archived__body">
+        {% for archived in shop.metaobjects.product_guides.values %}
+          {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
+          {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
           <div class="custom-archived__items">
             <div class="custom-archived__items_wrapper">
               {% if archived.thumbnail != blank %}
@@ -92,62 +91,58 @@
               Learn More
             </a>
           </div>
-          {% continue %}
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <!--
-      <div class="custom-archived__body">
-
-        {% for archived in shop.metaobjects.product_guides.values %}
-          {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-          {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
-
-          {% if single_archive_handle_clean == archived.system.handle %}
-            <div class="custom-archived__items">
-              <div class="custom-archived__items_wrapper">
-                {% if archived.thumbnail != blank %}
-                  <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-                {% endif %}
-                <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
-              </div>
-              <p>{{ archived.description }}</p>
-              {{ archived.system.handle }}
-              <br>
-              {{ single_archive_handle | remove: '/' }}
-              <br>
-              {{ page.handle }}
-              <a
-                href="{{ single_archive_handle  }}"
-                class="button button--primary"
-              >
-                Learn More
-              </a>
-            </div>
-            {% break %}
-          {% endif %}
-
-          {% if archived.system.handle != single_archive_handle_clean %}
-            <div class="custom-archived__items">
-              <div class="custom-archived__items_wrapper">
-                {% if archived.thumbnail != blank %}
-                  <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-                {% endif %}
-                <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
-              </div>
-              <p>{{ archived.description }}</p>
-              <a
-                href="{{ single_archive_handle  }}"
-                class="button button--primary"
-              >
-                Learn More
-              </a>
-            </div>
-          {% endif %}
         {% endfor %}
       </div>
     -->
+
+    <div class="custom-archived__body">
+      {% for archived in shop.metaobjects.product_guides.values %}
+        {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
+        {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
+
+        {% if single_archive_handle_clean == archived.system.handle %}
+          <div class="custom-archived__items">
+            <div class="custom-archived__items_wrapper">
+              {% if archived.thumbnail != blank %}
+                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+              {% endif %}
+              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
+            </div>
+            <p>{{ archived.description }}</p>
+            {{ archived.system.handle }}
+            <br>
+            {{ single_archive_handle | remove: '/' }}
+            <br>
+            {{ page.handle }}
+            <a
+              href="{{ single_archive_handle  }}"
+              class="button button--primary"
+            >
+              Learn More
+            </a>
+          </div>
+          {% break %}
+        {% endif %}
+
+        {% if archived.system.handle != single_archive_handle_clean %}
+          <div class="custom-archived__items">
+            <div class="custom-archived__items_wrapper">
+              {% if archived.thumbnail != blank %}
+                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+              {% endif %}
+              <h3 style="color: var(--zekoki-white);">{{ archived.title }}</h3>
+            </div>
+            <p>{{ archived.description }}</p>
+            <a
+              href="{{ single_archive_handle  }}"
+              class="button button--primary"
+            >
+              Learn More
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 
