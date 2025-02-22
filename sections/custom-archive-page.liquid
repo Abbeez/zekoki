@@ -74,8 +74,8 @@
     <div
       class="custom-archived__body"
       style="
-        padding-top: calc({{ section.settings.padding_top }}/2)px;
-        padding-bottom: calc({{ section.settings.padding_bottom }}/2)px;
+        padding-top: calc({{ section.settings.padding_top }}px - 50px);
+        padding-bottom: calc({{ section.settings.padding_bottom }}px - 50px);
       "
     >
       {% for archived in shop.metaobjects.product_guides.values %}
