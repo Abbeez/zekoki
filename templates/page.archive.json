@@ -16,13 +16,48 @@
         "padding_bottom": 28
       }
     },
-    "get_in_touch_WhJLQA": {
-      "type": "get-in-touch",
-      "settings": {}
+    "rich_text_jnF9Mn": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_ErqDED": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ page.title }}",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "heading_3Kc3UB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore Our Latest {{ page.title }}",
+            "heading_size": "h0"
+          }
+        },
+        "text_VMdj98": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stay updated with our expert tips and trends.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_ErqDED",
+        "heading_3Kc3UB",
+        "text_VMdj98"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "get_in_touch_WhJLQA"
+    "rich_text_jnF9Mn"
   ]
 }
