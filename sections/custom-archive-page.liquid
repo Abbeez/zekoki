@@ -73,7 +73,7 @@
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
 
-        {% if single_archive_handle == archived.system.handle %}
+        {% if single_archive_handle_clean == archived.system.handle %}
           yes equal
         {% endif %}
 
