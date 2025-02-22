@@ -71,6 +71,13 @@
     <div class="custom-archived__body">
       {% assign archive_handle = shop.metaobjects.product_guides.system.handle %}
 
+      {% if shop.metaobjects.product_guides.system.handle %}
+        {% assign archive_handle = shop.metaobjects.product_guides.system.handle %}
+        <p>Handle: {{ archive_handle }}</p>
+      {% else %}
+        <p>No handle found.</p>
+      {% endif %}
+
       {% for archived in shop.metaobjects.product_guides.values %}
         <div class="custom-archived__items">
           <div class="custom-archived__items_wrapper">
