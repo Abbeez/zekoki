@@ -1,10 +1,64 @@
-{% form 'customer' %}
+{% form 'customer', id: 'signup-form' %}
   <div class="email">
     <label for="email">Email</label>
-    <input type="email" name="contact[email]">
+    <input type="email" name="contact[email]" id="email" required>
+    <div class="error-message" id="email-error"></div>
+    <!-- Error message container -->
   </div>
 
   <div class="submit">
     <input type="submit" value="Sign up">
   </div>
+
+  <div id="success-message" class="success-message"></div>
+  <!-- Success message container -->
 {% endform %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("signup-form");
+    const emailInput = document.getElementById("email");
+    const emailError = document.getElementById("email-error");
+    const successMessage = document.getElementById("success-message");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default submission
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.json()) // Assuming Shopify returns JSON
+      .then(data => {
+        emailError.textContent = "";
+        successMessage.textContent = "";
+
+        if (data.errors) {
+          emailError.textContent = data.errors.email || "An error occurred.";
+        } else {
+          successMessage.textContent = "You have successfully signed up!";
+          form.reset(); // Reset form on success
+        }
+      })
+      .catch(error => {
+        emailError.textContent = "Something went wrong. Please try again.";
+      });
+    });
+  });
+</script>
+
+<style>
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+</style>
