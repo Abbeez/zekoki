@@ -56,6 +56,39 @@
        flex: 1 0 100%;
   }
 
+  .calltoaction-container form#contact_form {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       max-width:500px;
+  }
+   .calltoaction-container form#contact_form .email input {
+       width:100%;
+       background:transparent;
+       border:none;
+       border: 1px solid var(--zekoki-white);
+       padding:2rem;
+       outline:none;
+       color:var(--zekoki-white);
+  }
+   .calltoaction-container form#contact_form .submit input[type="submit"]{
+       background:var(--zekoki-white);
+       color:var(--zekoki-secondary);
+       border:none;
+       border: 1px solid var(--zekoki-white);
+       padding:2rem;
+       width:100%;
+  }
+   .calltoaction-container form#contact_form .email input::placeholder {
+       color:var(--zekoki-white);
+       opacity: 1;
+      /* Firefox */
+  }
+   .calltoaction-container form#contact_form .email {
+       flex:1 0 70%;
+  }
+
+
       /* Tablet and small desktop */
     @media screen and (min-width: 750px) {
     .calltoaction-container .calltoaction-columns {
