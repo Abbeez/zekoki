@@ -92,7 +92,9 @@
       <div class="calltoaction-columns">
         <h2 class="h1 title" style="color:var(--zekoki-white);">{{ section.settings['calltoaction-heading'] }}</h2>
         <div class="subtext">{{ section.settings['calltoaction-subtext'] }}</div>
-        {% render 'custom-newsletter' %}
+        {% if section.settings.show_newsletter %}
+          {% render 'custom-newsletter' %}
+        {% endif %}
       </div>
       <div class="calltoaction-columns">
         <img src="">
@@ -141,7 +143,19 @@
     },
     {
       "type": "header",
-      "content": "Section Spacing"
+      "content": "Section Settings",
+      "info": "Customized the section by tweaking these settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "Show Newsletter",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing",
+      "info": "Adjust the padding and spacing of this section"
     },
     {
       "type": "range",
