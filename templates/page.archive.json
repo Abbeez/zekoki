@@ -29,26 +29,20 @@
         "custom_archived_metaobject": []
       }
     },
-    "custom_footer_cta_prEQ6f": {
-      "type": "custom-footer-cta",
+    "custom_calltoaction_gBxcyV": {
+      "type": "custom-calltoaction",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "custom-cta_background": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
-        "custom-cta__title": "Quality Products",
-        "custom-cta__description": "Product that you will truly love",
-        "cta_button_text_primary": "Learn More",
-        "cta_button_url_primary": "",
-        "cta_button_text_secondary": "Shop Now",
-        "cta_button_url_secondary": ""
+        "background_image": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
+        "gradient_start": "#f50b0b",
+        "gradient_end": "#000000",
+        "heading": "Your Heading Here",
+        "subtext": "<p>Your subtext here.</p>"
       }
     }
   },
   "order": [
     "main",
     "custom_archive_page_Tetr4Y",
-    "custom_footer_cta_prEQ6f"
+    "custom_calltoaction_gBxcyV"
   ]
 }
