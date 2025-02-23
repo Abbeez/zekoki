@@ -41,14 +41,8 @@
 
 <div
   class="gradient-section"
+  style="background: url('{{ section.settings.gradient-background | image_url }}')"
 >
-  {% if section.settings.background_image != blank %}
-    <div
-      class="background-image"
-      style="background-image: url('{{ section.settings.gradient-background | image_url }}');"
-    ></div>
-  {% endif %}
-
   <div
     class="overlay"
     style="background: linear-gradient(180deg, {{ section.settings.gradient_start }} 0%, {{ section.settings.gradient_end }} 100%);"
