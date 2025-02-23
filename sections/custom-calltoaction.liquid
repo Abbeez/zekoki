@@ -7,6 +7,7 @@
        color: white;
        padding: 20px;
        overflow:hidden;
+
   }
    .calltoaction-img {
        position: absolute;
@@ -97,17 +98,22 @@
         {% endif %}
       </div>
       <div class="calltoaction-columns">
-        <div class="calltoaction__buttons calltoaction__buttons--multiple">
-          <a href="{{ section.settings.calltoaction_button_url_primary | strip_html }}" class="button button--primary">
-            {{- section.settings.calltoaction_button_text_primary | strip_html -}}
-          </a>
-          <a
-            href="{{ section.settings.calltoaction_button_url_secondary | strip_html }}"
-            class="button button--secondary"
-          >
-            {{- section.settings.calltoaction_button_text_secondary | strip_html -}}
-          </a>
-        </div>
+        {% if section.settings.show_newsletter != true %}
+          <div class="calltoaction__buttons calltoaction__buttons--multiple">
+            <a
+              href="{{ section.settings.calltoaction_button_url_primary | strip_html }}"
+              class="button button--primary"
+            >
+              {{- section.settings.calltoaction_button_text_primary | strip_html -}}
+            </a>
+            <a
+              href="{{ section.settings.calltoaction_button_url_secondary | strip_html }}"
+              class="button button--secondary"
+            >
+              {{- section.settings.calltoaction_button_text_secondary | strip_html -}}
+            </a>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
