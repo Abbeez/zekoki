@@ -29,72 +29,26 @@
         "custom_archived_metaobject": []
       }
     },
-    "newsletter_YX3XgA": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_dDxHKh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get The Latest {{ page.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_GHFmCL": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new {{ page.title }} and exclusive offers of Zekoki. </p>"
-          }
-        },
-        "email_form_N3ByYn": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_dDxHKh",
-        "paragraph_GHFmCL",
-        "email_form_N3ByYn"
-      ],
+    "custom_footer_cta_prEQ6f": {
+      "type": "custom-footer-cta",
       "settings": {
-        "color_scheme": "scheme-5",
-        "full_width": true,
-        "padding_top": 72,
-        "padding_bottom": 80
-      }
-    },
-    "featured_collection_JQ6CxM": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "power-tools",
-        "products_to_show": 10,
-        "title": "Explore Zekoki Power Tools",
-        "heading_size": "h1",
-        "description": "<p>Quality Industrial Grade Power Tools By Zekoki</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 5,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 20,
+        "margin_bottom": 0,
+        "custom-cta_background": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
+        "custom-cta__title": "Quality Products",
+        "custom-cta__description": "Product that you will truly love",
+        "cta_button_text_primary": "Learn More",
+        "cta_button_url_primary": "",
+        "cta_button_text_secondary": "Shop Now",
+        "cta_button_url_secondary": ""
       }
     }
   },
   "order": [
     "main",
     "custom_archive_page_Tetr4Y",
-    "newsletter_YX3XgA",
-    "featured_collection_JQ6CxM"
+    "custom_footer_cta_prEQ6f"
   ]
 }
