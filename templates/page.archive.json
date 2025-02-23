@@ -37,6 +37,7 @@
         "gradient_end": "#373737",
         "calltoaction-heading": "Call To Action Heading",
         "calltoaction-subtext": "<p>Your subtext here.</p>",
+        "show_newsletter": true,
         "padding_top": 70,
         "padding_bottom": 70
       }
