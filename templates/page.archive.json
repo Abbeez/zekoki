@@ -65,11 +65,74 @@
         "custom-archived__title": "Zekoki Powertools Academy",
         "custom-archived__description": "Learn more about the Zekoki Products"
       }
+    },
+    "newsletter_YX3XgA": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_dDxHKh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_GHFmCL": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_N3ByYn": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_dDxHKh",
+        "paragraph_GHFmCL",
+        "email_form_N3ByYn"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_JQ6CxM": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "power-tools",
+        "products_to_show": 10,
+        "title": "Explore Zekoki Power Tools",
+        "heading_size": "h1",
+        "description": "<p>Quality Industrial Grade Power Tools By Zekoki</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
     "main",
     "rich_text_jnF9Mn",
-    "custom_archive_page_Tetr4Y"
+    "custom_archive_page_Tetr4Y",
+    "newsletter_YX3XgA",
+    "featured_collection_JQ6CxM"
   ]
 }
