@@ -41,7 +41,7 @@
         "calltoaction_button_url_primary": "",
         "calltoaction_button_text_secondary": "Shop Now",
         "calltoaction_button_url_secondary": "",
-        "show_newsletter": false,
+        "show_newsletter": true,
         "padding_top": 70,
         "padding_bottom": 70
       }
