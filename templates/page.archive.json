@@ -34,7 +34,7 @@
       "settings": {
         "background_image": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
         "gradient_start": "#f50b0b",
-        "gradient_end": "#000000",
+        "gradient_end": "#373737",
         "heading": "Your Heading Here",
         "subtext": "<p>Your subtext here.</p>"
       }
