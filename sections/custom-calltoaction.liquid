@@ -44,7 +44,7 @@
   {% if section.settings.background_image != blank %}
     <div
       class="background-image"
-      style="background-image: url('{{ section.settings.background_image | img_url: '1920x1080' }}');"
+      style="background-image: url('{{ section.settings.background_image | img_url }}');"
     ></div>
   {% endif %}
 
