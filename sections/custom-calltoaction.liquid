@@ -7,87 +7,9 @@
        color: white;
        padding: 20px;
        overflow:hidden;
-         display: flex;
-        flex-direction: column;
-    justify-content: center;
-
-
-  }
-   .calltoaction-img {
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: var(--sectionheight);
-  }
-   .calltoaction-img:after{
-       content: '';
-       position: absolute;
-       width: 100%;
-       height: 100%;
-       top: 0;
-       left: 0;
-       mix-blend-mode: multiply;
-       background: rgb(218,41,28);
-       background: linear-gradient(141deg, rgba(218,41,28,1) 0%, rgba(14,14,14,1) 67%);
-       opacity: 1;
-  }
-   .calltoaction-img > img {
-       width: 100%;
-       height: var(--sectionheight);
-       object-fit:cover;
-       -webkit-filter: brightness(133%) contrast(95%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(300%) sepia(14%);
-       filter: brightness(133%) contrast(95%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(300%) sepia(14%);
-       mix-blend-mode: none;
-  }
-   .calltoaction .calltoaction-content {
-       position: relative;
-       z-index: 3;
-       width:100%;
-  }
-   .calltoaction-container {
-       display:flex;
-     align-items: center;
-       gap:30px;
-  }
-
-
-   .calltoaction-container form#contact_form {
        display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       max-width:500px;
-  }
-   .calltoaction-container form#contact_form .email input {
-       width:100%;
-       background:transparent;
-       border:none;
-       border: 1px solid var(--zekoki-white);
-       padding:2rem;
-       outline:none;
-       color:var(--zekoki-white);
-  }
-   .calltoaction-container form#contact_form .submit input[type="submit"]{
-       background:var(--zekoki-white);
-       color:var(--zekoki-secondary);
-       border:none;
-       border: 1px solid var(--zekoki-white);
-       padding:2rem;
-       width:100%;
-  }
-   .calltoaction-container form#contact_form .email input::placeholder {
-       color:var(--zekoki-white);
-       opacity: 1;
-      /* Firefox */
-  }
-   .calltoaction-container form#contact_form .email {
-       flex:1 0 70%;
-  }
-   .calltoaction-columns {
-       flex: 1 0 45%;
-  }
-       .calltoaction-container .calltoaction-columns:last-child {
-      text-align:right;
+      flex-direction: column;
+      justify-content: center;
   }
 </style>
 
