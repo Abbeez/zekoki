@@ -40,7 +40,10 @@
 }
 {% endschema %}
 
-<div class="gradient-section">
+<div
+  class="gradient-section"
+  style="background-image: url('{{ section.settings.gradient_background_image | image_url }}') !important;"
+>
   {% if section.settings.background_image != blank %}
     <div
       class="background-image"
