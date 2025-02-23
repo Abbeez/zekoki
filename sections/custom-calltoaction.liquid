@@ -4,7 +4,7 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "background_image",
+      "id": "gradient_background_image",
       "label": "Background Image"
     },
     {
@@ -44,7 +44,7 @@
   {% if section.settings.background_image != blank %}
     <div
       class="background-image"
-      style="background-image: url('{{ section.settings.background_image | image_url }}') !important;"
+      style="background-image: url('{{ section.settings.gradient_background_image | image_url }}') !important;"
     ></div>
   {% endif %}
 
