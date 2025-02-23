@@ -41,7 +41,7 @@
 
 <div
   class="gradient-section"
-  style="background: url('{{ section.settings.gradient_background_image | image_url }}')"
+  style="background: url('{{ section.settings.gradient-background | image_url }}')"
 >
   <!--
     {% if section.settings.background_image != blank %}
@@ -69,7 +69,7 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "gradient_background_image",
+      "id": "gradient-background",
       "label": "Background Image"
     },
     {
