@@ -18,52 +18,15 @@
         "padding_bottom": 68
       }
     },
-    "rich_text_jnF9Mn": {
-      "type": "rich-text",
-      "blocks": {
-        "caption_ErqDED": {
-          "type": "caption",
-          "settings": {
-            "caption": "{{ page.title }}",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        },
-        "heading_3Kc3UB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Explore Our Latest {{ page.title }}",
-            "heading_size": "h0"
-          }
-        },
-        "text_VMdj98": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Stay updated with our expert tips and trends.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "caption_ErqDED",
-        "heading_3Kc3UB",
-        "text_VMdj98"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "custom_archive_page_Tetr4Y": {
       "type": "custom-archive-page",
       "settings": {
         "padding_top": 100,
         "padding_bottom": 100,
-        "custom-archived__title": "Zekoki Powertools Academy",
-        "custom-archived__description": "Learn more about the Zekoki Products"
+        "custom-archived__subtitle": "{{ page.title }}",
+        "custom-archived__title": "Explore Our Latest {{ page.title }} Product Guides",
+        "custom-archived__description": "Learn more about the Zekoki Products",
+        "custom_archived_metaobject": []
       }
     },
     "newsletter_YX3XgA": {
@@ -130,7 +93,6 @@
   },
   "order": [
     "main",
-    "rich_text_jnF9Mn",
     "custom_archive_page_Tetr4Y",
     "newsletter_YX3XgA",
     "featured_collection_JQ6CxM"
