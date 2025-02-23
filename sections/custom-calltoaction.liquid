@@ -43,12 +43,14 @@
   class="gradient-section"
   style="background-image: url('{{ section.settings.gradient_background_image | image_url }}');"
 >
-  {% if section.settings.background_image != blank %}
-    <div
-      class="background-image"
-      style="background-image: url('{{ section.settings.gradient_background_image | image_url }}') !important;"
-    ></div>
-  {% endif %}
+  <!--
+    {% if section.settings.background_image != blank %}
+      <div
+        class="background-image"
+        style="background-image: url('{{ section.settings.gradient_background_image | image_url }}') !important;"
+      ></div>
+    {% endif %}
+  -->
 
   <div
     class="overlay"
