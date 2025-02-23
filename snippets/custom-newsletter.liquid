@@ -1,72 +1,36 @@
-{% form 'customer', id: 'signup-form' %}
+{% form 'customer', class: 'customer-form' %}
   <div class="email">
     <label for="email">Email</label>
-    <input type="email" name="contact[email]" id="email" required>
-    <div class="error-message" id="email-error"></div>
-    <!-- Error message container -->
+    <input
+      type="email"
+      id="email"
+      name="contact[email]"
+      placeholder="Enter your email"
+      required
+      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    >
+    <span class="error-message" id="email-error"></span>
   </div>
 
   <div class="submit">
     <input type="submit" value="Sign up">
   </div>
-
-  <div id="success-message" class="success-message"></div>
-  <!-- Success message container -->
 {% endform %}
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("signup-form");
+    const form = document.querySelector(".customer-form");
     const emailInput = document.getElementById("email");
     const emailError = document.getElementById("email-error");
-    const successMessage = document.getElementById("success-message");
 
     form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Stop default form submission
-
-      emailError.textContent = "";
-      successMessage.textContent = "";
-
-      const formData = new FormData(form);
-
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-      })
-      .then(response => response.text()) // Shopify returns HTML, not JSON
-      .then(responseText => {
-        // Create a temporary DOM element to parse the response
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(responseText, "text/html");
-
-        // Check for errors inside the returned form
-        const errorElement = doc.querySelector(".form__message--error");
-        const successElement = doc.querySelector(".form__message--success");
-
-        if (errorElement) {
-          emailError.textContent = errorElement.textContent.trim();
-        } else if (successElement) {
-          successMessage.textContent = successElement.textContent.trim();
-          form.reset(); // Reset form on success
-        }
-      })
-      .catch(() => {
-        emailError.textContent = "Something went wrong. Please try again.";
-      });
+      if (!emailInput.checkValidity()) {
+        event.preventDefault();
+        emailError.textContent = "Please enter a valid email address.";
+        emailError.style.color = "red";
+      } else {
+        emailError.textContent = "";
+      }
     });
   });
 </script>
-
-<style>
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-
-  .success-message {
-    color: green;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-</style>
