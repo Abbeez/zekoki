@@ -32,6 +32,7 @@
     "custom_calltoaction_gBxcyV": {
       "type": "custom-calltoaction",
       "settings": {
+        "gradient-background": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
         "gradient_start": "#f50b0b",
         "gradient_end": "#373737",
         "heading": "Your Heading Here",
