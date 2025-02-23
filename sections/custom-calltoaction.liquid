@@ -97,7 +97,14 @@
         {% endif %}
       </div>
       <div class="calltoaction-columns">
-        <img src="">
+        <div class="cta__buttons cta__buttons--multiple">
+          <a href="{{ section.settings.cta_button_url_primary | strip_html }}" class="button button--primary">
+            {{- section.settings.cta_button_text_primary | strip_html -}}
+          </a>
+          <a href="{{ section.settings.cta_button_url_secondary | strip_html }}" class="button button--secondary">
+            {{- section.settings.cta_button_text_secondary | strip_html -}}
+          </a>
+        </div>
       </div>
     </div>
   </div>
