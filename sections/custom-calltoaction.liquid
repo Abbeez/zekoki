@@ -11,7 +11,7 @@
     padding: 50px;
   }
 
-  .overlay {
+  .gradient-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
   style="background: url('{{ section.settings.gradient-background | image_url }}')"
 >
   <div
-    class="overlay"
+    class="gradient-overlay"
     style="background: linear-gradient(180deg, {{ section.settings.gradient_start }} 0%, {{ section.settings.gradient_end }} 100%);"
   ></div>
 
