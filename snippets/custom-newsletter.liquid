@@ -22,19 +22,27 @@
     const successMessage = document.getElementById("success-message");
 
     form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent default submission
+      event.preventDefault(); // STOP normal form submission
+
+      emailError.textContent = "";
+      successMessage.textContent = "";
 
       const formData = new FormData(form);
 
       fetch(form.action, {
         method: "POST",
-        body: formData
+        body: formData,
+        headers: { "X-Requested-With": "XMLHttpRequest" } // Ensures AJAX handling
       })
-      .then(response => response.json()) // Assuming Shopify returns JSON
+      .then(response => {
+        // Check if the response is JSON
+        const contentType = response.headers.get("content-type");
+        if (contentType && contentType.includes("application/json")) {
+          return response.json();
+        }
+        throw new Error("Invalid response format");
+      })
       .then(data => {
-        emailError.textContent = "";
-        successMessage.textContent = "";
-
         if (data.errors) {
           emailError.textContent = data.errors.email || "An error occurred.";
         } else {
