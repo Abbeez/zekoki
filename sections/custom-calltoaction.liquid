@@ -1,5 +1,5 @@
 <style>
-       .gradient-section {
+       .calltoaction {
          position:relative;
          width: 100%;
          height: 400px;
@@ -9,14 +9,14 @@
          overflow:hidden;
        }
 
-  .gradient-section-img {
+  .calltoaction-img {
             position: absolute;
          top: 0;
          left: 0;
          width: 100%;
   }
 
-  .gradient-section-img:after{
+  .calltoaction-img:after{
       content: '';
     position: absolute;
     width: 100%;
@@ -29,13 +29,13 @@
     opacity: 1;
   }
 
-    .gradient-section-img > img {
+    .calltoaction-img > img {
         width: 100%;
       -webkit-filter:  brightness(133%) contrast(95%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(300%) sepia(14%);
               filter:  brightness(133%) contrast(95%) grayscale(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(300%) sepia(14%);
       mix-blend-mode: none;
   }
-        .gradient-section .content {
+        .calltoaction .content {
          position: relative;
          z-index: 3;
          /* max-width: 800px; */
@@ -43,13 +43,13 @@
 </style>
 
 <div
-  class="gradient-section"
+  class="calltoaction"
 >
-  <div class="gradient-section-img">
+  <div class="calltoaction-img">
     <img src="{{ section.settings.gradient-background | image_url }}');" height="" width="">
   </div>
 
-  <div class="content page-width">
+  <div class="calltoaction-content page-width">
     <h2>{{ section.settings.heading }}</h2>
     <div class="subtext">{{ section.settings.subtext }}</div>
   </div>
@@ -57,7 +57,7 @@
 
 {% schema %}
 {
-  "name": "Gradient Section",
+  "name": "Call To Action Section",
   "settings": [
     {
       "type": "image_picker",
@@ -91,7 +91,7 @@
   ],
   "presets": [
     {
-      "name": "Gradient Background"
+      "name": "Call To Action Section"
     }
   ]
 }
