@@ -61,13 +61,11 @@
   <div class="custom-archived__container">
     <div class="custom-archived__header">
       <div class="custom_archived__header--container">
+        <span class="custom_archived_subtitle">{{ section.settings['custom-archived__subtitle'] }}</span>
         <h1 class="h0 title">{{ section.settings['custom-archived__title'] }}</h1>
-      </div>
-      <div class="custom_archived__header--container">
         <p>{{ section.settings['custom-archived__description'] }}</p>
       </div>
     </div>
-    {{ shop.metaobjects.product_guides.system.handle }}
 
     <div
       class="custom-archived__body"
