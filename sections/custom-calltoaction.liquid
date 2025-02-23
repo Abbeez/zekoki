@@ -97,12 +97,15 @@
         {% endif %}
       </div>
       <div class="calltoaction-columns">
-        <div class="cta__buttons cta__buttons--multiple">
-          <a href="{{ section.settings.cta_button_url_primary | strip_html }}" class="button button--primary">
-            {{- section.settings.cta_button_text_primary | strip_html -}}
+        <div class="calltoaction__buttons calltoaction__buttons--multiple">
+          <a href="{{ section.settings.calltoaction_button_url_primary | strip_html }}" class="button button--primary">
+            {{- section.settings.calltoaction_button_text_primary | strip_html -}}
           </a>
-          <a href="{{ section.settings.cta_button_url_secondary | strip_html }}" class="button button--secondary">
-            {{- section.settings.cta_button_text_secondary | strip_html -}}
+          <a
+            href="{{ section.settings.calltoaction_button_url_secondary | strip_html }}"
+            class="button button--secondary"
+          >
+            {{- section.settings.calltoaction_button_text_secondary | strip_html -}}
           </a>
         </div>
       </div>
@@ -142,6 +145,28 @@
       "id": "calltoaction-subtext",
       "label": "Call To Subtext",
       "default": "<p>Call to action subtext here.</p>"
+    },
+    {
+      "type": "text",
+      "id": "calltoaction_button_text_primary",
+      "label": "Button 1 Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "calltoaction_button_url_primary",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "calltoaction_button_text_secondary",
+      "label": "Button 2 Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "calltoaction_button_url_secondary",
+      "label": "Button 2 Link"
     },
     {
       "type": "image_picker",
