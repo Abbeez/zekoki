@@ -49,8 +49,15 @@
   </div>
 
   <div class="calltoaction-content page-width">
-    <h2>{{ section.settings.heading }}</h2>
-    <div class="subtext">{{ section.settings.subtext }}</div>
+    <div class="calltoaction-container">
+      <div class="calltoaction-columns">
+        <h2 class="h1 title">{{ section.settings.heading }}</h2>
+        <div class="subtext">{{ section.settings.subtext }}</div>
+      </div>
+      <div class="calltoaction-columns">
+        <img src="">
+      </div>
+    </div>
   </div>
 </div>
 
@@ -86,7 +93,12 @@
       "id": "subtext",
       "label": "Subtext",
       "default": "<p>Your subtext here.</p>"
-    }
+    },
+    {
+      "type": "image_picker",
+      "id": "calltoaction-side",
+      "label": "Call To Action Image"
+    },
   ],
   "presets": [
     {
