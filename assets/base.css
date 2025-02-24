@@ -29,7 +29,7 @@ h1:not(.header__heading), h2, h3, h4, h5, h6, .button {
 }
 
 main#MainContent {
-    background: url(https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoki_Archive_Background.png?v=1740373683);
+    background: url('https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoki_Archive_Background.png?v=1740374128');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
