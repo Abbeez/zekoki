@@ -1,35 +1,36 @@
 {%- style -%}
-  .custom-contact__container {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap:20px;
-  }
+    .custom-contact__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:20px;
+    }
 
-    .custom-contact_container.custom-form_main {flex:1 0 65%;}
-    .custom-contact_container.custom-form_side {flex:1 0 25%;}
+      .custom-contact_container.custom-form_main {flex:1 0 65%;}
+      .custom-contact_container.custom-form_side {flex:1 0 25%;}
 
-    .custom_form_class {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap:20px;
-  }
+      .custom_form_class {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:20px;
+    }
 
-  .custom_form_class .custom_field {flex: 1 0 33%;}
-  .custom_form_class .custom_field.custom_field_full {flex: 1 0 100%;}
+    .custom_form_class .custom_field {flex: 1 0 33%;}
+    .custom_form_class .custom_field.custom_field_full {flex: 1 0 100%;}
 
-    .custom_form_class .custom_field .custom_input_field {
-      border: 1px solid var(--zekoki-secondary);
-      border-radius: 2px;
-      padding: 1.5rem;
-      width: 100%;
-  }
+      .custom_form_class .custom_field .custom_input_field {
+        border: 1px solid var(--zekoki-secondary);
+        border-radius: 2px;
+        padding: 1.5rem;
+        width: 100%;
+    }
 
-  /* Validation Styles */
+    /* Validation Styles */
   div#successModal {
       background: var(--zekoki-gold);
-      padding:1px;
+      padding: 1rem;
+      margin-top: 10px;
   }
 {%- endstyle -%}
 <section
@@ -43,6 +44,7 @@
     <div class="custom-contact_container custom-form_main">
       <h1 class="h3 title">{{ section.settings.custom_form__heading | strip_html }}</h1>
       {{ section.settings.custom_form__description | strip }}
+      <div id="successModal" class="successValidation">Thank you! Your message has been sent successfully.</div>
 
       {% form 'contact', id: 'contact_form', class: 'custom_form_class' %}
         <div class="custom_field">
@@ -93,10 +95,6 @@
           <button type="submit" class="button button--primary">Submit</button>
         </div>
       {% endform %}
-
-      <!-- Success Popup Modal -->
-
-      <div id="successModal" class="successValidation">Thank you! Your message has been sent successfully.</div>
     </div>
     <div class="custom-contact_container custom-form_side">
       {{ section.settings.custom_form_side | strip }}
