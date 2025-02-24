@@ -60,7 +60,7 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "custom_form__heading": "Contact Us",
-        "custom_form_side": "<h1><strong>Get in Touch with Zekoki</strong></h1><p>Have questions about our products? Need assistance with your <strong>Zekoki power tools</strong>? We’re here to help!</p><h2><strong>📞 Contact Our Team</strong></h2><p>For inquiries, product support, or warranty concerns, reach out to us through the following channels:</p><p>📌 <strong>Customer Support Hotline:</strong> [Insert Phone Number]<br/>📌 <strong>Email:</strong> [Insert Email Address]<br/>📌 <strong>Business Hours:</strong> [Insert Operating Hours]</p>"
+        "custom_form_side": "<p>Have questions about our products? Need assistance with your <strong>Zekoki power tools</strong>? We’re here to help!</p><h3><strong>Contact Our Team</strong></h3><p>For inquiries, product support, or warranty concerns, reach out to us through the following channels:</p><p>📌 <strong>Customer Support Hotline:</strong> [Insert Phone Number]<br/>📌 <strong>Email:</strong> [Insert Email Address]<br/>📌 <strong>Business Hours:</strong> [Insert Operating Hours]</p>"
       }
     }
   },
