@@ -3669,10 +3669,11 @@ h2.title.h1 {
 }
 
 .shopify-payment-button__button:hover {
-  background: var(--zekoki-secondary) !important;
+  background: var(--zekoki-gold) !important;
 }
 
 .quick-add__submit, .product-form__submit {
+  background: transparent;
   border: 1px solid var(--zekoki-secondary) !important;
 }
 
