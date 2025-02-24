@@ -44,7 +44,7 @@
         "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
         "full_width": true,
         "padding_top": 60,
-        "padding_bottom": 52
+        "padding_bottom": 60
       }
     },
     "multicolumn_Di3jbM": {
@@ -92,24 +92,12 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
-    },
-    "custom_archive_page_k4deAb": {
-      "type": "custom-archive-page",
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "custom-archived__subtitle": "Enter Archived Sub Title",
-        "custom-archived__title": "Enter Archived Title",
-        "custom-archived__description": "Enter some details regarding your archived description",
-        "custom_archived_metaobject": []
-      }
     }
   },
   "order": [
     "main",
     "rich_text_rTF8VN",
     "multicolumn_Di3jbM",
-    "custom_store_branches_Wndjyd",
-    "custom_archive_page_k4deAb"
+    "custom_store_branches_Wndjyd"
   ]
 }
