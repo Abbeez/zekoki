@@ -43,10 +43,14 @@
           margin: 0 !important;
       }
 
+  .archived-items__cta{
+    flex:1 0 100%;
+  }
+
       /* Tablet and small desktop */
     @media screen and (min-width: 750px) {
 
-        .custom-archived__items {
+        .custom-archived__items:not(.archived-items__cta) {
           flex: 1;
           min-width:425px;
           max-width:33%;
