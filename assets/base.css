@@ -13,10 +13,10 @@
   --sectionheight:530px;
 }
 
-/* html {
+main {
   overflow-x:hidden !important;
 }
- */
+
 img {
   min-height:auto;
   width:100%;
