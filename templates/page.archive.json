@@ -29,21 +29,6 @@
         "custom_archived_metaobject": []
       }
     },
-    "video_AjQ7U9": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=A0GmCQcd1ZY",
-        "cover_image": "shopify://shop_images/Know_more_about_Zekoki_Tools.jpg",
-        "description": "Zekoki Power Tools",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_calltoaction_gBxcyV": {
       "type": "custom-calltoaction",
       "settings": {
@@ -65,7 +50,6 @@
   "order": [
     "main",
     "custom_archive_page_Tetr4Y",
-    "video_AjQ7U9",
     "custom_calltoaction_gBxcyV"
   ]
 }
