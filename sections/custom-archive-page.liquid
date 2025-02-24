@@ -15,6 +15,13 @@
         .custom-archived__items {
           flex: 1 0 100%;
           text-align:center;
+          transition: translateY 500ms;
+        }
+
+          .custom-archived__items:hover {
+          flex: 1 0 100%;
+          text-align:center;
+         transform:translateY(-3px);
         }
 
         .custom-archived__items_wrapper{
@@ -73,20 +80,21 @@
       {% for archived in shop.metaobjects.product_guides.values %}
         {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
-        <a
-          href="{{ page.handle }}/{{ archived.system.handle }}"
-          class="button button--primary"
-        >
-          <div class="custom-archived__items">
-            <div class="custom-archived__items_wrapper">
-              {% if archived.thumbnail != blank %}
-                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-              {% endif %}
-              <h3 style="">{{ archived.title }}</h3>
-            </div>
-            <p>{{ archived.description }}</p>
+        <div class="custom-archived__items">
+          <div class="custom-archived__items_wrapper">
+            {% if archived.thumbnail != blank %}
+              <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+            {% endif %}
+            <h3 style="">{{ archived.title }}</h3>
           </div>
-        </a>
+          <p>{{ archived.description }}</p>
+          <a
+            href="{{ page.handle }}/{{ archived.system.handle }}"
+            class="button button--primary"
+          >
+            Learn More
+          </a>
+        </div>
       {% endfor %}
     </div>
   </div>
