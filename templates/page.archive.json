@@ -29,61 +29,19 @@
         "custom_archived_metaobject": []
       }
     },
-    "rich_text_xYxaWa": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_EhzWxF": {
-          "type": "heading",
-          "settings": {
-            "heading": "Follow Zekoki Youtube Channel @zekokipowertools",
-            "heading_size": "h1"
-          }
-        },
-        "text_TkDqQR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Get a real-time notification about Zekoki {{ page.title }} by following us on our Youtube Channel</p>"
-          }
-        },
-        "button_wDNMeQ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Follow Zekoki",
-            "button_link": "https://www.youtube.com/@zekokipowertools",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_EhzWxF",
-        "text_TkDqQR",
-        "button_wDNMeQ"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "custom_calltoaction_gBxcyV": {
       "type": "custom-calltoaction",
       "settings": {
         "gradient-background": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
         "gradient_start": "#f50b0b",
         "gradient_end": "#373737",
-        "calltoaction-heading": "Subscribe to our newsletter",
+        "calltoaction-heading": "Follow Zekoki Youtube Channel @zekokipowertools",
         "calltoaction-subtext": "<p>Be the first to know about<em> </em><em>{{ page.title }}</em> and exclusive <strong>Zekoki </strong>offers.</p>",
-        "calltoaction_button_text_primary": "Learn More",
-        "calltoaction_button_url_primary": "",
+        "calltoaction_button_text_primary": "Follow Zekoki",
+        "calltoaction_button_url_primary": "https://www.youtube.com/@zekokipowertools",
         "calltoaction_button_text_secondary": "Shop Now",
         "calltoaction_button_url_secondary": "",
-        "show_newsletter": true,
+        "show_newsletter": false,
         "padding_top": 70,
         "padding_bottom": 70
       }
@@ -92,7 +50,6 @@
   "order": [
     "main",
     "custom_archive_page_Tetr4Y",
-    "rich_text_xYxaWa",
     "custom_calltoaction_gBxcyV"
   ]
 }
