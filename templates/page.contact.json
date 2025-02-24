@@ -60,7 +60,8 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "custom_form__heading": "Contact Us",
-        "custom_form_side": "<p>Have questions about our products? Need assistance with your <strong>Zekoki power tools</strong>? We’re here to help!</p><h3><strong>Contact Our Team</strong></h3><p>For inquiries, product support, or warranty concerns, reach out to us through the following channels:</p><p>📌 <strong>Customer Support Hotline:</strong> [Insert Phone Number]<br/>📌 <strong>Email:</strong> [Insert Email Address]<br/>📌 <strong>Business Hours:</strong> [Insert Operating Hours]</p>"
+        "custom_form__description": "<p>Have questions about our products? Need assistance with your Zekoki power tools? We’re here to help!</p>",
+        "custom_form_side": "<h3><strong>Contact Our Team</strong></h3><p>For inquiries, product support, or warranty concerns, reach out to us through the following channels:</p><p>📌 <strong>Customer Support Hotline:</strong> [Insert Phone Number]<br/>📌 <strong>Email:</strong> [Insert Email Address]<br/>📌 <strong>Business Hours:</strong> [Insert Operating Hours]</p><h3><strong>💬 Connect with Us Online</strong></h3><p>Follow us on social media for updates, product demos, and exclusive deals:</p><p>🔗 <strong>Facebook:</strong> <a href=\"#\">@zekokiofficial</a><br/>🔗 <strong>Instagram:</strong> <a href=\"#\">@zekoki</a><br/>🔗 <strong>TikTok:</strong> <a href=\"#\">@zekoki</a></p>"
       }
     }
   },
