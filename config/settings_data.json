@@ -123,10 +123,10 @@
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": true,
     "show_cart_note": true,
-    "cart_drawer_collection": "power-tools",
+    "cart_drawer_collection": "garden-tools-1",
     "cart_color_scheme": "scheme-1",
     "sections": {
       "main-password-header": {
