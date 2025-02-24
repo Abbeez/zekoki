@@ -101,6 +101,23 @@
           </a>
         </div>
       {% endfor %}
+
+      <div class="custom-archived__items">
+        <a
+          href="{{ page.handle }}/{{ archived.system.handle }}"
+          class=""
+        >
+          <div class="archive-link__container">
+            <div class="custom-archived__items_wrapper">
+              {% if archived.thumbnail != blank %}
+                <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
+              {% endif %}
+              <h3 style="">{{ archived.title }}</h3>
+            </div>
+            <p>{{ archived.description }}</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
