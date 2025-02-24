@@ -26,7 +26,6 @@
       width: 100%;
   }
 
-   */
   /* Modal Styles */
   #successModal {
     display: none !important;
@@ -114,8 +113,6 @@
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("contact_posted")) {
       modal.style.display = "block";
-    }else{
-      modal.style.display = "none";
     }
     });
   });
