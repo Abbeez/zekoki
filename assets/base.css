@@ -3677,7 +3677,7 @@ h2.title.h1 {
   border: 1px solid var(--zekoki-secondary) !important;
 }
 
-.quick-add__submit, .product-form__submit:hover {
+.quick-add__submit:hover, .product-form__submit:hover {
   background: var(--zekoki-gold) !important;
 }
 
