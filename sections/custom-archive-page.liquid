@@ -22,6 +22,10 @@
           transform:translateY(-5px);
         }
 
+      .archived-items__cta{
+        background:var(--zekoki-gold);
+      }
+
   .custom-archived__items a {
     text-decoration: none;
     color:rgba(var(--color-foreground), 0.75);
@@ -91,9 +95,6 @@
           >
             <div class="archive-link__container">
               <div class="custom-archived__items_wrapper">
-                {% if archived.thumbnail != blank %}
-                  <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
-                {% endif %}
                 <h3 style="">{{ archived.title }}</h3>
               </div>
               <p>{{ archived.description }}</p>
@@ -102,7 +103,7 @@
         </div>
       {% endfor %}
 
-      <div class="custom-archived__items">
+      <div class="custom-archived__items archived-items__cta">
         <a
           href="{{ page.handle }}/{{ archived.system.handle }}"
           class=""
@@ -176,7 +177,12 @@
   "id": "custom_archived_metaobject",
   "label": "Select Featured Archived / Metaobject",
   "metaobject_type": "product_guides"
-}
+},
+  {
+    "type": "header",
+    "content": "Archived Details",
+    "info": "Please put all the details related to your archive. make sure to fill the necessary fields"
+  }
   ],
   "presets": [
     {
