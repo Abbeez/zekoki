@@ -28,8 +28,12 @@ h1:not(.header__heading), h2, h3, h4, h5, h6, .button {
   letter-spacing: -1px !important;
 }
 
-
-
+main#MainContent {
+    background: url(https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoki_Archive_Background.png?v=1740373683);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 
 .product-card-wrapper .card,
