@@ -17,6 +17,36 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_rTF8VN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p4tTpk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_9AVHPL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_p4tTpk",
+        "text_9AVHPL"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn_Di3jbM": {
       "type": "multicolumn",
       "blocks": {
@@ -62,11 +92,24 @@
         "custom-branch__title": "Quality Products",
         "custom-branch__description": "Product that you will truly love"
       }
+    },
+    "custom_archive_page_k4deAb": {
+      "type": "custom-archive-page",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-archived__subtitle": "Enter Archived Sub Title",
+        "custom-archived__title": "Enter Archived Title",
+        "custom-archived__description": "Enter some details regarding your archived description",
+        "custom_archived_metaobject": []
+      }
     }
   },
   "order": [
     "main",
+    "rich_text_rTF8VN",
     "multicolumn_Di3jbM",
-    "custom_store_branches_Wndjyd"
+    "custom_store_branches_Wndjyd",
+    "custom_archive_page_k4deAb"
   ]
 }
