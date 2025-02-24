@@ -39,7 +39,7 @@
         "calltoaction-subtext": "<p>Be the first to know about<em> </em><em>{{ page.title }}</em> and exclusive <strong>Zekoki </strong>offers.</p>",
         "calltoaction_button_text_primary": "Follow Zekoki",
         "calltoaction_button_url_primary": "https://www.youtube.com/@zekokipowertools",
-        "calltoaction_button_text_secondary": "Watch More {{ page.title }}",
+        "calltoaction_button_text_secondary": "Watch More",
         "calltoaction_button_url_secondary": "https://www.youtube.com/@zekokipowertools/videos",
         "show_newsletter": false,
         "padding_top": 70,
