@@ -38,7 +38,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "header {z-index:999;}"
+        "header {z-index: 999 !important;}"
       ],
       "settings": {
         "logo_position": "middle-left",
