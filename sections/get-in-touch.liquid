@@ -27,9 +27,9 @@
   }
 
   /* Modal Styles */
-  #successModal {
+  /* #successModal {
     display: none;
-  }
+  } */
 {%- endstyle -%}
 <section
   class="custom-contact__form scroll-trigger animate--slide-in page-width"
@@ -112,7 +112,7 @@
     // Check if form was submitted successfully
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("contact_posted")) {
-      modal.style.display = "block !important";
+      modal.style.display = "block";
       console.log("yes");
     }else{
             modal.style.display = "none";
