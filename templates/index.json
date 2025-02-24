@@ -15,24 +15,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Quality Tools That EmpowerYour Projects",
+            "heading": "Zenith Power. Built for the Driven.",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "At Zekoki, we believe in delivering exceptional power tools and machinery that combine quality with affordability. Explore our extensive range designed to elevate your craftsmanship and meet all your project needs.",
+            "text": "Zekoki puts professional-grade power tools and accessories in your zone. Forged for maximum efficiency and uncompromising safety, our tools let you dominate every project with confidence.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Explore Our Products",
+            "button_label_1": "Shop Zekoki Tools",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Deals",
+            "button_label_2": "Find Your Zone",
             "button_link_2": "shopify://collections",
             "button_style_secondary_2": false
           }
@@ -161,32 +161,32 @@
           "type": "blurps",
           "settings": {
             "sub_category_subheading": "Power Tools",
-            "sub_category_title": "Power Tools for Every Project",
-            "sub_category_description": "Discover our high-performance tools tailored for professionals and DIY enthusiasts alike."
+            "sub_category_title": "Tough Tools Forged for the Grind",
+            "sub_category_description": "Cut, drill, and build with tools that keep up with every task."
           }
         },
         "blurps_mgzpgX": {
           "type": "blurps",
           "settings": {
             "sub_category_subheading": "Machinery",
-            "sub_category_title": "Reliable Machinery for Your Needs",
-            "sub_category_description": "Our machinery is built to enhance productivity and efficiency."
+            "sub_category_title": "The Force Behind Your Projects",
+            "sub_category_description": "The industrial strength you need to keep your operations running smoothly."
           }
         },
         "blurps_3XeV8W": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Quality Lorem Ipsum",
-            "sub_category_title": "Essential Accessories to Complete Your Toolkit",
-            "sub_category_description": "Find the perfect accessories to elevate your projects."
+            "sub_category_subheading": "Accessories",
+            "sub_category_title": "Adapt Your Tools to Any Job",
+            "sub_category_description": "Blades, wheels, and attachments to push your tools further."
           }
         },
         "blurps_itkDtG": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Community",
-            "sub_category_title": "Join Our Community of Tool Enthusiasts",
-            "sub_category_description": "Connect with us for tips, updates, and exclusive offers."
+            "sub_category_subheading": "Pumps ",
+            "sub_category_title": "Powering the Flow",
+            "sub_category_description": "Get the right equipment to maintain a smooth water system for your home, farm, and business."
           }
         }
       },
@@ -199,13 +199,13 @@
       "settings": {
         "padding_top": 90,
         "padding_bottom": 60,
-        "category_subtitle": "Accessories",
-        "category_heading": "Explore Our Diverse Product Categories",
-        "category_description": "At Zekoki, we provide an extensive range of power tools, machinery, and accessories designed to meet your needs. Our commitment to quality and affordability ensures you get the best value for your investment.",
+        "category_subtitle": "Z Factor",
+        "category_heading": "The Mark of Japan-Grade Quality",
+        "category_description": "Built to meet Japan’s exacting standards, Zekoki tools deliver precision and durability for those who demand more. Whether your zone is a construction site or a backyard project, our tools and accessories let you conquer every challenge.",
         "category_button_text_primary": "Shop Now",
-        "category_button_url_primary": "",
+        "category_button_url_primary": "shopify://collections",
         "category_button_text_secondary": "Learn More",
-        "category_button_url_secondary": ""
+        "category_button_url_secondary": "shopify://pages/about-us"
       }
     },
     "custom_product_list_A3jbBy": {
@@ -213,9 +213,9 @@
       "settings": {
         "collection": "accessories",
         "products_to_show": 10,
-        "title": "Accessories",
+        "title": "Zekoki Accessories ",
         "heading_size": "h1",
-        "description": "<p>Explore our high-quality accessories for every project.</p>",
+        "description": "<p>Equip your tools with the right add-ons for any job. </p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 5,
@@ -246,12 +246,12 @@
         "custom-banner_background": "shopify://shop_images/Zekoki_Mascot.png",
         "custom-banner_image": "shopify://shop_images/Mascot_Zekoki.png",
         "custom-banner__sub": "About Us",
-        "custom-banner__title": "Discover the Zekoki Advantage Today",
-        "custom-banner__description": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike.",
-        "banner_button_text_primary": "Shop Now",
-        "banner_button_url_primary": "shopify://collections/all",
-        "banner_button_text_secondary": "Learn More",
-        "banner_button_url_secondary": "shopify://pages/about-us"
+        "custom-banner__title": "Generation Zekoki: Setting the Next Standard",
+        "custom-banner__description": "For those who push forward, we build tools that keep up. Faster, tougher, and always ready—just like the new generation of makers, builders, and fixers.",
+        "banner_button_text_primary": "Learn More",
+        "banner_button_url_primary": "shopify://pages/about-us",
+        "banner_button_text_secondary": "Find a store",
+        "banner_button_url_secondary": "shopify://pages/branches"
       }
     },
     "custom_product_list_DQ8Gk7": {
@@ -259,9 +259,9 @@
       "settings": {
         "collection": "power-tools",
         "products_to_show": 10,
-        "title": "Power Tools",
+        "title": "<strong>Zekoki Power Tools</strong>",
         "heading_size": "h1",
-        "description": "<p>Explore our high-quality accessories for every project.</p>",
+        "description": "<p>Own the strength to build more. Grab the right power tools for the job.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 5,
@@ -288,8 +288,8 @@
         "blurps_6FPd8G": {
           "type": "blurps",
           "settings": {
-            "sub_about_title": "93%",
-            "sub_about_description": "Customer satisfaction rate across all product categories."
+            "sub_about_title": "99%",
+            "sub_about_description": "Customer satisfaction rate acrolls all product categories"
           }
         },
         "blurps_kXiHYw": {
@@ -308,8 +308,8 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "custom-about_image": "shopify://shop_images/Milestone_Image_1.png",
-        "custom-about__title": "Discover Our Impressive Achievements and Milestones in the Industry",
-        "custom-about__description": "At Zekoki, we take pride in our commitment to excellence. Our tools have empowered countless professionals and DIY enthusiasts alike."
+        "custom-about__title": "Zooming Ahead: Built on Trust, Backed by You",
+        "custom-about__description": "Zekoki is built on a foundation of authenticity and customer confidence. With every tool used and every project completed, we keep raising the standard. Our journey is just getting started, and you are part of it."
       }
     },
     "custom_store_branches_pX6QHt": {
@@ -323,6 +323,7 @@
     },
     "custom_footer_cta_Hjk7yp": {
       "type": "custom-footer-cta",
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20,
@@ -336,6 +337,23 @@
         "cta_button_text_secondary": "Shop Now",
         "cta_button_url_secondary": ""
       }
+    },
+    "custom_calltoaction_zXwdHX": {
+      "type": "custom-calltoaction",
+      "settings": {
+        "gradient-background": "shopify://shop_images/481263058_637334712528839_3762435364694348601_n.jpg",
+        "gradient_start": "#000000",
+        "gradient_end": "#000000",
+        "calltoaction-heading": "Does Your Toolkit Have the Z Factor?",
+        "calltoaction-subtext": "<p>If Zekoki is not in your kit, you are not at your best. Do not get left behind. Upgrade now!</p>",
+        "calltoaction_button_text_primary": "Shop Now",
+        "calltoaction_button_url_primary": "shopify://collections/all",
+        "calltoaction_button_text_secondary": "View All Categories",
+        "calltoaction_button_url_secondary": "shopify://collections",
+        "show_newsletter": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -347,6 +365,7 @@
     "custom_product_list_DQ8Gk7",
     "custom_about_section_V8UCVN",
     "custom_store_branches_pX6QHt",
-    "custom_footer_cta_Hjk7yp"
+    "custom_footer_cta_Hjk7yp",
+    "custom_calltoaction_zXwdHX"
   ]
 }
