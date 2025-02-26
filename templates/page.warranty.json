@@ -194,14 +194,14 @@
       "settings": {
         "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
         "height": "adapt",
-        "desktop_image_width": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
         "color_scheme": "scheme-5",
-        "image_behavior": "zoom-in",
+        "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 100,
         "padding_bottom": 0
