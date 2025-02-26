@@ -56,6 +56,59 @@
         "padding_bottom": 72
       }
     },
+    "multicolumn_Ff8AGE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4Vf9g3": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Built to Last</strong>",
+            "text": "<p>Reliable and efficient for every job</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DPzHxn": {
+          "type": "column",
+          "settings": {
+            "title": "6-Month Warranty",
+            "text": "<p>Extra protection for your peace of mind</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GWypVR": {
+          "type": "column",
+          "settings": {
+            "title": "Trusted by Pros",
+            "text": "<p>Designed for professionals and DIYers alike</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4Vf9g3",
+        "column_DPzHxn",
+        "column_GWypVR"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "image_with_text_cJj3M3": {
       "type": "image-with-text",
       "blocks": {
@@ -104,60 +157,6 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_Ff8AGE": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_4Vf9g3": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Built to Last</strong>",
-            "text": "<p>Reliable and efficient for every job</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_DPzHxn": {
-          "type": "column",
-          "settings": {
-            "title": "6-Month Warranty",
-            "text": "<p>Extra protection for your peace of mind</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_GWypVR": {
-          "type": "column",
-          "settings": {
-            "title": "Trusted by Pros",
-            "text": "<p>Designed for professionals and DIYers alike</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_4Vf9g3",
-        "column_DPzHxn",
-        "column_GWypVR"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 52,
-        "padding_bottom": 0
-      }
-    },
     "image_with_text_GCEkck": {
       "type": "image-with-text",
       "blocks": {
@@ -180,7 +179,7 @@
           "settings": {
             "button_label": "Watch Tutorials",
             "button_link": "shopify://pages/product-guides",
-            "button_style_secondary": true
+            "button_style_secondary": false
           }
         }
       },
@@ -199,9 +198,9 @@
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "overlap",
+        "content_layout": "no-overlap",
         "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "color_scheme": "scheme-5",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -212,8 +211,8 @@
   "order": [
     "main",
     "rich_text_XVaggT",
-    "image_with_text_cJj3M3",
     "multicolumn_Ff8AGE",
+    "image_with_text_cJj3M3",
     "image_with_text_GCEkck"
   ]
 }

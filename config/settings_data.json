@@ -306,7 +306,7 @@
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#efc00f",
+          "button": "rgba(0,0,0,0)",
           "button_label": "#121212",
           "secondary_button_label": "#efc00f",
           "shadow": "rgba(0,0,0,0)"
