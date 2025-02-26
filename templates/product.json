@@ -278,7 +278,7 @@
     "custom_liquid_TGFqQY": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% for guide in product.metafields.custom.product_guide.values %}\n{{ guide.title }}\n\n{% endfor %}",
+        "custom_liquid": "{% assign guide = product.metafields.custom.product_guide.value %}\n\n{{ guide.title }}\n{% for guide in guides %}\n{{ guide.product_guides.title.values }}\n\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
