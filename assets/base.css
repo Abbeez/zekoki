@@ -35,6 +35,9 @@ main#MainContent {
     background-attachment: fixed;
 }
 
+html.ui-admin-bar.ui-admin-bar--is-collapsed {
+    display: none;
+}
 
 .product-card-wrapper .card,
 .contains-card--product {
