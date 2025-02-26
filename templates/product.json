@@ -101,7 +101,7 @@
         "custom_liquid_UeW6xj": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.short_description != blank %}\n  {{ product.metafields.custom.short_description | strip }}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.short_description != blank %}\n  {{ product.metafields.custom.short_description | metafield_tag }}\n{% endif %}"
           }
         }
       },
