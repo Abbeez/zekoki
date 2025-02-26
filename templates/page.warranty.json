@@ -48,8 +48,8 @@
         "text_WddAGN"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
         "full_width": true,
         "padding_top": 72,
