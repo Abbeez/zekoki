@@ -63,7 +63,7 @@
         "sku_ecUHGd": {
           "type": "sku",
           "settings": {
-            "text_style": "body"
+            "text_style": "uppercase"
           }
         },
         "collapsible_tab_LKRccT": {
