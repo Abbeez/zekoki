@@ -60,12 +60,6 @@
             "show_inventory_quantity": true
           }
         },
-        "sku_ecUHGd": {
-          "type": "sku",
-          "settings": {
-            "text_style": "uppercase"
-          }
-        },
         "collapsible_tab_LKRccT": {
           "type": "collapsible_tab",
           "settings": {
@@ -109,7 +103,6 @@
         "quantity_selector",
         "buy_buttons",
         "inventory_FGwyR3",
-        "sku_ecUHGd",
         "collapsible_tab_LKRccT",
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
@@ -288,14 +281,21 @@
         "padding_bottom": 28
       }
     },
-    "quick_order_list_rjKjtU": {
-      "type": "quick-order-list",
+    "custom_calltoaction_XWTTVy": {
+      "type": "custom-calltoaction",
       "settings": {
-        "show_image": false,
-        "show_sku": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "gradient-background": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
+        "gradient_start": "#000000",
+        "gradient_end": "#000000",
+        "calltoaction-heading": "Call To Action Heading",
+        "calltoaction-subtext": "<p>Call to action subtext here.</p>",
+        "calltoaction_button_text_primary": "Learn More",
+        "calltoaction_button_url_primary": "",
+        "calltoaction_button_text_secondary": "Shop Now",
+        "calltoaction_button_url_secondary": "",
+        "show_newsletter": false,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
@@ -306,6 +306,6 @@
     "custom_footer_cta_h8XTeg",
     "image-with-text",
     "related-products",
-    "quick_order_list_rjKjtU"
+    "custom_calltoaction_XWTTVy"
   ]
 }
