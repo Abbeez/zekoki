@@ -157,13 +157,61 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_NeKrVG": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_UhmXw6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "woodwork"
+          }
+        },
+        "featured_collection_7YTQiq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "power-tools"
+          }
+        },
+        "featured_collection_gDPqch": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pumps"
+          }
+        },
+        "featured_collection_xUYqTA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "garden-tools-1"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_UhmXw6",
+        "featured_collection_7YTQiq",
+        "featured_collection_gDPqch",
+        "featured_collection_xUYqTA"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Zekoki Tools",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_GCEkck": {
       "type": "image-with-text",
       "blocks": {
         "heading_kJAd3B": {
           "type": "heading",
           "settings": {
-            "heading": "New to Power Tools? Need Help?",
+            "heading": "New to Power Tools?",
             "heading_size": "h1"
           }
         },
@@ -215,53 +263,6 @@
         "padding_top": 100,
         "padding_bottom": 0
       }
-    },
-    "collection_list_NeKrVG": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_UhmXw6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "woodwork"
-          }
-        },
-        "featured_collection_7YTQiq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "power-tools"
-          }
-        },
-        "featured_collection_gDPqch": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pumps"
-          }
-        },
-        "featured_collection_xUYqTA": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "garden-tools-1"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_UhmXw6",
-        "featured_collection_7YTQiq",
-        "featured_collection_gDPqch",
-        "featured_collection_xUYqTA"
-      ],
-      "settings": {
-        "title": "Zekoki Tools",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -269,7 +270,7 @@
     "rich_text_XVaggT",
     "multicolumn_Ff8AGE",
     "image_with_text_cJj3M3",
-    "image_with_text_GCEkck",
-    "collection_list_NeKrVG"
+    "collection_list_NeKrVG",
+    "image_with_text_GCEkck"
   ]
 }
