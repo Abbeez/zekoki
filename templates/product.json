@@ -32,14 +32,6 @@
             "custom_liquid": "{% if product.metafields.custom.short_description != blank %}\n  {{ product.metafields.custom.short_description | metafield_tag }}\n{% endif %}"
           }
         },
-        "inventory_FGwyR3": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -56,6 +48,14 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "inventory_FGwyR3": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "collapsible_tab_LKRccT": {
@@ -110,10 +110,10 @@
         "title",
         "price",
         "custom_liquid_UeW6xj",
-        "inventory_FGwyR3",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "inventory_FGwyR3",
         "collapsible_tab_LKRccT",
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
