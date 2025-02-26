@@ -122,7 +122,8 @@
         "complementary_cXVTT7"
       ],
       "custom_css": [
-        ".product__media {border: 1px solid #111111; border-radius: 10px;}"
+        ".product__media {border: 1px solid #111111; border-radius: 10px;}",
+        ".thumbnail-list__item {border: 1px solid var(--zekoki-secondary); border-radius:4px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
