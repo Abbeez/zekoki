@@ -85,20 +85,11 @@
             "share_label": "Share"
           }
         },
-        "collapsible_tab_w3ggaE": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
         "complementary_cXVTT7": {
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs well with",
-            "make_collapsible_row": true,
+            "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 3,
             "products_per_page": 3,
@@ -120,7 +111,6 @@
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
         "share",
-        "collapsible_tab_w3ggaE",
         "complementary_cXVTT7"
       ],
       "custom_css": [
