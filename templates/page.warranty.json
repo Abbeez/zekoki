@@ -32,7 +32,7 @@
           "type": "heading",
           "settings": {
             "heading": "Quality You Can Trust, Guaranteed.",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_WddAGN": {
@@ -48,8 +48,8 @@
         "text_WddAGN"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
         "full_width": true,
         "padding_top": 72,
@@ -192,7 +192,7 @@
         "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
