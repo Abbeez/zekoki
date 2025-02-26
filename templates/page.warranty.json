@@ -17,53 +17,6 @@
         "padding_bottom": 28
       }
     },
-    "image_with_text_GCEkck": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_kJAd3B": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_9H4wyk": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_tp7n9m": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_kJAd3B",
-        "text_9H4wyk",
-        "button_tp7n9m"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_XVaggT": {
       "type": "rich-text",
       "blocks": {
@@ -97,10 +50,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "image_with_text_cJj3M3": {
@@ -134,6 +87,7 @@
         "text_FhfaMB",
         "button_9MMHBH"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/445687100_438386469090332_5152573186827745133_n.jpg",
         "height": "adapt",
@@ -202,13 +156,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_GCEkck": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kJAd3B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_9H4wyk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_tp7n9m": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kJAd3B",
+        "text_9H4wyk",
+        "button_tp7n9m"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
+    "rich_text_XVaggT",
     "image_with_text_cJj3M3",
     "multicolumn_Ff8AGE",
-    "image_with_text_GCEkck",
-    "rich_text_XVaggT"
+    "image_with_text_GCEkck"
   ]
 }
