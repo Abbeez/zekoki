@@ -12,10 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "sku_wKa4jr": {
+          "type": "sku",
           "settings": {
-            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
@@ -92,10 +91,23 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "complementary_cXVTT7": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
         }
       },
       "block_order": [
-        "vendor",
+        "sku_wKa4jr",
         "title",
         "caption",
         "price",
@@ -106,7 +118,8 @@
         "collapsible_tab_LKRccT",
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
-        "share"
+        "share",
+        "complementary_cXVTT7"
       ],
       "custom_css": [
         ".product__media {border: 1px solid #111111; border-radius: 10px;}"
@@ -119,54 +132,12 @@
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "hover",
+        "image_zoom": "none",
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 72,
         "padding_bottom": 72
-      }
-    },
-    "rich_text_Wb8RmM": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_CYjaFn": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_pgbidW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_LBg7J4": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_CYjaFn",
-        "text_pgbidW",
-        "button_LBg7J4"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "featured_collection_8xaXWw": {
@@ -342,7 +313,6 @@
     }
   },
   "order": [
-    "rich_text_Wb8RmM",
     "main",
     "featured_collection_8xaXWw",
     "multicolumn",
