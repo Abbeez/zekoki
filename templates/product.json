@@ -136,6 +136,7 @@
     },
     "featured_collection_8xaXWw": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "",
         "products_to_show": 4,
@@ -254,8 +255,8 @@
         "image-with-text-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
-        "height": "small",
+        "image": "shopify://shop_images/445687100_438386469090332_5152573186827745133_n.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
