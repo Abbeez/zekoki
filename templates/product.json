@@ -25,7 +25,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "",
             "text_style": "subtitle"
           }
         },
@@ -104,13 +104,6 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
-        },
-        "popup_MBwiGQ": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": "get-in-touch"
-          }
         }
       },
       "block_order": [
@@ -126,8 +119,7 @@
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
         "share",
-        "complementary_cXVTT7",
-        "popup_MBwiGQ"
+        "complementary_cXVTT7"
       ],
       "custom_css": [
         ".product__media {border: 1px solid #111111; border-radius: 10px;}",
