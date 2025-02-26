@@ -188,6 +188,9 @@
         "text_9H4wyk",
         "button_tp7n9m"
       ],
+      "custom_css": [
+        ".image-with-text__media {background: transparent; }"
+      ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
         "height": "adapt",
