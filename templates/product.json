@@ -116,7 +116,7 @@
         "share"
       ],
       "custom_css": [
-        ".product__media {border: 1px solid #111111;}"
+        ".product__media {border: 1px solid #111111; border-radius: 10px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
