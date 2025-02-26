@@ -181,12 +181,21 @@
             "button_link": "shopify://pages/product-guides",
             "button_style_secondary": false
           }
+        },
+        "caption_rjLHgK": {
+          "type": "caption",
+          "settings": {
+            "caption": "Let’s make every project smooth and hassle-free. Explore our expert tips today!",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "heading_kJAd3B",
         "text_9H4wyk",
-        "button_tp7n9m"
+        "button_tp7n9m",
+        "caption_rjLHgK"
       ],
       "custom_css": [
         ".image-with-text__media {background: transparent;}"
