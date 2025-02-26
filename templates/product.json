@@ -97,6 +97,12 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
+        },
+        "custom_liquid_UeW6xj": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.short_description != blank %}\n  {{ product.metafields.custom.short_description | strip }}\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -111,7 +117,8 @@
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
         "share",
-        "complementary_cXVTT7"
+        "complementary_cXVTT7",
+        "custom_liquid_UeW6xj"
       ],
       "custom_css": [
         ".product__media {border: 1px solid #111111; border-radius: 10px;}",
