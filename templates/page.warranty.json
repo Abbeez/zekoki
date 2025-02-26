@@ -171,16 +171,16 @@
         "text_9H4wyk": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Getting started with power tools or facing issues with your equipment? <strong>Learn from the experts!</strong></p>",
             "text_style": "body"
           }
         },
         "button_tp7n9m": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Watch Tutorials",
+            "button_link": "shopify://pages/product-guides",
+            "button_style_secondary": true
           }
         }
       },
