@@ -32,7 +32,7 @@
           "type": "heading",
           "settings": {
             "heading": "Quality You Can Trust, Guaranteed.",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_WddAGN": {
@@ -140,6 +140,7 @@
         "column_DPzHxn",
         "column_GWypVR"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -163,7 +164,7 @@
         "heading_kJAd3B": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "New to Power Tools? Need Help?",
             "heading_size": "h1"
           }
         },
@@ -189,7 +190,7 @@
         "button_tp7n9m"
       ],
       "custom_css": [
-        ".image-with-text__media {background: transparent; }"
+        ".image-with-text__media {background: transparent;}"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Safety_Tips.png",
