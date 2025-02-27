@@ -72,7 +72,7 @@
           "settings": {
             "heading": "Shipping",
             "icon": "none",
-            "content": "",
+            "content": "<ul><li>Metro Manila: 1 to 2 days</li><li>Outside Metro Manila: 3 to 5 days</li></ul>",
             "page": ""
           }
         },
@@ -81,7 +81,7 @@
           "settings": {
             "heading": "Returns",
             "icon": "none",
-            "content": "<p>{{ block.settings.page.content }}</p>",
+            "content": "<p>We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.<a href=\"/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\"> Learn More</a></p>",
             "page": ""
           }
         },
