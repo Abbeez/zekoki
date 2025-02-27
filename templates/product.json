@@ -61,9 +61,9 @@
         "collapsible_tab_LKRccT": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Details",
+            "heading": "Specifications",
             "icon": "none",
-            "content": "",
+            "content": "<p>Specifications</p>",
             "page": ""
           }
         },
