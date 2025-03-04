@@ -42,43 +42,46 @@
 >
   <div class="custom-servicecenters__container">
     <div class="custom-servicecenters__header">
-      <h2 class="h1 title">{{ section.settings['custom-servicecenters__title'] }}</h2>
-      <p>{{ section.settings['custom-servicecenters__description'] }}</p>
+      <h2 class="h1 title">{{ section.settings.custom_servicecenters__title }}</h2>
+      <p>{{ section.settings.custom_servicecenters__description }}</p>
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
     {% assign centers_per_page = 5 %}
-    {% assign page = request.query.page | default: 1 %}
+    {% assign page = request.query.page | default: 1 | plus: 0 %}
+    {% assign total_centers = centers_list.size %}
+    {% assign total_pages = total_centers | divided_by: centers_per_page | ceil %}
     {% assign start_index = centers_per_page | times: page | minus: centers_per_page %}
-    {% assign end_index = start_index | plus: centers_per_page %}
 
-    <table class="custom-servicecenters__table">
-      <thead>
-        <tr>
-          <th>Service Center</th>
-          <th>Location</th>
-          <th>Address</th>
-          <th>Contact</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for i in (start_index..end_index) %}
-          {% assign center = centers_list[i] %}
-          {% if center %}
+    <!-- Debugging Output -->
+    <p>Found {{ total_centers }} service centers.</p>
+
+    {% if total_centers > 0 %}
+      <table class="custom-servicecenters__table">
+        <thead>
+          <tr>
+            <th>Service Center</th>
+            <th>Location</th>
+            <th>Address</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for center in centers_list limit: centers_per_page offset: start_index %}
             <tr>
-              <td>{{ center.service_center_name }}</td>
-              <td>{{ center.location }}</td>
-              <td>{{ center.address | metafield_tag }}</td>
+              <td>{{ center.metafields.custom.service_center_name }}</td>
+              <td>{{ center.metafields.custom.location }}</td>
+              <td>{{ center.metafields.custom.address }}</td>
               <td>
-                {% if center.contact_number.size > 1 %}
+                {% if center.metafields.custom.contact_number.size > 1 %}
                   <ul>
-                    {% for number in center.contact_number %}
+                    {% for number in center.metafields.custom.contact_number %}
                       <li>{{ number }}</li>
                     {% endfor %}
                   </ul>
                 {% else %}
                   <a
-                    href="tel:{{ center.contact_number | metafield_text | remove:'-' }}"
+                    href="tel:{{ center.metafields.custom.contact_number | remove: '-' }}"
                     class="button button--primary"
                   >
                     Inquire
@@ -86,31 +89,31 @@
                 {% endif %}
               </td>
             </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <!-- Pagination -->
+      <div class="custom-servicecenters__pagination">
+        {% if page > 1 %}
+          <a href="?page={{ page | minus: 1 }}">&laquo; Prev</a>
+        {% endif %}
+
+        {% for p in (1..total_pages) %}
+          {% if p == page %}
+            <span class="current">{{ p }}</span>
+          {% else %}
+            <a href="?page={{ p }}">{{ p }}</a>
           {% endif %}
         {% endfor %}
-      </tbody>
-    </table>
 
-    <!-- Pagination -->
-    <div class="custom-servicecenters__pagination">
-      {% assign total_pages = centers_list.size | divided_by: centers_per_page | ceil %}
-
-      {% if page > 1 %}
-        <a href="?page={{ page | minus: 1 }}">&laquo; Prev</a>
-      {% endif %}
-
-      {% for p in (1..total_pages) %}
-        {% if p == page %}
-          <span class="current">{{ p }}</span>
-        {% else %}
-          <a href="?page={{ p }}">{{ p }}</a>
+        {% if page < total_pages %}
+          <a href="?page={{ page | plus: 1 }}">Next &raquo;</a>
         {% endif %}
-      {% endfor %}
-
-      {% if page < total_pages %}
-        <a href="?page={{ page | plus: 1 }}">Next &raquo;</a>
-      {% endif %}
-    </div>
+      </div>
+    {% else %}
+      <p>No service centers found.</p>
+    {% endif %}
   </div>
 </section>
 
@@ -146,13 +149,13 @@
     },
     {
       "type": "text",
-      "id": "custom-servicecenters__title",
+      "id": "custom_servicecenters__title",
       "label": "Service Centers Title",
       "default": "Find a Service Center Near You"
     },
     {
       "type": "textarea",
-      "id": "custom-servicecenters__description",
+      "id": "custom_servicecenters__description",
       "label": "Service Centers Description",
       "default": "Find authorized service centers for quality support."
     }
