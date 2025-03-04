@@ -1,37 +1,53 @@
-{% paginate blogs['product-guide'].articles by 6 %}
-  <div class="custom-blog-grid">
-    <div class="custom-blog-grid-container">
-      {% for article in blogs['product-guide'].articles %}
-        <div class="custom-blog-grid-item">
-          <a href="{{ article.url }}">
-            <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title }}">
-            <h3>{{ article.title }}</h3>
-          </a>
-          <p>{{ article.excerpt | strip_html | truncatewords: 20 }}</p>
-        </div>
-      {% endfor %}
-    </div>
+{% style %}
+   .custom-blog--header {
+      text-align: center;
+  }
+{% endstyle %}
 
-    <!-- Pagination -->
-    <div class="custom-blog-grid-pagination">
-      {% if paginate.previous %}
-        <a href="{{ paginate.previous.url }}" class="custom-blog-grid-prev">&laquo; Prev</a>
-      {% endif %}
-
-      {% for part in paginate.parts %}
-        {% if part.is_link %}
-          <a href="{{ part.url }}" class="custom-blog-grid-page">{{ part.title }}</a>
-        {% else %}
-          <span class="custom-blog-grid-current">{{ part.title }}</span>
-        {% endif %}
-      {% endfor %}
-
-      {% if paginate.next %}
-        <a href="{{ paginate.next.url }}" class="custom-blog-grid-next">Next &raquo;</a>
-      {% endif %}
+<section class="custom-blog--grid-section">
+  <div class="custom-blog--header">
+    <div class="custom_blog--header--container">
+      <span class="custom-blog--subtitle">Learn More about - {{ page_title] }}</span>
+      <h1 class="h0 title">{{ page.title }}</h1>
+      <p>{{ page_description }}</p>
     </div>
   </div>
-{% endpaginate %}
+
+  {% paginate blogs['product-guide'].articles by 6 %}
+    <div class="custom-blog-grid">
+      <div class="custom-blog-grid-container">
+        {% for article in blogs['product-guide'].articles %}
+          <div class="custom-blog-grid-item">
+            <a href="{{ article.url }}">
+              <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title }}">
+              <h3>{{ article.title }}</h3>
+            </a>
+            <p>{{ article.excerpt | strip_html | truncatewords: 20 }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Pagination -->
+      <div class="custom-blog-grid-pagination">
+        {% if paginate.previous %}
+          <a href="{{ paginate.previous.url }}" class="custom-blog-grid-prev">&laquo; Prev</a>
+        {% endif %}
+
+        {% for part in paginate.parts %}
+          {% if part.is_link %}
+            <a href="{{ part.url }}" class="custom-blog-grid-page">{{ part.title }}</a>
+          {% else %}
+            <span class="custom-blog-grid-current">{{ part.title }}</span>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginate.next %}
+          <a href="{{ paginate.next.url }}" class="custom-blog-grid-next">Next &raquo;</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endpaginate %}
+</section>
 
 <style>
   .custom-blog-grid {
