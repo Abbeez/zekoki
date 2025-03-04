@@ -65,17 +65,9 @@
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
-    {{ shop.metaobjects.service_centers.entries.size }}
-    {{ shop.metaobjects.service_centers.values.count }}
-    {% for centersss in shop.metaobjects.service_centers.values %}
-      <p>{{ centersss.service_center_name }}</p>
-
-    {% else %}
-      <p>No service centers found.</p>
-    {% endfor %}
     {% assign centers_per_page = 5 %}
     {% assign page = request.query.page | default: 1 | plus: 0 %}
-    {% assign total_centers = centers_list.size %}
+    {% assign total_centers = centers_list.count %}
     {% assign total_pages = total_centers | divided_by: centers_per_page | ceil %}
     {% assign start_index = centers_per_page | times: page | minus: centers_per_page %}
 
