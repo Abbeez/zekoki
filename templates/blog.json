@@ -67,9 +67,9 @@
     "featured_blog_qrhaXn": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "",
         "heading_size": "h1",
-        "blog": "product-guide",
+        "blog": "articles",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "",
