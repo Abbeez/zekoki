@@ -1,6 +1,89 @@
+{% style %}
+        .product-section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #fff;
+          padding: 40px;
+          max-width: 1200px;
+          margin: auto;
+      }
+
+      .product-image {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+      }
+
+      .product-image img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+
+      .product-content {
+          flex: 1;
+          padding-left: 40px;
+      }
+
+      .product-content h2 {
+          font-size: 28px;
+          font-weight: bold;
+          color: #000;
+      }
+
+      .product-content p {
+          font-size: 16px;
+          color: #555;
+          margin: 15px 0;
+      }
+
+      .btn {
+          display: inline-block;
+          background: #000;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 5px;
+      }
+
+      .btn:hover {
+          background: #333;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .product-section {
+              flex-direction: column;
+              text-align: center;
+              padding: 20px;
+          }
+
+          .product-content {
+              padding-left: 0;
+              margin-top: 20px;
+          }
+      }
+  </style>
+{% endstyle %}
+<section class="product-section">
+  <div class="product-image">
+    <img src="your-image.jpg" alt="Zekoki Angle Grinder">
+  </div>
+  <div class="product-content">
+    <h2>What is Zekoki Angle Grinder Disc</h2>
+    <p>
+      Learn more about the Zekoki Angle Grinder Disc! Discover its uses, durability, and how it helps you achieve
+      precise cutting and grinding.
+    </p>
+    <a href="#" class="btn">Watch Demo</a>
+  </div>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Section name",
+  "settings": []
+}
 {% endschema %}
