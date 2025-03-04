@@ -69,7 +69,7 @@
 {% assign guide = product.metafields.custom.product_guide.value %}
 
 {% if guide %}
-  <section class="product-section">
+  <section class="product-section page-width">
     <div class="product-image">
       {% if guide.thumbnail != blank %}
         <img src="{{ guide.thumbnail | image_url }}" alt="{{ guide.title }}" height="" width="">
