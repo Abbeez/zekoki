@@ -283,6 +283,12 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "product_guide_GnCQ6a": {
+      "type": "product-guide",
+      "settings": {
+        "custom_form_side": ""
+      }
     }
   },
   "order": [
@@ -291,6 +297,7 @@
     "image_with_text_FPFjRh",
     "related-products",
     "custom_calltoaction_XWTTVy",
-    "custom_liquid_TGFqQY"
+    "custom_liquid_TGFqQY",
+    "product_guide_GnCQ6a"
   ]
 }
