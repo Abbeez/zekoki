@@ -70,7 +70,7 @@
     {% assign total_centers = centers_list.size %}
     {% assign total_pages = total_centers | divided_by: centers_per_page | ceil %}
     {% assign start_index = centers_per_page | times: page | minus: centers_per_page %}
-
+    {{ centers_list.size }}
     {% if total_centers > 0 %}
       <table class="custom-servicecenters__table">
         <thead>
