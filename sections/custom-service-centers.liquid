@@ -112,7 +112,11 @@
         </thead>
         <tbody id="centers-table-body">
           {% for center in centers_list %}
-            <tr class="center-row" onclick="window.location='{{ center.direction }}';" style="cursor: pointer;">
+            <tr
+              class="center-row"
+              onclick="window.location='{{ center.direction.value.url }}';"
+              style="cursor: pointer;"
+            >
               <td>{{ center.service_center_name }}</td>
               <td>{{ center.location }}</td>
               <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
@@ -121,7 +125,6 @@
                   {{ center.contact_number | metafield_text | remove: '-' }}
                 {% endif %}
               </td>
-              {{ center.direction.value.url }}
             </tr>
           {% endfor %}
         </tbody>
