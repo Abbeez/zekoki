@@ -121,7 +121,7 @@
                   {{ center.contact_number | metafield_text | remove: '-' }}
                 {% endif %}
               </td>
-              {{ center.direction[1] }}
+              {{ center.direction.button_link }}
             </tr>
           {% endfor %}
         </tbody>
