@@ -114,7 +114,7 @@
           {% for center in centers_list %}
             <tr
               class="center-row"
-              onclick="window.location='{{ center.direction.value.url }}';"
+              onclick="window.open('{{ center.direction.value.url }}', '_blank');"
               style="cursor: pointer;"
             >
               <td>{{ center.service_center_name }}</td>
