@@ -6,6 +6,11 @@
     gap: 15px;
   }
 
+  .custom-servicecenters__table-container .sc-address,
+    .custom-servicecenters__table-container .sc-address-data{
+      display:none;
+    }
+
   @media (min-width: 768px) {
     .custom-servicecenters__header {
       flex-direction: row;
@@ -85,10 +90,10 @@
       <table class="custom-servicecenters__table">
         <thead>
           <tr>
-            <th>Service Center</th>
-            <th>Location</th>
-            <th>Address</th>
-            <th style="text-align:center !important;">Map</th>
+            <th class="sc-name">Service Center</th>
+            <th class="sc-location">Location</th>
+            <th class="sc-address">Address</th>
+            <th class="sc-map" style="text-align:center;">Map</th>
           </tr>
         </thead>
         <tbody id="centers-table-body">
@@ -96,7 +101,7 @@
             <tr class="center-row">
               <td>{{ center.service_center_name }}</td>
               <td>{{ center.location }}</td>
-              <td>{{ center.address | metafield_tag }}</td>
+              <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
               <td style="text-align:center;">
                 <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
               </td>
