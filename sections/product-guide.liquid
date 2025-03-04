@@ -67,19 +67,23 @@
       }
   </style>
 {% endstyle %}
-<section class="product-section">
-  <div class="product-image">
-    <img src="your-image.jpg" alt="Zekoki Angle Grinder">
-  </div>
-  <div class="product-content">
-    <h2>What is Zekoki Angle Grinder Disc</h2>
-    <p>
-      Learn more about the Zekoki Angle Grinder Disc! Discover its uses, durability, and how it helps you achieve
-      precise cutting and grinding.
-    </p>
-    <a href="#" class="btn">Watch Demo</a>
-  </div>
-</section>
+
+{% assign guide = product.metafields.custom.product_guide.value %}
+
+{% if guide %}
+  <section class="product-section">
+    <div class="product-image">
+      <img src="your-image.jpg" alt="Zekoki Angle Grinder">
+    </div>
+    <div class="product-content">
+      <h2>{{ guide.title }}</h2>
+      <p>
+        {{ guide.description }}
+      </p>
+      <a href="#" class="btn">Watch Demo</a>
+    </div>
+  </section>
+{% endif %}
 
 {% schema %}
 {
