@@ -193,51 +193,10 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_FPFjRh": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_az4BDp": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.product_guide.value.title.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_cDHxCE": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.product_guide.value.description.value }}</p>",
-            "text_style": "body"
-          }
-        },
-        "button_HTXq6q": {
-          "type": "button",
-          "settings": {
-            "button_label": "Watch Demo",
-            "button_link": "{{ product.metafields.custom.product_guide.value.external_link.value }}",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_az4BDp",
-        "text_cDHxCE",
-        "button_HTXq6q"
-      ],
+    "product_guide_GnCQ6a": {
+      "type": "product-guide",
       "settings": {
-        "image": "{{ product.metafields.custom.product_guide.value.thumbnail.value }}",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_form_side": ""
       }
     },
     "related-products": {
@@ -274,30 +233,13 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "custom_liquid_TGFqQY": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% assign guide = product.metafields.custom.product_guide.value %}\n\n{{ guide.title }}\n{{ guide.description }}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "product_guide_GnCQ6a": {
-      "type": "product-guide",
-      "settings": {
-        "custom_form_side": ""
-      }
     }
   },
   "order": [
     "main",
     "multicolumn",
-    "image_with_text_FPFjRh",
+    "product_guide_GnCQ6a",
     "related-products",
-    "custom_calltoaction_XWTTVy",
-    "custom_liquid_TGFqQY",
-    "product_guide_GnCQ6a"
+    "custom_calltoaction_XWTTVy"
   ]
 }
