@@ -17,12 +17,10 @@
     </div>
   </div>
 
-  {% assign all_articles = blogs['product-guide'].articles | concat: blogs.tips.articles %}
-
-  {% paginate all_articles by 6 %}
+  {% paginate blogs.articles.articles by 6 %}
     <div class="custom-blog-grid">
       <div class="custom-blog-grid-container">
-        {% for article in all_articles %}
+        {% for article in blogs['product-guide'].articles %}
           <div class="custom-blog-grid-item">
             <a href="{{ article.url }}">
               <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title }}">
