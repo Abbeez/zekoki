@@ -31,13 +31,12 @@
     text-align: center;
   }
 
-  .custom-servicecenters__pagination a,
-  .custom-servicecenters__pagination span {
-    display: inline-block;
+  .custom-servicecenters__pagination button {
     padding: 8px 12px;
     margin: 0 5px;
     border: 1px solid #ccc;
-    text-decoration: none;
+    background: white;
+    cursor: pointer;
     border-radius: 5px;
   }
 
@@ -66,12 +65,8 @@
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
     {% assign centers_per_page = 5 %}
-    {% assign page = request.query.page | default: 1 | plus: 0 %}
-    {% assign total_centers = centers_list.count %}
-    {% assign total_pages = total_centers | divided_by: centers_per_page | ceil %}
-    {% assign start_index = centers_per_page | times: page | minus: centers_per_page %}
 
-    {% if total_centers > 0 %}
+    {% if centers_list.size > 0 %}
       <table class="custom-servicecenters__table">
         <thead>
           <tr>
@@ -81,9 +76,9 @@
             <th>Map</th>
           </tr>
         </thead>
-        <tbody>
-          {% for center in centers_list limit: centers_per_page offset: start_index %}
-            <tr>
+        <tbody id="centers-table-body">
+          {% for center in centers_list %}
+            <tr class="center-row">
               <td>{{ center.service_center_name }}</td>
               <td>{{ center.location }}</td>
               <td>{{ center.address | metafield_tag }}</td>
@@ -95,30 +90,60 @@
         </tbody>
       </table>
 
-      <!-- Pagination -->
-      <div class="custom-servicecenters__pagination">
-        {% if page > 1 %}
-          <a href="?page={{ page | minus: 1 }}">&laquo; Prev</a>
-        {% endif %}
-
-        {% for p in (1..total_pages) %}
-          {% if p == page %}
-            <span class="current">{{ p }}</span>
-          {% else %}
-            <a href="?page={{ p }}">{{ p }}</a>
-          {% endif %}
-        {% endfor %}
-
-        {% if page < total_pages %}
-          <a href="?page={{ page | plus: 1 }}">Next &raquo;</a>
-        {% endif %}
-      </div>
+      <!-- Pagination Controls -->
+      <div class="custom-servicecenters__pagination" id="pagination-controls"></div>
 
     {% else %}
       <p>No service centers found.</p>
     {% endif %}
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const rows = document.querySelectorAll(".center-row");
+    const centersPerPage = 5;
+    let currentPage = 1;
+
+    function showPage(page) {
+      const start = (page - 1) * centersPerPage;
+      const end = start + centersPerPage;
+
+      rows.forEach((row, index) => {
+        row.style.display = index >= start && index < end ? "table-row" : "none";
+      });
+
+      updatePaginationControls(page);
+    }
+
+    function updatePaginationControls(page) {
+      const totalPages = Math.ceil(rows.length / centersPerPage);
+      const paginationContainer = document.getElementById("pagination-controls");
+      paginationContainer.innerHTML = "";
+
+      if (totalPages > 1) {
+        if (page > 1) {
+          paginationContainer.innerHTML += `<button onclick="changePage(${page - 1})">&laquo; Prev</button>`;
+        }
+
+        for (let i = 1; i <= totalPages; i++) {
+          paginationContainer.innerHTML += `<button class="${i === page ? 'current' : ''}" onclick="changePage(${i})">${i}</button>`;
+        }
+
+        if (page < totalPages) {
+          paginationContainer.innerHTML += `<button onclick="changePage(${page + 1})">Next &raquo;</button>`;
+        }
+      }
+    }
+
+    window.changePage = function (page) {
+      currentPage = page;
+      showPage(page);
+    };
+
+    showPage(currentPage);
+  });
+</script>
 
 {% schema %}
 {
