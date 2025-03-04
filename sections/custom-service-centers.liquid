@@ -66,6 +66,7 @@
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
     {{ shop.metaobjects.service_centers.size }}
+    {{ page.title }}
     {% assign centers_per_page = 5 %}
     {% assign page = request.query.page | default: 1 | plus: 0 %}
     {% assign total_centers = centers_list.size %}
