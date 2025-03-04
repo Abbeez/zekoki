@@ -55,7 +55,6 @@
   "
 >
   <div class="custom-servicecenters__container">
-    {{ centers_list.size }}
     <div class="custom-servicecenters__header">
       <div class="custom_servicecenters__header--container">
         <h2 class="h1 title">{{ section.settings['custom-servicecenters__title'] }}</h2>
@@ -66,6 +65,7 @@
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
+    {{ centers_list.size }}
     {% assign centers_per_page = 5 %}
     {% assign page = request.query.page | default: 1 | plus: 0 %}
     {% assign total_centers = centers_list.size %}
