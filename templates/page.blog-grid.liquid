@@ -20,7 +20,7 @@
   {% paginate blogs.articles.articles by 6 %}
     <div class="custom-blog-grid">
       <div class="custom-blog-grid-container">
-        {% for article in blogs['product-guide'].articles %}
+        {% for article in blogs.articles.articles %}
           <div class="custom-blog-grid-item">
             <a href="{{ article.url }}">
               <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.title }}">
