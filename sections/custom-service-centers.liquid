@@ -114,7 +114,7 @@
           {% for center in centers_list %}
             <tr
               class="center-row"
-              onclick="window.location='{{ center.direction | metafield_tag }}';"
+              onclick="window.location='{{ center.direction | metafield_tag }}'"
               style="cursor: pointer;"
             >
               <td>{{ center.service_center_name }}</td>
