@@ -1,69 +1,50 @@
 {%- style -%}
-        .custom-servicecenters__header {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          gap: 20px;
-      }
-
-    ul.metafield-single_line_text_field-array {
-      margin: 0 !important;
-      padding: 0 !important;
+  .custom-servicecenters__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
   }
 
-    ul.metafield-single_line_text_field-array li {
-      text-decoration:none !important;
-      list-style-type:none;
-      color:var(--zekoki-primary);
+  .custom-servicecenters__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
   }
 
-      ul.metafield-single_line_text_field-array li::marker {
-      text-decoration:none !important;
+  .custom-servicecenters__table th,
+  .custom-servicecenters__table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
   }
 
-      .custom-servicecenters__body {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+  .custom-servicecenters__table th {
+    background-color: var(--zekoki-primary);
+    color: var(--zekoki-white);
+  }
 
-        .custom-servicecenters__items {
-          flex: 1 0 100%;
-          text-align:center;
-          /* min-wheight:500px; */
-        }
+  .custom-servicecenters__pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
 
-        .custom-servicecenters__items_wrapper{
-        position: relative;
-        padding: 1rem;
-        background: var(--zekoki-primary);
-        border-radius: 1rem;
-      }
+  .custom-servicecenters__pagination a,
+  .custom-servicecenters__pagination span {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-        .custom-servicecenters__items_wrapper h2 {
-          background: var(--zekoki-primary);
-          color: var(--zekoki-white);
-          padding: 20px;
-          width:100%;
-          margin: 0 !important;
-      }
-
-      /* Tablet and small desktop */
-    @media screen and (min-width: 750px) {
-
-        .custom-servicecenters__items {
-          flex: 1 0 350px;
-        }
-    }
-
-    /* Large desktops */
-    @media screen and (min-width: 990px) {
-
-    }
+  .custom-servicecenters__pagination .current {
+    background: var(--zekoki-primary);
+    color: var(--zekoki-white);
+  }
 {%- endstyle -%}
 
 <section
@@ -83,17 +64,59 @@
       </div>
     </div>
 
-    <div class="custom-servicecenters__body">
-      {% for centers in shop.metaobjects.service_centers.values %}
-        <div class="custom-servicecenters__items">
-          <p>{{ centers.location }}</p>
-          <h2>{{ centers.service_center_name }}</h2>
-          <p>{{ centers.address | metafield_tag }}</p>
+    {% assign centers_list = shop.metaobjects.service_centers.values %}
+    {% assign centers_per_page = 5 %}
+    {% assign page = request.query.page | default: 1 | plus: 0 %}
+    {% assign total_centers = centers_list.size %}
+    {% assign total_pages = total_centers | divided_by: centers_per_page | ceil %}
+    {% assign start_index = centers_per_page | times: page | minus: centers_per_page %}
 
-          <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
-        </div>
-      {% endfor %}
-    </div>
+    {% if total_centers > 0 %}
+      <table class="custom-servicecenters__table">
+        <thead>
+          <tr>
+            <th>Service Center</th>
+            <th>Location</th>
+            <th>Address</th>
+            <th>Map</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for center in centers_list limit: centers_per_page offset: start_index %}
+            <tr>
+              <td>{{ center.service_center_name }}</td>
+              <td>{{ center.location }}</td>
+              <td>{{ center.address | metafield_tag }}</td>
+              <td>
+                <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <!-- Pagination -->
+      <div class="custom-servicecenters__pagination">
+        {% if page > 1 %}
+          <a href="?page={{ page | minus: 1 }}">&laquo; Prev</a>
+        {% endif %}
+
+        {% for p in (1..total_pages) %}
+          {% if p == page %}
+            <span class="current">{{ p }}</span>
+          {% else %}
+            <a href="?page={{ p }}">{{ p }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if page < total_pages %}
+          <a href="?page={{ page | plus: 1 }}">Next &raquo;</a>
+        {% endif %}
+      </div>
+
+    {% else %}
+      <p>No service centers found.</p>
+    {% endif %}
   </div>
 </section>
 
@@ -101,44 +124,44 @@
 {
   "name": "Custom Branches Section",
   "settings": [
-  {
-    "type": "header",
-    "content": "Section Spacing"
-  },
-  {
-    "type": "range",
-    "id": "padding_top",
-    "label": "Padding Top",
-    "min": 0,
-    "max": 100,
-    "step": 5,
-    "default": 20
-  },
-  {
-    "type": "range",
-    "id": "padding_bottom",
-    "label": "Padding Bottom",
-    "min": 0,
-    "max": 100,
-    "step": 5,
-    "default": 20
-  },
-  {
-    "type": "header",
-    "content": "servicecenters Details"
-  },
-  {
-    "type": "text",
-    "id": "custom-servicecenters__title",
-    "label": "servicecenters Title",
-    "default": "Quality Products"
-  },
-  {
-    "type": "textarea",
-    "id": "custom-servicecenters__description",
-    "label": "servicecenters Description",
-    "default": "Product that you will truly love"
-  },
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Service Centers Details"
+    },
+    {
+      "type": "text",
+      "id": "custom-servicecenters__title",
+      "label": "Service Centers Title",
+      "default": "Find a Service Center Near You"
+    },
+    {
+      "type": "textarea",
+      "id": "custom-servicecenters__description",
+      "label": "Service Centers Description",
+      "default": "Find authorized service centers for quality support."
+    }
   ],
   "presets": [
     {
