@@ -98,6 +98,7 @@
             <th class="sc-name">Service Center</th>
             <th class="sc-location">Location</th>
             <th class="sc-address">Address</th>
+            <th></th>
             <!-- <th class="sc-map" style="text-align:center;">Check on Map</th> -->
           </tr>
         </thead>
@@ -108,6 +109,22 @@
                 <td>{{ center.service_center_name }}</td>
                 <td>{{ center.location }}</td>
                 <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
+                <td style="text-align:center;">
+                  {% if center.contact_number.size > 1 %}
+                    <ul>
+                      {% for number in center.contact_number %}
+                        <li>{{ number }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                    <a
+                      href="tel:{{ center.contact_number | metafield_text | remove:'-' }}"
+                      class="button button--primary"
+                    >
+                      Inquire
+                    </a>
+                  {% endif %}
+                </td>
               </tr>
             </a>
           {% endfor %}
