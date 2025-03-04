@@ -1,74 +1,76 @@
 {%- style -%}
-  .custom-servicecenters__header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .sc-address, .sc-address-data{
-      display:none;
-    }
-
-  @media (min-width: 768px) {
     .custom-servicecenters__header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom:3rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  .sc-address-data p {
+    margin:0;
+  }
+    .sc-address, .sc-address-data{
+        display:none;
+      }
+
+    @media (min-width: 768px) {
+      .custom-servicecenters__header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:3rem;
+      }
+
+        .sc-address, .sc-address-data{
+        display:block;
+      }
+
     }
 
-      .sc-address, .sc-address-data{
-      display:block;
+    .custom-servicecenters__table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 20px;
     }
 
-  }
+    .custom-servicecenters__table {
+      width: 100%;
+      min-width: 600px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
 
-  .custom-servicecenters__table-container {
-    width: 100%;
-    overflow-x: auto;
-    margin-top: 20px;
-  }
+    .custom-servicecenters__table th,
+    .custom-servicecenters__table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      word-wrap: break-word;
+    }
 
-  .custom-servicecenters__table {
-    width: 100%;
-    min-width: 600px;
-    border-collapse: collapse;
-    table-layout: fixed;
-  }
+    .custom-servicecenters__table th {
+      background-color: var(--zekoki-primary);
+      color: var(--zekoki-white);
+    }
 
-  .custom-servicecenters__table th,
-  .custom-servicecenters__table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-    word-wrap: break-word;
-  }
+    .custom-servicecenters__pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 5px;
+    }
 
-  .custom-servicecenters__table th {
-    background-color: var(--zekoki-primary);
-    color: var(--zekoki-white);
-  }
+    .custom-servicecenters__pagination button {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
 
-  .custom-servicecenters__pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 5px;
-  }
-
-  .custom-servicecenters__pagination button {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    background: white;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .custom-servicecenters__pagination .current {
-    background: var(--zekoki-primary);
-    color: var(--zekoki-white);
-  }
+    .custom-servicecenters__pagination .current {
+      background: var(--zekoki-primary);
+      color: var(--zekoki-white);
+    }
 {%- endstyle -%}
 
 <section
@@ -105,7 +107,7 @@
             <tr class="center-row">
               <td>{{ center.service_center_name }}</td>
               <td>{{ center.location }}</td>
-              <td class="sc-address-data" style="margin:0;">{{ center.address | metafield_tag }}</td>
+              <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
               <td style="text-align:center;">
                 <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
               </td>
