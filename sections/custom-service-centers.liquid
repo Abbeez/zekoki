@@ -116,6 +116,9 @@
 
     {% if centers_list.count > 0 %}
       <table class="custom-servicecenters__table">
+        <caption>
+          <p><strong>Currently there are </strong>{{ centers_list.count }} authorized service nationwide.</p>
+        </caption>
         <thead>
           <tr>
             <th class="sc-name">Service Center</th>
