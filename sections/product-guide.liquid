@@ -83,7 +83,18 @@
 
 {% schema %}
 {
-  "name": "Section name",
-  "settings": []
+  "name": "Product Guide",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "custom_form_side",
+      "label": "Sidebar Content"
+    }
+  ],
+  "presets": [
+    {
+      "name":"Product Guide Section"
+    }
+  ]
 }
 {% endschema %}
