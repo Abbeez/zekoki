@@ -109,19 +109,8 @@
               <td>{{ center.location }}</td>
               <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
               <td style="text-align:center;">
-                {% if center.contact_number.size > 1 %}
-                  <ul>
-                    {% for number in center.contact_number %}
-                      <li>{{ number }}</li>
-                    {% endfor %}
-                  </ul>
-                {% else %}
-                  <a
-                    href="tel:{{ center.contact_number | metafield_text | remove:'-' }}"
-                    class="button button--primary"
-                  >
-                    Inquire
-                  </a>
+                {% if center.contact_number %}
+                  {{ center.contact_number }}
                 {% endif %}
               </td>
             </tr>
