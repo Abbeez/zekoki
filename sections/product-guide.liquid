@@ -16,7 +16,7 @@
       .product-image img {
           max-width: 100%;
           height: auto;
-          border-radius: 8px;
+          border-radius: 4px;
       }
 
       .product-content {
@@ -25,29 +25,13 @@
       }
 
       .product-content h2 {
-          font-size: 28px;
           font-weight: bold;
           color: #000;
       }
 
       .product-content p {
-          font-size: 16px;
           color: #555;
           margin: 15px 0;
-      }
-
-      .btn {
-          display: inline-block;
-          background: #000;
-          color: #fff;
-          padding: 10px 20px;
-          text-decoration: none;
-          font-weight: bold;
-          border-radius: 5px;
-      }
-
-      .btn:hover {
-          background: #333;
       }
 
       /* Responsive Design */
@@ -80,7 +64,7 @@
       <p>
         {{ guide.description }}
       </p>
-      <a href=" {{ guide.external_link }}" class="btn">Watch Demo</a>
+      <a href=" {{ guide.external_link }}" class="button button--primary">Watch Demo</a>
     </div>
   </section>
 {% endif %}
