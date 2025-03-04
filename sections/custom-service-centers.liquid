@@ -1,83 +1,98 @@
 {%- style -%}
-    .custom-servicecenters__header {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 15px;
-    }
+  /* Custom Service Centers Styles */
+  .custom-servicecenters__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
 
   .custom-servicecenters__container {
-    transition: all 500ms;
-  }
-  .sc-address-data p {margin:0; border:none;}
-
-    .sc-address, .sc-address-data{
-        display:none;
-      }
-
-  .center-row:hover{
-    background:#f0f0f0;
+    transition: all 0.5s ease-in-out;
   }
 
-    @media (min-width: 768px) {
-      .custom-servicecenters__header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom:3rem;
-      }
+  .sc-address-data p {
+    margin: 0;
+    border: none;
+  }
 
-        .sc-address, .sc-address-data{
-        display:block;
-      }
+  .sc-address,
+  .sc-address-data {
+    display: none;
+  }
 
+  .center-row:hover {
+    background: #f0f0f0;
+  }
+
+  /* Responsive Styling */
+  @media (min-width: 768px) {
+    .custom-servicecenters__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
     }
 
-    .custom-servicecenters__table-container {
-      width: 100%;
-      overflow-x: auto;
-      margin-top: 20px;
+    .sc-address,
+    .sc-address-data {
+      display: block;
     }
+  }
 
-    .custom-servicecenters__table {
-      width: 100%;
-      min-width: 450px;
-      border-collapse: collapse;
-      /* table-layout: fixed; */
-    }
+  /* Table Styling */
+  .custom-servicecenters__table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
 
-    .custom-servicecenters__table th,
-    .custom-servicecenters__table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-      word-wrap: break-word;
-    }
+  .custom-servicecenters__table {
+    width: 100%;
+    min-width: 450px;
+    border-collapse: collapse;
+  }
 
-    .custom-servicecenters__table th {
-      background-color: var(--zekoki-primary);
-      color: var(--zekoki-white);
-    }
+  .custom-servicecenters__table th,
+  .custom-servicecenters__table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+  }
 
-    .custom-servicecenters__pagination {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      gap: 5px;
-    }
+  .custom-servicecenters__table th {
+    background-color: var(--zekoki-primary);
+    color: var(--zekoki-white);
+    text-align: center;
+  }
 
-    .custom-servicecenters__pagination button {
-      padding: 8px 12px;
-      border: 1px solid #ccc;
-      background: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+  /* Pagination Styling */
+  .custom-servicecenters__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+  }
 
-    .custom-servicecenters__pagination .current {
-      background: var(--zekoki-primary);
-      color: var(--zekoki-white);
-    }
+  .custom-servicecenters__pagination button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .custom-servicecenters__pagination button:hover {
+    background-color: #e0e0e0;
+  }
+
+  .custom-servicecenters__pagination .current {
+    background: var(--zekoki-primary);
+    color: var(--zekoki-white);
+    font-weight: bold;
+  }
 {%- endstyle -%}
 
 <section
