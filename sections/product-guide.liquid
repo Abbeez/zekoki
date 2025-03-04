@@ -71,14 +71,16 @@
 {% if guide %}
   <section class="product-section">
     <div class="product-image">
-      <img src="your-image.jpg" alt="Zekoki Angle Grinder">
+      {% if guide.thumbnail != blank %}
+        <img src="{{ guide.thumbnail | image_url }}" alt="{{ guide.title }}" height="" width="">
+      {% endif %}
     </div>
     <div class="product-content">
       <h2>{{ guide.title }}</h2>
       <p>
         {{ guide.description }}
       </p>
-      <a href="#" class="btn">Watch Demo</a>
+      <a href=" {{ guide.external_link }}" class="btn">Watch Demo</a>
     </div>
   </section>
 {% endif %}
