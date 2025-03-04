@@ -58,19 +58,6 @@
             "show_inventory_quantity": true
           }
         },
-        "icon_with_text_YGekf8": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "none",
-            "image_1": "shopify://shop_images/Shopee_1.svg",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
-        },
         "collapsible_tab_LKRccT": {
           "type": "collapsible_tab",
           "settings": {
@@ -127,7 +114,6 @@
         "quantity_selector",
         "buy_buttons",
         "inventory_FGwyR3",
-        "icon_with_text_YGekf8",
         "collapsible_tab_LKRccT",
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
