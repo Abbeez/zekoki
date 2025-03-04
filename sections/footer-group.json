@@ -14,12 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "brand_information_AnMY87": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": false
-          }
-        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -40,13 +34,19 @@
             "heading": "Stay Connected",
             "menu": "stay-connected"
           }
+        },
+        "brand_information_AnMY87": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": false
+          }
         }
       },
       "block_order": [
-        "brand_information_AnMY87",
         "footer-0",
         "footer-1",
-        "link_list_FijeDR"
+        "link_list_FijeDR",
+        "brand_information_AnMY87"
       ],
       "custom_css": [],
       "settings": {
