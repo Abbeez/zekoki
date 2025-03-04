@@ -64,7 +64,7 @@
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
-    {% assign centers_per_page = 8 %}
+    <!-- {% assign centers_per_page = 8 %} -->
 
     {% if centers_list.count > 0 %}
       <table class="custom-servicecenters__table">
@@ -102,7 +102,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const rows = document.querySelectorAll(".center-row");
-    const centersPerPage = 5;
+    const centersPerPage = 8;
     let currentPage = 1;
 
     function showPage(page) {
