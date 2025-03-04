@@ -110,11 +110,7 @@
               <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
               <td style="text-align:center;">
                 {% if center.contact_number %}
-                  <ul>
-                    {% for number in center.contact_number %}
-                      <li>{{ number }}</li>
-                    {% endfor %}
-                  </ul>
+                  {{ center.contact_number | metafield_text | remove: '-' }}
                 {% endif %}
               </td>
             </tr>
