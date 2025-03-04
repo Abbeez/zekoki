@@ -104,29 +104,27 @@
         </thead>
         <tbody id="centers-table-body">
           {% for center in centers_list %}
-            <a href="www.example.com">
-              <tr class="center-row">
-                <td>{{ center.service_center_name }}</td>
-                <td>{{ center.location }}</td>
-                <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
-                <td style="text-align:center;">
-                  {% if center.contact_number.size > 1 %}
-                    <ul>
-                      {% for number in center.contact_number %}
-                        <li>{{ number }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% else %}
-                    <a
-                      href="tel:{{ center.contact_number | metafield_text | remove:'-' }}"
-                      class="button button--primary"
-                    >
-                      Inquire
-                    </a>
-                  {% endif %}
-                </td>
-              </tr>
-            </a>
+            <tr class="center-row" onclick="window.location='https://example.com';" style="cursor: pointer;">
+              <td>{{ center.service_center_name }}</td>
+              <td>{{ center.location }}</td>
+              <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
+              <td style="text-align:center;">
+                {% if center.contact_number.size > 1 %}
+                  <ul>
+                    {% for number in center.contact_number %}
+                      <li>{{ number }}</li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <a
+                    href="tel:{{ center.contact_number | metafield_text | remove:'-' }}"
+                    class="button button--primary"
+                  >
+                    Inquire
+                  </a>
+                {% endif %}
+              </td>
+            </tr>
           {% endfor %}
         </tbody>
       </table>
