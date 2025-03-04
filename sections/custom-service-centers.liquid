@@ -70,37 +70,39 @@
 >
   <div class="custom-servicecenters__container">
     <div class="custom-servicecenters__header">
-      <h2 class="h1 title">{{ section.settings['custom-servicecenters__title'] }}</h2>
-      <p>{{ section.settings['custom-servicecenters__description'] }}</p>
+      <div class="custom_servicecenters__header--container">
+        <h2 class="h1 title">{{ section.settings['custom-servicecenters__title'] }}</h2>
+      </div>
+      <div class="custom_servicecenters__header--container">
+        <p>{{ section.settings['custom-servicecenters__description'] }}</p>
+      </div>
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
 
     {% if centers_list.count > 0 %}
-      <div class="custom-servicecenters__table-container">
-        <table class="custom-servicecenters__table">
-          <thead>
-            <tr>
-              <th>Service Center</th>
-              <th>Location</th>
-              <th>Address</th>
-              <th>Map</th>
+      <table class="custom-servicecenters__table">
+        <thead>
+          <tr>
+            <th>Service Center</th>
+            <th>Location</th>
+            <th>Address</th>
+            <th>Map</th>
+          </tr>
+        </thead>
+        <tbody id="centers-table-body">
+          {% for center in centers_list %}
+            <tr class="center-row">
+              <td>{{ center.service_center_name }}</td>
+              <td>{{ center.location }}</td>
+              <td>{{ center.address | metafield_tag }}</td>
+              <td>
+                <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
+              </td>
             </tr>
-          </thead>
-          <tbody id="centers-table-body">
-            {% for center in centers_list %}
-              <tr class="center-row">
-                <td>{{ center.service_center_name }}</td>
-                <td>{{ center.location }}</td>
-                <td>{{ center.address | metafield_tag }}</td>
-                <td>
-                  <a href="http://www.example.com/" class="button button--primary"> Check Map </a>
-                </td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+          {% endfor %}
+        </tbody>
+      </table>
 
       <!-- Pagination Controls -->
       <div class="custom-servicecenters__pagination" id="pagination-controls"></div>
@@ -120,10 +122,6 @@
     function showPage(page) {
       const start = (page - 1) * centersPerPage;
       const end = start + centersPerPage;
-      
-      // Ensure table height doesn't jump
-      const tableBody = document.getElementById("centers-table-body");
-      tableBody.style.minHeight = tableBody.clientHeight + "px";
 
       rows.forEach((row, index) => {
         row.style.display = index >= start && index < end ? "table-row" : "none";
@@ -160,3 +158,54 @@
     showPage(currentPage);
   });
 </script>
+
+{% schema %}
+{
+  "name": "Custom Branches Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Service Centers Details"
+    },
+    {
+      "type": "text",
+      "id": "custom-servicecenters__title",
+      "label": "Service Centers Title",
+      "default": "Find a Service Center Near You"
+    },
+    {
+      "type": "textarea",
+      "id": "custom-servicecenters__description",
+      "label": "Service Centers Description",
+      "default": "Find authorized service centers for quality support."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Store Branches Section"
+    }
+  ]
+}
+{% endschema %}
