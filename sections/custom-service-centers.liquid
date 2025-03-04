@@ -103,8 +103,8 @@
         </thead>
         <tbody id="centers-table-body">
           {% for center in centers_list %}
-            <a href="www.example.com">
-              <tr class="center-row">
+            <tr class="center-row">
+              <a href="www.example.com">
                 <td>{{ center.service_center_name }}</td>
                 <td>{{ center.location }}</td>
                 <td class="sc-address-data">{{ center.address | metafield_tag }}</td>
@@ -113,8 +113,8 @@
                     <a href="http://www.example.com/" class=""> View </a>
                   </td>
                 -->
-              </tr>
-            </a>
+              </a>
+            </tr>
           {% endfor %}
         </tbody>
       </table>
