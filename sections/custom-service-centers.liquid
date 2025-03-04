@@ -66,7 +66,7 @@
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
     {{ shop.metaobjects.service_centers.entries.size }}
-    {{ shop.metaobjects.service_centers.entries | json }}
+    {{ shop.metaobjects.service_centers.values | json }}
     {% for centersss in shop.metaobjects.service_centers.values %}
       <p>{{ centersss.service_center_name }}</p>
 
