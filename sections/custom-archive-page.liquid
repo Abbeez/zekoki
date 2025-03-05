@@ -130,6 +130,57 @@
   </div>
 </section>
 
+{% schema %}
+{
+  "name": "Custom Branches Section",
+  "settings": [
+  {
+    "type": "header",
+    "content": "Section Spacing"
+  },
+  {
+    "type": "range",
+    "id": "padding_top",
+    "label": "Padding Top",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "label": "Padding Bottom",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "default": 20
+  },
+  {
+    "type": "header",
+    "content": "servicecenters Details"
+  },
+  {
+    "type": "text",
+    "id": "custom-servicecenters__title",
+    "label": "servicecenters Title",
+    "default": "Quality Products"
+  },
+  {
+    "type": "textarea",
+    "id": "custom-servicecenters__description",
+    "label": "servicecenters Description",
+    "default": "Product that you will truly love"
+  },
+  ],
+  "presets": [
+    {
+      "name": "Custom Store Branches Section"
+    }
+  ]
+}
+{% endschema %}
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     let currentPage = 1;
