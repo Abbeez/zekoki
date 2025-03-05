@@ -86,9 +86,12 @@
         "blurps_W4e3hj",
         "blurps_47FDn4"
       ],
+      "custom_css": [
+        ".custom_about__container img {max-height: 500px; object-fit: cover;}"
+      ],
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "padding_top": 70,
+        "padding_bottom": 70,
         "custom-about_image": "shopify://shop_images/Image.png",
         "custom-about__title": "Our Commitment to Exceptional Quality Tools",
         "custom-about__description": "At Zekoki, we prioritize quality in every product we offer. Our tools are designed to deliver performance and reliability, ensuring you get the best value for your investment."
