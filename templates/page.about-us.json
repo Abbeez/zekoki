@@ -64,69 +64,6 @@
         "show_text_below": true
       }
     },
-    "multicolumn_QjzRpH": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_cNMnYz": {
-          "type": "column",
-          "settings": {
-            "title": "Uncompromising Excellence",
-            "text": "<p>Every product is built to <strong>meet the highest standards</strong> of quality and durability.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RVFbET": {
-          "type": "column",
-          "settings": {
-            "title": "Integrity in Every Step",
-            "text": "<p>We operate with <strong>honesty, transparency, and accountability</strong>, ensuring trust in every transaction.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_jcBGaQ": {
-          "type": "column",
-          "settings": {
-            "title": "Relentless Innovation",
-            "text": "<p>We continuously push <strong>technological advancements</strong> to keep our solutions future-ready.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_k97AUY": {
-          "type": "column",
-          "settings": {
-            "title": "Customer-Centric Approach",
-            "text": "<p>Every product is designed with the end-user in mind, ensuring <strong>efficiency, ease of use, and long-term reliability</strong>.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_cNMnYz",
-        "column_RVFbET",
-        "column_jcBGaQ",
-        "column_k97AUY"
-      ],
-      "settings": {
-        "title": "The Zekoki Difference",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_DK4beF": {
       "type": "image-with-text",
       "blocks": {
@@ -201,6 +138,69 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_QjzRpH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cNMnYz": {
+          "type": "column",
+          "settings": {
+            "title": "Uncompromising Excellence",
+            "text": "<p>Every product is built to <strong>meet the highest standards</strong> of quality and durability.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RVFbET": {
+          "type": "column",
+          "settings": {
+            "title": "Integrity in Every Step",
+            "text": "<p>We operate with <strong>honesty, transparency, and accountability</strong>, ensuring trust in every transaction.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jcBGaQ": {
+          "type": "column",
+          "settings": {
+            "title": "Relentless Innovation",
+            "text": "<p>We continuously push <strong>technological advancements</strong> to keep our solutions future-ready.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_k97AUY": {
+          "type": "column",
+          "settings": {
+            "title": "Customer-Centric Approach",
+            "text": "<p>Every product is designed with the end-user in mind, ensuring <strong>efficiency, ease of use, and long-term reliability</strong>.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cNMnYz",
+        "column_RVFbET",
+        "column_jcBGaQ",
+        "column_k97AUY"
+      ],
+      "settings": {
+        "title": "The Zekoki Difference",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
     "custom_store_branches_CpgnhB": {
       "type": "custom-store-branches",
       "settings": {
@@ -232,9 +232,9 @@
     "main",
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
-    "multicolumn_QjzRpH",
     "image_with_text_DK4beF",
     "image_with_text_mnFV8F",
+    "multicolumn_QjzRpH",
     "custom_store_branches_CpgnhB",
     "custom_calltoaction_Jfhw7X"
   ]
