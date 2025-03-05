@@ -97,8 +97,8 @@
     "custom_store_branches_CpgnhB": {
       "type": "custom-store-branches",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "padding_top": 85,
+        "padding_bottom": 80,
         "custom-branch__title": "Zekoki Launches New Store in Cavite: Your Go-To Destination for Quality Tools",
         "custom-branch__description": "Explore Zekoki's wide selection of premium tools at their newest Cavite location, perfect for professionals and DIY enthusiasts alike."
       }
