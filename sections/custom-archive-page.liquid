@@ -97,15 +97,20 @@
         {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
         <div class="custom-archived__items">
           <a
-            href="{{ page.handle }}/{{ archived.system.handle }}"
-            class=""
+            href="{{ archived.external_link }}"
+            <!--
+            {
+            page.handle
+            }}/{{ archived.system.handle }}
+            --
           >
+            class="" >
             <div class="archive-link__container">
               <div class="custom-archived__items_wrapper">
                 {% if archived.thumbnail != blank %}
                   <img src="{{ archived.thumbnail | image_url }}" alt="{{ archived.title }}" height="" width="">
                 {% endif %}
-                <h3 style="">{{ archived.title }}test</h3>
+                <h3 style="">{{ archived.title }}</h3>
               </div>
               <p>{{ archived.description }}</p>
             </div>
