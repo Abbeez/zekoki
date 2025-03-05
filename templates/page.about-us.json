@@ -87,7 +87,7 @@
         "text_z9cgAM"
       ],
       "settings": {
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
@@ -124,7 +124,7 @@
         "text_Ui7VQD"
       ],
       "settings": {
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
@@ -194,20 +194,74 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
         "padding_bottom": 72
       }
     },
-    "custom_store_branches_CpgnhB": {
-      "type": "custom-store-branches",
+    "rich_text_mADwHp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RaqFLp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed for Strength. Engineered for Success.",
+            "heading_size": "h1"
+          }
+        },
+        "text_rtYwPH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RaqFLp",
+        "text_rtYwPH"
+      ],
       "settings": {
-        "padding_top": 85,
-        "padding_bottom": 80,
-        "custom-branch__title": "Zekoki Launches New Store in Cavite: Your Go-To Destination for Quality Tools",
-        "custom-branch__description": "Explore Zekoki's wide selection of premium tools at their newest Cavite location, perfect for professionals and DIY enthusiasts alike."
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter_JCXVgV": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_tXitVz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join us in shaping the future of industrial excellence.",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_zger4n": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_ytECQb": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_tXitVz",
+        "paragraph_zger4n",
+        "email_form_ytECQb"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 72
       }
     },
     "custom_calltoaction_Jfhw7X": {
@@ -235,7 +289,8 @@
     "image_with_text_DK4beF",
     "image_with_text_mnFV8F",
     "multicolumn_QjzRpH",
-    "custom_store_branches_CpgnhB",
+    "rich_text_mADwHp",
+    "newsletter_JCXVgV",
     "custom_calltoaction_Jfhw7X"
   ]
 }
