@@ -191,10 +191,10 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
@@ -257,9 +257,10 @@
         "paragraph_zger4n",
         "email_form_ytECQb"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 72,
         "padding_bottom": 72
       }
