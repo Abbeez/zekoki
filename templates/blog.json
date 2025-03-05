@@ -9,48 +9,44 @@
  */
 {
   "sections": {
-    "rich_text_T3xnJM": {
-      "type": "rich-text",
+    "image_banner_BDwze9": {
+      "type": "image-banner",
       "blocks": {
-        "caption_LwMRAp": {
-          "type": "caption",
-          "settings": {
-            "caption": "{{ blog.title }}",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        },
-        "heading_nDAE6q": {
+        "heading_CWmFfy": {
           "type": "heading",
           "settings": {
-            "heading": "Explore Our Latest {{ blog.title }}",
+            "heading": "Zekoki {{ blog.title }}",
             "heading_size": "h1"
           }
         },
-        "text_GTQQmD": {
+        "text_xfxGqf": {
           "type": "text",
           "settings": {
-            "text": "<p>Stay updated with our expert tips and trends.</p>"
+            "text": "Learn more about the threads, latest news and articles.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "caption_LwMRAp",
-        "heading_nDAE6q",
-        "text_GTQQmD"
+        "heading_CWmFfy",
+        "text_xfxGqf"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "main": {
       "type": "main-blog",
-      "disabled": true,
       "custom_css": [
         "h1.title--primary.scroll-trigger.animate--fade-in {display: none;}"
       ],
@@ -66,6 +62,7 @@
     },
     "featured_blog_qrhaXn": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -83,7 +80,7 @@
     }
   },
   "order": [
-    "rich_text_T3xnJM",
+    "image_banner_BDwze9",
     "main",
     "featured_blog_qrhaXn"
   ]
