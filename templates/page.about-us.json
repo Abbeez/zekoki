@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -18,11 +19,55 @@
     },
     "get_in_touch_WhJLQA": {
       "type": "get-in-touch",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom_form__heading": "Contact Us",
+        "custom_form__description": "<p>Have questions about our products? Need assistance with your Zekoki power tools? We’re here to help!</p>",
+        "custom_form_side": ""
+      }
+    },
+    "image_banner_YwpjL9": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mgpt9e": {
+          "type": "heading",
+          "settings": {
+            "heading": "Discover Zekoki Tools",
+            "heading_size": "h1"
+          }
+        },
+        "text_MpKK9j": {
+          "type": "text",
+          "settings": {
+            "text": "At Zekoki, we believe in providing exceptional quality without breaking the bank. Our extensive range of power tools and machinery is designed to meet the needs of both professionals and DIY enthusiasts alike.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mgpt9e",
+        "text_MpKK9j"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/zekoki_web_design_asset-04-04-04.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "get_in_touch_WhJLQA"
+    "get_in_touch_WhJLQA",
+    "image_banner_YwpjL9"
   ]
 }
