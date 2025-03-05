@@ -46,7 +46,7 @@
       "custom_css": [
         ".banner__buttons {display: inline-flex; flex-wrap: wrap; gap: 1rem; max-width: none !important; word-break: break-word;}",
         ".banner__buttons.banner__buttons--multiple a:last-child {background: var(--zekoki-primary);}",
-        "@media screen and (max-width: 990px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(4rem - 1vw); }}",
+        "@media screen and (max-width: 990px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(4.3rem - 1vw); }}",
         "@media screen and (max-width: 749px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(3rem - 1vw); }}"
       ],
       "settings": {
