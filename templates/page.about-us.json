@@ -93,12 +93,40 @@
         "custom-about__title": "Our Commitment to Exceptional Quality Tools",
         "custom-about__description": "At Zekoki, we prioritize quality in every product we offer. Our tools are designed to deliver performance and reliability, ensuring you get the best value for your investment."
       }
+    },
+    "custom_calltoaction_Jfhw7X": {
+      "type": "custom-calltoaction",
+      "settings": {
+        "gradient-background": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
+        "gradient_start": "#000000",
+        "gradient_end": "#000000",
+        "calltoaction-heading": "Call To Action Heading",
+        "calltoaction-subtext": "<p>Call to action subtext here.</p>",
+        "calltoaction_button_text_primary": "Learn More",
+        "calltoaction_button_url_primary": "",
+        "calltoaction_button_text_secondary": "Shop Now",
+        "calltoaction_button_url_secondary": "",
+        "show_newsletter": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_store_branches_CpgnhB": {
+      "type": "custom-store-branches",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-branch__title": "Zekoki Launches New Store in Cavite: Your Go-To Destination for Quality Tools",
+        "custom-branch__description": "Explore Zekoki's wide selection of premium tools at their newest Cavite location, perfect for professionals and DIY enthusiasts alike."
+      }
     }
   },
   "order": [
     "main",
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
-    "custom_about_section_LCfCGC"
+    "custom_about_section_LCfCGC",
+    "custom_calltoaction_Jfhw7X",
+    "custom_store_branches_CpgnhB"
   ]
 }
