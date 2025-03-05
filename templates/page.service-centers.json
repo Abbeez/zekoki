@@ -17,18 +17,67 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_FMfaiR": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_4XVcWh": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_mq9B4w": {
+          "type": "text",
+          "settings": {
+            "text": "Zekoki Authorized Service Centers",
+            "text_style": "body"
+          }
+        },
+        "buttons_hHbHMF": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4XVcWh",
+        "text_mq9B4w",
+        "buttons_hHbHMF"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/zekoki_web_design_asset-04-04-04.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "custom_service_centers_nz79MQ": {
       "type": "custom-service-centers",
       "settings": {
-        "padding_top": 70,
+        "padding_top": 30,
         "padding_bottom": 70,
-        "custom-servicecenters__title": "Service Centers",
-        "custom-servicecenters__description": "Zekoki Authorized Service Centers"
+        "custom-servicecenters__title": "",
+        "custom-servicecenters__description": ""
       }
     }
   },
   "order": [
     "main",
+    "image_banner_FMfaiR",
     "custom_service_centers_nz79MQ"
   ]
 }
