@@ -9,13 +9,15 @@
 {% endstyle %}
 
 <section class="custom-blog--grid-section page-width">
-  <div class="custom-blog--header">
-    <div class="custom_blog--header--container">
-      <span class="custom-blog--subtitle">Learn More about - {{ page_title] }}</span>
-      <h1 class="h0 title">{{ page.title }}</h1>
-      <p>{{ page_description }}</p>
+  <!--
+    <div class="custom-blog--header">
+      <div class="custom_blog--header--container">
+        <span class="custom-blog--subtitle">Learn More about - {{ page_title] }}</span>
+        <h1 class="h0 title">{{ page.title }}</h1>
+        <p>{{ page_description }}</p>
+      </div>
     </div>
-  </div>
+  -->
 
   {% paginate blogs.articles.articles by 6 %}
     <div class="custom-blog-grid">
