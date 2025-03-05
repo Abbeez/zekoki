@@ -50,7 +50,7 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         "li.list-menu__item svg {border-radius: 50%; background: var(--zekoki-gold);}",
-        ".facets__label:hover,.facets__label.active,.facets__label:has(:focus-visible) {font-style: oblique;}"
+        ".facets__label.active{font-style: oblique;}"
       ],
       "settings": {
         "products_per_page": 16,
