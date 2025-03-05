@@ -97,7 +97,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 36
       }
     },
@@ -127,6 +127,43 @@
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_ceDFUr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4yF3MR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed for Strength. Engineered for Success.",
+            "heading_size": "h1"
+          }
+        },
+        "text_7FFEPw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4yF3MR",
+        "text_7FFEPw"
+      ],
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -201,36 +238,6 @@
         "padding_bottom": 72
       }
     },
-    "rich_text_mADwHp": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_RaqFLp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed for Strength. Engineered for Success.",
-            "heading_size": "h1"
-          }
-        },
-        "text_rtYwPH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RaqFLp",
-        "text_rtYwPH"
-      ],
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "right",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "newsletter_JCXVgV": {
       "type": "newsletter",
       "blocks": {
@@ -289,8 +296,8 @@
     "image_banner_YwpjL9",
     "image_with_text_DK4beF",
     "image_with_text_mnFV8F",
+    "image_with_text_ceDFUr",
     "multicolumn_QjzRpH",
-    "rich_text_mADwHp",
     "newsletter_JCXVgV",
     "custom_calltoaction_Jfhw7X"
   ]
