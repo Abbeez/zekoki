@@ -87,7 +87,7 @@
         "blurps_47FDn4"
       ],
       "custom_css": [
-        ".custom_about__container img {max-height: 500px; object-fit: cover;}"
+        ".custom_about__container img {max-height: 500px; object-fit: cover; object-position: top;}"
       ],
       "settings": {
         "padding_top": 70,
