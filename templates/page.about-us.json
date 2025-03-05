@@ -43,7 +43,7 @@
         "heading_mgpt9e"
       ],
       "settings": {
-        "image": "shopify://shop_images/zekoki_web_design_asset-04-04-04.png",
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -59,35 +59,15 @@
     "rich_text_XjEA8b": {
       "type": "rich-text",
       "blocks": {
-        "heading_X8kyyc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "text_U6UTWL": {
           "type": "text",
           "settings": {
             "text": "<p>Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.</p>"
           }
-        },
-        "button_gDgqQf": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "heading_X8kyyc",
-        "text_U6UTWL",
-        "button_gDgqQf"
+        "text_U6UTWL"
       ],
       "settings": {
         "desktop_content_position": "center",
