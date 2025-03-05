@@ -24,7 +24,7 @@
         "heading_7GRTYR": {
           "type": "heading",
           "settings": {
-            "heading": "Explore Our Latest {{ page.title }}",
+            "heading": "Zekoki  {{ page.title }}",
             "heading_size": "h1"
           }
         },
