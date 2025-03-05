@@ -56,7 +56,7 @@
     "get_in_touch_kgGhrF": {
       "type": "get-in-touch",
       "settings": {
-        "padding_top": 30,
+        "padding_top": 50,
         "padding_bottom": 70,
         "custom_form__heading": "Contact Us",
         "custom_form__description": "<p>Have questions about our products? Need assistance with your Zekoki power tools? We’re here to help!</p>",
