@@ -30,7 +30,7 @@
         "text_aRxAgR": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Let us know your concern, we are here willing to help you.",
             "text_style": "body"
           }
         }
@@ -39,25 +39,24 @@
         "heading_j3eTg9",
         "text_aRxAgR"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Zekoki_Info.png",
-        "image_overlay_opacity": 20,
-        "image_height": "small",
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-9d4eda0b-e395-4793-ae24-ce4619cdeb0c",
+        "color_scheme": "scheme-5",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "get_in_touch_kgGhrF": {
       "type": "get-in-touch",
       "settings": {
-        "padding_top": 70,
+        "padding_top": 30,
         "padding_bottom": 70,
         "custom_form__heading": "Contact Us",
         "custom_form__description": "<p>Have questions about our products? Need assistance with your Zekoki power tools? We’re here to help!</p>",
