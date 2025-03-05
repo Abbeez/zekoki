@@ -17,87 +17,55 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_rTF8VN": {
-      "type": "rich-text",
+    "image_banner_3BVpEf": {
+      "type": "image-banner",
       "blocks": {
-        "heading_p4tTpk": {
+        "heading_XqHeVG": {
           "type": "heading",
           "settings": {
             "heading": "Zekoki {{ page.title }}",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
-        "text_9AVHPL": {
+        "text_inGxjz": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "Zekoki Branches",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_p4tTpk",
-        "text_9AVHPL"
+        "heading_XqHeVG",
+        "text_inGxjz"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-76991950-e5e0-4297-8853-510cd32c575a",
-        "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "multicolumn_Di3jbM": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_AF8YMT": {
-          "type": "column",
-          "disabled": true,
-          "repeater": "{{ page.metafields.custom.branches.value }}",
-          "settings": {
-            "image": "{{ block.repeater.photo.value }}",
-            "title": "{{ block.repeater.title.value }}",
-            "text": "<ul><li><strong>Business Name:  </strong>{{ block.repeater.company.value }}</li><li><strong>Location: </strong>{{ block.repeater.location.value }}</li></ul>",
-            "link_label": "View Details",
-            "link": "{{ block.repeater.system.url }}"
-          }
-        }
-      },
-      "block_order": [
-        "column_AF8YMT"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "{{ page.title }}",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "custom_store_branches_Wndjyd": {
       "type": "custom-store-branches",
       "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "custom-branch__title": "Quality Products",
-        "custom-branch__description": "Product that you will truly love"
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom-branch__title": "",
+        "custom-branch__description": ""
       }
     }
   },
   "order": [
     "main",
-    "rich_text_rTF8VN",
-    "multicolumn_Di3jbM",
+    "image_banner_3BVpEf",
     "custom_store_branches_Wndjyd"
   ]
 }
