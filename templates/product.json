@@ -97,7 +97,7 @@
             "block_heading": "Pairs well with",
             "make_collapsible_row": false,
             "icon": "price_tag",
-            "product_list_limit": 1,
+            "product_list_limit": 2,
             "products_per_page": 3,
             "pagination_style": "counter",
             "image_ratio": "square",
