@@ -18,14 +18,50 @@
         "padding_bottom": 68
       }
     },
+    "image_banner_tPtaQp": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_7GRTYR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore Our Latest {{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_gWgPm7": {
+          "type": "text",
+          "settings": {
+            "text": "Learn more about the Zekoki Products",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7GRTYR",
+        "text_gWgPm7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
     "custom_archive_page_Tetr4Y": {
       "type": "custom-archive-page",
       "settings": {
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "custom-archived__subtitle": "{{ page.title }}",
-        "custom-archived__title": "Explore Our Latest {{ page.title }} Product Guides",
-        "custom-archived__description": "Learn more about the Zekoki Products",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom-archived__subtitle": "",
+        "custom-archived__title": "",
+        "custom-archived__description": "",
         "custom_archived_metaobject": []
       }
     },
@@ -49,6 +85,7 @@
   },
   "order": [
     "main",
+    "image_banner_tPtaQp",
     "custom_archive_page_Tetr4Y",
     "custom_calltoaction_gBxcyV"
   ]
