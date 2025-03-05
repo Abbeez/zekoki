@@ -32,8 +32,8 @@
             "button_label_1": "Shop Zekoki Tools",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
-            "button_label_2": "Find Your Zone",
-            "button_link_2": "shopify://collections",
+            "button_label_2": "Service Centers",
+            "button_link_2": "shopify://pages/service-centers",
             "button_style_secondary_2": false
           }
         }
