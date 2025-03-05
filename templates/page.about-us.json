@@ -63,11 +63,42 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "custom_about_section_LCfCGC": {
+      "type": "custom-about-section",
+      "blocks": {
+        "blurps_W4e3hj": {
+          "type": "blurps",
+          "settings": {
+            "sub_about_title": "Durability Matters",
+            "sub_about_description": "Built to withstand rigorous use, our tools are crafted for longevity and efficiency."
+          }
+        },
+        "blurps_47FDn4": {
+          "type": "blurps",
+          "settings": {
+            "sub_about_title": "Affordable Excellence",
+            "sub_about_description": "Experience high-quality tools without breaking the bank, combining performance with affordability."
+          }
+        }
+      },
+      "block_order": [
+        "blurps_W4e3hj",
+        "blurps_47FDn4"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-about_image": "shopify://shop_images/Image.png",
+        "custom-about__title": "Our Commitment to Exceptional Quality Tools",
+        "custom-about__description": "At Zekoki, we prioritize quality in every product we offer. Our tools are designed to deliver performance and reliability, ensuring you get the best value for your investment."
+      }
     }
   },
   "order": [
     "main",
     "get_in_touch_WhJLQA",
-    "image_banner_YwpjL9"
+    "image_banner_YwpjL9",
+    "custom_about_section_LCfCGC"
   ]
 }
