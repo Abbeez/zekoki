@@ -49,7 +49,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        "li.list-menu__item svg {border-radius: 50%; background: var(--zekoki-primary);}"
+        "li.list-menu__item svg {border-radius: 50%; background: var(--zekoki-gold);}"
       ],
       "settings": {
         "products_per_page": 16,
