@@ -34,21 +34,13 @@
         "heading_mgpt9e": {
           "type": "heading",
           "settings": {
-            "heading": "Discover Zekoki Tools",
+            "heading": "About Zekoki",
             "heading_size": "h1"
-          }
-        },
-        "text_MpKK9j": {
-          "type": "text",
-          "settings": {
-            "text": "At Zekoki, we believe in providing exceptional quality without breaking the bank. Our extensive range of power tools and machinery is designed to meet the needs of both professionals and DIY enthusiasts alike.",
-            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_mgpt9e",
-        "text_MpKK9j"
+        "heading_mgpt9e"
       ],
       "settings": {
         "image": "shopify://shop_images/zekoki_web_design_asset-04-04-04.png",
@@ -64,37 +56,120 @@
         "show_text_below": true
       }
     },
-    "custom_about_section_LCfCGC": {
-      "type": "custom-about-section",
+    "rich_text_XjEA8b": {
+      "type": "rich-text",
       "blocks": {
-        "blurps_W4e3hj": {
-          "type": "blurps",
+        "heading_X8kyyc": {
+          "type": "heading",
           "settings": {
-            "sub_about_title": "Durability Matters",
-            "sub_about_description": "Built to withstand rigorous use, our tools are crafted for longevity and efficiency."
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
           }
         },
-        "blurps_47FDn4": {
-          "type": "blurps",
+        "text_U6UTWL": {
+          "type": "text",
           "settings": {
-            "sub_about_title": "Affordable Excellence",
-            "sub_about_description": "Experience high-quality tools without breaking the bank, combining performance with affordability."
+            "text": "<p>Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.</p>"
+          }
+        },
+        "button_gDgqQf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "blurps_W4e3hj",
-        "blurps_47FDn4"
-      ],
-      "custom_css": [
-        ".custom_about__container img {max-height: 500px; object-fit: cover; object-position: top;}"
+        "heading_X8kyyc",
+        "text_U6UTWL",
+        "button_gDgqQf"
       ],
       "settings": {
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "custom-about_image": "shopify://shop_images/Image.png",
-        "custom-about__title": "Our Commitment to Exceptional Quality Tools",
-        "custom-about__description": "At Zekoki, we prioritize quality in every product we offer. Our tools are designed to deliver performance and reliability, ensuring you get the best value for your investment."
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_DK4beF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MDmAJ9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission",
+            "heading_size": "h1"
+          }
+        },
+        "text_z9cgAM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Zekoki, we are committed to <strong>delivering solutions that exceed expectations</strong>. We understand that industries are constantly evolving, and we are dedicated to staying ahead—<strong>providing machinery that enhances productivity, efficiency, and long-term success</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MDmAJ9",
+        "text_z9cgAM"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_mnFV8F": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kbxnda": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Vision",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ui7VQD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To be the <strong>leading and most trusted provider</strong> of industrial and machinery products in the Philippines—<strong>synonymous with power, innovation, and reliability</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kbxnda",
+        "text_Ui7VQD"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_store_branches_CpgnhB": {
@@ -128,7 +203,9 @@
     "main",
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
-    "custom_about_section_LCfCGC",
+    "rich_text_XjEA8b",
+    "image_with_text_DK4beF",
+    "image_with_text_mnFV8F",
     "custom_store_branches_CpgnhB",
     "custom_calltoaction_Jfhw7X"
   ]
