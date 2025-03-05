@@ -15,7 +15,7 @@
         "heading_JD6fBc": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.title }}",
+            "heading": "Zekoki {{ collection.title }}",
             "heading_size": "h1"
           }
         }
@@ -39,6 +39,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
