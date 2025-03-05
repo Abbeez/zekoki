@@ -9,8 +9,37 @@
  */
 {
   "sections": {
+    "image_banner_Yp9NDn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JD6fBc": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JD6fBc"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Zekoki_Page_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -22,7 +51,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -39,6 +68,7 @@
     }
   },
   "order": [
+    "image_banner_Yp9NDn",
     "banner",
     "product-grid"
   ]
