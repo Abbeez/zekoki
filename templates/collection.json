@@ -50,7 +50,7 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         "li.list-menu__item svg {border-radius: 50%; background: var(--zekoki-gold); display: none;}",
-        ".facets__label.active {font-style: oblique;}",
+        ".facets__label.active {text-decoration:underline;}",
         ".facet-checkbox__text-label + * {display: none;}"
       ],
       "settings": {
