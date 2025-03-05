@@ -94,6 +94,15 @@
         "custom-about__description": "At Zekoki, we prioritize quality in every product we offer. Our tools are designed to deliver performance and reliability, ensuring you get the best value for your investment."
       }
     },
+    "custom_store_branches_CpgnhB": {
+      "type": "custom-store-branches",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "custom-branch__title": "Zekoki Launches New Store in Cavite: Your Go-To Destination for Quality Tools",
+        "custom-branch__description": "Explore Zekoki's wide selection of premium tools at their newest Cavite location, perfect for professionals and DIY enthusiasts alike."
+      }
+    },
     "custom_calltoaction_Jfhw7X": {
       "type": "custom-calltoaction",
       "settings": {
@@ -110,15 +119,6 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "custom_store_branches_CpgnhB": {
-      "type": "custom-store-branches",
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "custom-branch__title": "Zekoki Launches New Store in Cavite: Your Go-To Destination for Quality Tools",
-        "custom-branch__description": "Explore Zekoki's wide selection of premium tools at their newest Cavite location, perfect for professionals and DIY enthusiasts alike."
-      }
     }
   },
   "order": [
@@ -126,7 +126,7 @@
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
     "custom_about_section_LCfCGC",
-    "custom_calltoaction_Jfhw7X",
-    "custom_store_branches_CpgnhB"
+    "custom_store_branches_CpgnhB",
+    "custom_calltoaction_Jfhw7X"
   ]
 }
