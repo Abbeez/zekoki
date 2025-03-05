@@ -57,12 +57,10 @@
     "custom_archive_page_Tetr4Y": {
       "type": "custom-archive-page",
       "settings": {
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "custom-archived__subtitle": "",
-        "custom-archived__title": "",
-        "custom-archived__description": "",
-        "custom_archived_metaobject": []
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "custom-servicecenters__title": "Quality Products",
+        "custom-servicecenters__description": "Product that you will truly love"
       }
     },
     "custom_calltoaction_gBxcyV": {
