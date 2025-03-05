@@ -37,10 +37,18 @@
             "heading": "About Zekoki",
             "heading_size": "h1"
           }
+        },
+        "text_HY6gch": {
+          "type": "text",
+          "settings": {
+            "text": "Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "heading_mgpt9e"
+        "heading_mgpt9e",
+        "text_HY6gch"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Page_Background.png",
@@ -56,26 +64,67 @@
         "show_text_below": true
       }
     },
-    "rich_text_XjEA8b": {
-      "type": "rich-text",
+    "multicolumn_QjzRpH": {
+      "type": "multicolumn",
       "blocks": {
-        "text_U6UTWL": {
-          "type": "text",
+        "column_cNMnYz": {
+          "type": "column",
           "settings": {
-            "text": "<p>Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.</p>"
+            "title": "Uncompromising Excellence",
+            "text": "<p>Every product is built to <strong>meet the highest standards</strong> of quality and durability.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RVFbET": {
+          "type": "column",
+          "settings": {
+            "title": "Integrity in Every Step",
+            "text": "<p>We operate with <strong>honesty, transparency, and accountability</strong>, ensuring trust in every transaction.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jcBGaQ": {
+          "type": "column",
+          "settings": {
+            "title": "Relentless Innovation",
+            "text": "<p>We continuously push <strong>technological advancements</strong> to keep our solutions future-ready.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_k97AUY": {
+          "type": "column",
+          "settings": {
+            "title": "Customer-Centric Approach",
+            "text": "<p>Every product is designed with the end-user in mind, ensuring <strong>efficiency, ease of use, and long-term reliability</strong>.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "text_U6UTWL"
+        "column_cNMnYz",
+        "column_RVFbET",
+        "column_jcBGaQ",
+        "column_k97AUY"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "The Zekoki Difference",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_DK4beF": {
@@ -183,7 +232,7 @@
     "main",
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
-    "rich_text_XjEA8b",
+    "multicolumn_QjzRpH",
     "image_with_text_DK4beF",
     "image_with_text_mnFV8F",
     "custom_store_branches_CpgnhB",
