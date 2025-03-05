@@ -33,23 +33,11 @@
             "text": "Zekoki Authorized Service Centers",
             "text_style": "body"
           }
-        },
-        "buttons_hHbHMF": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_4XVcWh",
-        "text_mq9B4w",
-        "buttons_hHbHMF"
+        "text_mq9B4w"
       ],
       "settings": {
         "image": "shopify://shop_images/zekoki_web_design_asset-04-04-04.png",
