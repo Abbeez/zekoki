@@ -42,10 +42,11 @@
   .pagination {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin-top: 20px;
   }
 
-  .pagination button {
+  .pagination button, .pagination span {
       padding: 10px 15px;
       margin: 0 5px;
       border: none;
@@ -58,6 +59,13 @@
   .pagination button:disabled {
       background: grey;
       cursor: not-allowed;
+  }
+
+  .pagination span {
+      background: white;
+      color: var(--zekoki-primary);
+      cursor: default;
+      font-weight: bold;
   }
 
   /* Tablet and small desktop */
@@ -102,8 +110,6 @@
       "
     >
       {% for archived in shop.metaobjects.product_guides.values %}
-        {% assign single_archive_handle = page.handle | append: '/' | append: archived.system.handle %}
-        {% assign single_archive_handle_clean = single_archive_handle | remove: '/' %}
         <div class="custom-archived__items archived-item" style="display: none;">
           <a
             href="{{ archived.external_link }}"
@@ -125,6 +131,7 @@
 
     <div class="pagination">
       <button id="prev-page" disabled>Previous</button>
+      <span id="page-numbers"></span>
       <button id="next-page">Next</button>
     </div>
   </div>
@@ -189,6 +196,7 @@
     const totalPages = Math.ceil(items.length / itemsPerPage);
     const prevButton = document.getElementById("prev-page");
     const nextButton = document.getElementById("next-page");
+    const pageNumbers = document.getElementById("page-numbers");
 
     function showPage(page) {
       let start = (page - 1) * itemsPerPage;
@@ -199,6 +207,28 @@
 
       prevButton.disabled = page === 1;
       nextButton.disabled = page === totalPages;
+
+      pageNumbers.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        let pageSpan = document.createElement("span");
+        pageSpan.textContent = i;
+        pageSpan.style.padding = "10px 15px";
+        pageSpan.style.margin = "0 5px";
+        pageSpan.style.cursor = "pointer";
+        pageSpan.style.borderRadius = "5px";
+        if (i === page) {
+          pageSpan.style.background = "var(--zekoki-primary)";
+          pageSpan.style.color = "white";
+        } else {
+          pageSpan.style.background = "white";
+          pageSpan.style.color = "var(--zekoki-primary)";
+        }
+        pageSpan.addEventListener("click", function () {
+          currentPage = i;
+          showPage(currentPage);
+        });
+        pageNumbers.appendChild(pageSpan);
+      }
     }
 
     prevButton.addEventListener("click", function () {
