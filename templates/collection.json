@@ -27,7 +27,7 @@
         "image": "shopify://shop_images/Zekoki_Page_Background.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "desktop_content_position": "middle-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-5",
