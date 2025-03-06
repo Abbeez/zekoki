@@ -37,18 +37,10 @@
             "heading": "About Zekoki",
             "heading_size": "h0"
           }
-        },
-        "text_HY6gch": {
-          "type": "text",
-          "settings": {
-            "text": "Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
-        "heading_mgpt9e",
-        "text_HY6gch"
+        "heading_mgpt9e"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Page_Background.png",
@@ -70,11 +62,48 @@
         "heading_MDmAJ9": {
           "type": "heading",
           "settings": {
-            "heading": "Our Mission",
+            "heading": "Powering Progress. Building the Future.",
             "heading_size": "h1"
           }
         },
         "text_z9cgAM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MDmAJ9",
+        "text_z9cgAM"
+      ],
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_xdtJn9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LTfDr8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission",
+            "heading_size": "h1"
+          }
+        },
+        "text_LNam4D": {
           "type": "text",
           "settings": {
             "text": "<p>At Zekoki, we are committed to <strong>delivering solutions that exceed expectations</strong>. We understand that industries are constantly evolving, and we are dedicated to staying ahead—<strong>providing machinery that enhances productivity, efficiency, and long-term success</strong>.</p>",
@@ -83,8 +112,8 @@
         }
       },
       "block_order": [
-        "heading_MDmAJ9",
-        "text_z9cgAM"
+        "heading_LTfDr8",
+        "text_LNam4D"
       ],
       "settings": {
         "height": "small",
@@ -127,43 +156,6 @@
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_ceDFUr": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_4yF3MR": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed for Strength. Engineered for Success.",
-            "heading_size": "h1"
-          }
-        },
-        "text_7FFEPw": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4yF3MR",
-        "text_7FFEPw"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -238,6 +230,43 @@
         "padding_bottom": 72
       }
     },
+    "image_with_text_ceDFUr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4yF3MR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed for Strength. Engineered for Success.",
+            "heading_size": "h1"
+          }
+        },
+        "text_7FFEPw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4yF3MR",
+        "text_7FFEPw"
+      ],
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "newsletter_JCXVgV": {
       "type": "newsletter",
       "blocks": {
@@ -295,6 +324,7 @@
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
     "image_with_text_DK4beF",
+    "image_with_text_xdtJn9",
     "image_with_text_mnFV8F",
     "multicolumn_QjzRpH",
     "image_with_text_ceDFUr",
