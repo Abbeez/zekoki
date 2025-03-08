@@ -33,6 +33,10 @@ main#MainContent {
     overflow-x:hidden !important;
 }
 
+body{
+   overflow-x:hidden !important;
+}
+
 html.ui-admin-bar.ui-admin-bar--is-collapsed {
     display: none;
 }
