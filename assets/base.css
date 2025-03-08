@@ -13,9 +13,6 @@
   --sectionheight:430px;
 }
 
-main {
-  overflow-x:hidden !important;
-}
 
 img {
   min-height:auto;
@@ -33,6 +30,7 @@ main#MainContent {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  overflow-x:hidden !important;
 }
 
 html.ui-admin-bar.ui-admin-bar--is-collapsed {
