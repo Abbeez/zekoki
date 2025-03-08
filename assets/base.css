@@ -14,28 +14,7 @@
 }
 
 
-img {
-  min-height:auto;
-  width:100%;
-  display:block;
-}
 
-h1:not(.header__heading), h2, h3, h4, h5, h6, .button {
-  font-style: oblique 12deg;
-  letter-spacing: -1px !important;
-}
-
-main#MainContent {
-    background: url('https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoki_Archive_Background.png?v=1740374128');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x:hidden !important;
-}
-
-body{
-   overflow-x:hidden !important;
-}
 
 html.ui-admin-bar.ui-admin-bar--is-collapsed {
     display: none;
@@ -3640,16 +3619,46 @@ details-disclosure>details {
 
 /* Custom CSS */
 
+img {
+  min-height:auto;
+  width:100%;
+  display:block;
+}
+
+h1:not(.header__heading), h2, h3, h4, h5, h6, .button {
+  font-style: oblique 12deg;
+  letter-spacing: -1px !important;
+}
+
+main#MainContent {
+    background: url('https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoki_Archive_Background.png?v=1740374128');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x:hidden !important;
+}
+
+body{
+   overflow-x:hidden !important;
+}
+
 h2.title.h1 {
     margin: 0 !important;
 }
 
+/* Header */
 
+@media screen and (min-width: 990px) {
+  
 .header{
   display: flex !important;
   justify-content: space-between;
   align-items: center;
 }
+  
+}
+
+/* end header */
 
 .footer__blocks-wrapper {
     display: flex;
