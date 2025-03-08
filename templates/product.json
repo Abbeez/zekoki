@@ -103,6 +103,10 @@
             "image_ratio": "square",
             "enable_quick_add": false
           }
+        },
+        "description_mUfKXX": {
+          "type": "description",
+          "settings": {}
         }
       },
       "block_order": [
@@ -118,7 +122,8 @@
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
         "share",
-        "complementary_cXVTT7"
+        "complementary_cXVTT7",
+        "description_mUfKXX"
       ],
       "custom_css": [
         ".product__media {border: 1px solid #111111; border-radius: 10px;}",
