@@ -1270,8 +1270,19 @@ if (!customElements.get('bulk-add')) {
 
 
 
-// Custom Javascript
+/* ==================== CUSTOM JAVASCRIPT ==================== */
 
+// Adding  Strong Element on Specifications
 document.querySelectorAll(".specifications-custom span").forEach((element) => {
     element.innerHTML = element.innerHTML.replace(/([\w\s]+):/g, "<strong>$1:</strong>");
+});
+
+// Shrink the Mascot When User Scrolls 
+window.addEventListener("scroll", function () {
+    let mascot = document.querySelector(".zekoking-mascot--fixed img");
+    if (window.scrollY > 100) { // Shrinks when user scrolls down 100px
+        mascot.style.maxWidth = "250px"; 
+    } else {
+        mascot.style.maxWidth = "400px"; 
+    }
 });
