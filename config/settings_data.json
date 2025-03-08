@@ -303,7 +303,7 @@
       },
       "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a": {
         "settings": {
-          "background": "#efc00f",
+          "background": "#ffffff",
           "background_gradient": "radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.06) 100%)",
           "text": "#121212",
           "button": "rgba(0,0,0,0)",
