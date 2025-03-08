@@ -221,6 +221,15 @@
         "padding_bottom": 100
       }
     },
+    "custom_liquid_AJkG9e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ".zekoking-mascot--fixed {\n    position: absolute;\n    top: 35%;\n    right: -200px;\n    transition: transform 0.3s ease, max-width 0.3s ease;\n}\n\n.zekoking-mascot--fixed img {\n    max-width: 400px;\n    transform: rotate(-35deg);\n}\n\n/* Adjust mascot size for tablets (768px and below) */\n@media screen and (max-width: 768px) {\n    .zekoking-mascot--fixed img {\n        max-width: 300px; /* Reduce size */\n    }\n}\n\n/* Adjust mascot size for mobile screens (480px and below) */\n@media screen and (max-width: 480px) {\n    .zekoking-mascot--fixed img {\n        max-width: 200px; /* Further reduce size */\n    }\n}",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "custom_calltoaction_XWTTVy": {
       "type": "custom-calltoaction",
       "settings": {
@@ -236,15 +245,6 @@
         "show_newsletter": false,
         "padding_top": 20,
         "padding_bottom": 20
-      }
-    },
-    "custom_liquid_AJkG9e": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n.zekoking-mascot--fixed{\nposition:absolute;\ntop:35%;\nright:-200px;\n}\n\n.zekoking-mascot--fixed img {\nmax-width:400px;\ntransform:rotate(-35deg);\n}\n</style>\n\n<div class=\"zekoking-mascot--fixed\">\n<img src=\"https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoking_Mascot.png?v=1741409149\">\n</div>",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
