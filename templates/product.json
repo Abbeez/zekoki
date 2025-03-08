@@ -58,6 +58,12 @@
             "show_inventory_quantity": true
           }
         },
+        "custom_liquid_R6VY3D": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.specifications != blank %}\n  {{ product.metafields.custom.specifications | metafield_tag }}\n{% endif %}"
+          }
+        },
         "collapsible_tab_LKRccT": {
           "type": "collapsible_tab",
           "settings": {
@@ -118,6 +124,7 @@
         "quantity_selector",
         "buy_buttons",
         "inventory_FGwyR3",
+        "custom_liquid_R6VY3D",
         "collapsible_tab_LKRccT",
         "collapsible_tab_qWyYtx",
         "collapsible_tab_BcyBmY",
