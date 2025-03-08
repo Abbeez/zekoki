@@ -111,7 +111,7 @@
         "collections_iNMcYG": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "pumps",
+            "boxed_collection": "pump",
             "boxed_collection__heading": "Collection Title"
           }
         },
