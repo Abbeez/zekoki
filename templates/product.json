@@ -69,7 +69,7 @@
           "settings": {
             "heading": "Specifications",
             "icon": "none",
-            "content": "<p>&lcub;% if product.metafields.custom.specifications != blank %&rcub;<br/>  {{ product.metafields.custom.short_description | metafield_tag }}<br/>&lcub;% endif %&rcub;</p>",
+            "content": "",
             "page": ""
           }
         },
