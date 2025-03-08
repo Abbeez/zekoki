@@ -3704,3 +3704,27 @@ a.button.button--secondary {
 }
 }
 
+
+
+
+/* Product Page */
+
+.zekoking-mascot--fixed{
+position:fixed;
+top:35%;
+right:-200px;
+z-index:-2;
+}
+
+.zekoking-mascot--fixed img {
+max-width:380px;
+transform:rotate(-35deg);
+}
+
+
+@media screen and (max-width: 990px) {
+  
+  section#shopify-section-template--24173682884974__custom_liquid_AJkG9e {
+      display: none;
+  }
+}
