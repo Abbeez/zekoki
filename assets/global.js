@@ -1267,3 +1267,11 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+
+
+// Custom Javascript
+
+document.querySelectorAll(".specifications-custom span").forEach((element) => {
+    element.innerHTML = element.innerHTML.replace(/([\w\s]+):/g, "<strong>$1:</strong>");
+});
