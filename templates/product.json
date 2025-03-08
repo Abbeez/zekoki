@@ -61,7 +61,7 @@
         "custom_liquid_R6VY3D": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.specifications != blank %}\n  {{ product.metafields.custom.specifications | metafield_tag }}\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.specifications != blank %}\n  {{ product.metafields.custom.short_description | metafield_tag }}\n{% endif %}"
           }
         },
         "collapsible_tab_LKRccT": {
@@ -69,7 +69,7 @@
           "settings": {
             "heading": "Specifications",
             "icon": "none",
-            "content": "<p>Specifications</p>",
+            "content": "<p>&lcub;% if product.metafields.custom.specifications != blank %&rcub;<br/>  {{ product.metafields.custom.short_description | metafield_tag }}<br/>&lcub;% endif %&rcub;</p>",
             "page": ""
           }
         },
