@@ -241,7 +241,7 @@
     "custom_liquid_AJkG9e": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.zekoking-mascot--fixed{\nposition:absolute;\ntop:35%;\nright:-15%;\n}\n\n.zekoking-mascot--fixed img {\nmax-width:350px;\ntransform:rotate(-35deg)\n}\n</style>\n\n<div class=\"zekoking-mascot--fixed\">\n<img src=\"https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoking_Mascot.png?v=1741409149\">\n</div>",
+        "custom_liquid": "<style>\n.zekoking-mascot--fixed{\nposition:fixed;\ntop:35%;\nright:-15%;\n}\n\n.zekoking-mascot--fixed img {\nmax-width:350px;\ntransform:rotate(-35deg)\n}\n</style>\n\n<div class=\"zekoking-mascot--fixed\">\n<img src=\"https://cdn.shopify.com/s/files/1/0895/9075/9790/files/Zekoking_Mascot.png?v=1741409149\">\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
