@@ -102,10 +102,7 @@
         <div class="collection-container">
           <a href="{{ collection.url }}" alt="{{ collection.title }}">
             <div class="collection-card">
-              <img src="{{ collection.image | image_url }}" alt="{{ collection.title }}" width="" height="">
-              <h3>
-                <a href="">{{ collection.title | truncate: 15 }}</a>
-              </h3>
+              <h3>{{ collection.title | truncate: 15 }}</h3>
             </div>
           </a>
         </div>
