@@ -101,7 +101,9 @@
         {% assign collection = collections[collection_handle] %}
         <div class="collection-container">
           <a href="{{ collection.url }}" alt="{{ collection.title }}">
-            <h3>{{ collection.title | truncate: 15 }}</h3>
+            <div class="collection-card">
+              <h3>{{ collection.title | truncate: 15 }}</h3>
+            </div>
           </a>
         </div>
       {% endif %}
