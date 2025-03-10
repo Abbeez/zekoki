@@ -15,14 +15,14 @@
         "heading_CWmFfy": {
           "type": "heading",
           "settings": {
-            "heading": "Zekoki {{ blog.title }}",
+            "heading": "Zekoki Central News, Announcements, and Updates",
             "heading_size": "h1"
           }
         },
         "text_xfxGqf": {
           "type": "text",
           "settings": {
-            "text": "Learn more about the threads, latest news and articles.",
+            "text": "Stay ahead with the latest updates on Zekoki tools. From new product launches to major announcements, find everything you need to know right here. Keep up with the latest trends and innovations in the world of Zekoki.",
             "text_style": "body"
           }
         }
