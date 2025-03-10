@@ -69,7 +69,7 @@
         "collections_f7Radq": {
           "type": "Collections",
           "settings": {
-            "boxed_collection": "pumps",
+            "boxed_collection": "pump",
             "boxed_collection__heading": "Collection Title"
           }
         },
@@ -253,7 +253,7 @@
         "banner_button_text_primary": "Learn More",
         "banner_button_url_primary": "shopify://pages/about-us",
         "banner_button_text_secondary": "Find a store",
-        "banner_button_url_secondary": "shopify://pages/branches"
+        "banner_button_url_secondary": "shopify://pages/statins"
       }
     },
     "custom_product_list_DQ8Gk7": {
