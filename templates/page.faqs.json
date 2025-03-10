@@ -30,7 +30,7 @@
         "text_ErrXTH": {
           "type": "text",
           "settings": {
-            "text": "Got Questions? We’ve Got Answers!",
+            "text": "Find answers to frequently asked questions about Zekoki tools and services.",
             "text_style": "body"
           }
         }
@@ -59,45 +59,27 @@
         "collapsible_row_DHJaLa": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "What makes Zekoki tools different from other brands?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Zekoki tools are engineered with Japan-grade components, delivering unmatched power and precision. We focus on durability and performance, ensuring our tools can handle the toughest jobs.</p>",
             "page": ""
           }
         },
         "collapsible_row_g6T4bQ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Are Zekoki tools designed for professional or DIY use?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Zekoki tools are designed for both professional and DIY use. Built with robust Japan-grade components, they withstand the demands of heavy-duty construction projects. However, their user-friendly design, ergonomic features, and versatile functionality also make them perfect for DIY enthusiasts.</p>",
             "page": ""
           }
         },
         "collapsible_row_Jk8Ct8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I choose the right Zekoki tool for my project?",
             "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_qYwiCD": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_ExfMTi": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Consider the type of project, the materials you'll be working with, and the required power output. Our product guides and expert reviews (found in the <a href=\"/pages/learning-center\" title=\"Learning Center\"><span style=\"text-decoration:underline\">Zekoki Learning Cente</span></a>r) offer detailed information to help you choose the perfect tool.</p>",
             "page": ""
           }
         }
@@ -105,17 +87,147 @@
       "block_order": [
         "collapsible_row_DHJaLa",
         "collapsible_row_g6T4bQ",
-        "collapsible_row_Jk8Ct8",
-        "collapsible_row_qYwiCD",
-        "collapsible_row_ExfMTi"
+        "collapsible_row_Jk8Ct8"
       ],
       "settings": {
         "caption": "",
-        "heading": "",
+        "heading": "Product and Performance",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
-        "color_scheme": "",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "collapsible_content_TiRNd7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_eTTjaQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Apart from your website, where can I purchase Zekoki tools?",
+            "icon": "none",
+            "row_content": "<p>Zekoki tools are available at our <a href=\"https://zekoki-official.myshopify.com/pages/branches\"><span style=\"text-decoration:underline\">authorized dealers</span></a> throughout the Philippines. Additionally, you can find our products on major online platforms such as Lazada, Shopee, and Tiktok Shop</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EakHnL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How can I ensure I'm buying genuine Zekoki products online?",
+            "icon": "none",
+            "row_content": "<p>To ensure you're purchasing genuine Zekoki products online, always buy directly from our official stores linked here:</p><ul><li> Lazada: @<a href=\"https://www.lazada.com.ph/shop/zekoki?path=index.htm&trafficFrom=17449020_303586&laz_trackid=2:mm_217760767_60751943_2019901622:clkgl3oof1ilmalulgead3&mkttid=clkgl3oof1ilmalulgead3\"><span style=\"text-decoration:underline\">Zekoki</span></a></li><li> Shopee: @<a href=\"https://shopee.ph/shop/1162009953\"><span style=\"text-decoration:underline\">Zekoki</span></a></li></ul><p>TikTok Shop: <a href=\"https://www.tiktok.com/@zekokipowertools\"><span style=\"text-decoration:underline\">@zekokipowertools</span></a>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_eTTjaQ",
+        "collapsible_row_EakHnL"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Purchasing and Availability",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "collapsible_content_pzX6ff": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Qd64kD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty period for Zekoki tools?",
+            "icon": "none",
+            "row_content": "<p>Zekoki tools are warranted to be free of defects in workmanship and materials for a period of <a href=\"/pages/warranty-info\" title=\"Warranty Info\">six (6) months</a> from the date of original purchase.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dkfdW3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What types of defects are covered under the Zekoki warranty?",
+            "icon": "none",
+            "row_content": "<p>The Zekoki warranty covers defects in workmanship and materials. This means that if your tool fails due to a manufacturing flaw, it will be covered.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HkFRC3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What should I do if my Zekoki tool develops a problem within the warranty period?",
+            "icon": "none",
+            "row_content": "<p>If your tool develops a problem within the six (6) month warranty period, return the complete tool, freight prepaid, to one of our Zekoki factory service centers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rFyXKD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What happens after I send my Zekoki tool to a service center for warranty repair?",
+            "icon": "none",
+            "row_content": "<p>Our technicians will inspect the tool. If the problem is caused by defective workmanship or material, Zekoki will repair (or, at our option, replace) the tool without charge.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XgbBPR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Am I responsible for shipping costs when sending a tool for warranty repair?",
+            "icon": "none",
+            "row_content": "<p>Yes, you are responsible for the freight prepaid when sending the tool to our service center.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7TdMnR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do Zekoki service centers offer repairs for out-of-warranty tools?",
+            "icon": "none",
+            "row_content": "<p>Yes, our service centers provide expert repairs for both in-warranty and out-of-warranty Zekoki tools. Contact your local service center for a quote.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_NwUU73": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I find a Zekoki service center?",
+            "icon": "none",
+            "row_content": "<p>Use our<a href=\"/pages/service-centers\" title=\"Service Center Locator\"> service center locator</a> on the website to find the nearest Zekoki service center. We have a growing network to serve you throughout the Philippines.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Qd64kD",
+        "collapsible_row_dkfdW3",
+        "collapsible_row_HkFRC3",
+        "collapsible_row_rFyXKD",
+        "collapsible_row_XgbBPR",
+        "collapsible_row_7TdMnR",
+        "collapsible_row_NwUU73"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Warranty and Support Terms",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
         "container_color_scheme": "scheme-2",
         "open_first_collapsible_row": true,
         "image_ratio": "small",
@@ -128,6 +240,8 @@
   "order": [
     "main",
     "image_banner_iegUXt",
-    "collapsible_content_PhLpBg"
+    "collapsible_content_PhLpBg",
+    "collapsible_content_TiRNd7",
+    "collapsible_content_pzX6ff"
   ]
 }
