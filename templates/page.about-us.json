@@ -88,8 +88,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/We_Challenge_the_Future_1.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
+        "height": "small",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -235,8 +235,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Image.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
+        "height": "small",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
