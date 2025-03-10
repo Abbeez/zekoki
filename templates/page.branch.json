@@ -23,7 +23,7 @@
         "heading_XqHeVG": {
           "type": "heading",
           "settings": {
-            "heading": "Zekoki Stations ",
+            "heading": "Zekoki {{ page.title }}",
             "heading_size": "h1"
           }
         },
