@@ -226,7 +226,7 @@
           "type": "button",
           "settings": {
             "button_label": "Watch Tutorials",
-            "button_link": "shopify://pages/product-guides",
+            "button_link": "shopify://pages/learning-center",
             "button_style_secondary": false
           }
         },
