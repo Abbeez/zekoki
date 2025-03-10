@@ -162,7 +162,7 @@
         "blurps_VJk3pK": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Power Tools",
+            "sub_category_image": "shopify://shop_images/001-power-drill.png",
             "sub_category_title": "Tough Tools Forged for the Grind",
             "sub_category_description": "Cut, drill, and build with tools that keep up with every task."
           }
@@ -170,7 +170,7 @@
         "blurps_mgzpgX": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Machinery",
+            "sub_category_image": "shopify://shop_images/003-generator.png",
             "sub_category_title": "The Force Behind Your Projects",
             "sub_category_description": "The industrial strength you need to keep your operations running smoothly."
           }
@@ -178,7 +178,7 @@
         "blurps_3XeV8W": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Accessories",
+            "sub_category_image": "shopify://shop_images/002-drill-bit.png",
             "sub_category_title": "Adapt Your Tools to Any Job",
             "sub_category_description": "Blades, wheels, and attachments to push your tools further."
           }
@@ -186,7 +186,7 @@
         "blurps_itkDtG": {
           "type": "blurps",
           "settings": {
-            "sub_category_subheading": "Pumps ",
+            "sub_category_image": "shopify://shop_images/005-water-pump.png",
             "sub_category_title": "Powering the Flow",
             "sub_category_description": "Get the right equipment to maintain a smooth water system for your home, farm, and business."
           }
