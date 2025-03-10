@@ -90,7 +90,14 @@
   <div class="custom-blurp__container blurp-second animate--slide-in">
     {% for block in section.blocks %}
       <div class="blurp-items">
-        <span>{{ block.settings.sub_category_image | strip_html }}</span>
+        {% if block.settings.sub_category_image != blank %}
+          <img
+            src="{{ block.settings.sub_category_image | image_url }}"
+            alt="{{ block.settings.sub_category_title }}"
+            height=""
+            width=""
+          >
+        {% endif %}
         <h3>{{ block.settings.sub_category_title | strip_html }}</h3>
         <p>{{ block.settings.sub_category_description | strip_html }}</p>
       </div>
