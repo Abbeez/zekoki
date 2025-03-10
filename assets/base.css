@@ -3738,6 +3738,10 @@ transform:rotate(-35deg);
   }
 
     /* Theme collection  */
+
+  .custom_product__list {
+    text-align:center;
+  }
   .custom_product__list > div:last-child {
       position: absolute;
       bottom: -30px;
