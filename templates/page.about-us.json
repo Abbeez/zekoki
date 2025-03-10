@@ -102,76 +102,45 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_xdtJn9": {
-      "type": "image-with-text",
+    "multicolumn_xnXDWf": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_LTfDr8": {
-          "type": "heading",
+        "column_thXjrz": {
+          "type": "column",
           "settings": {
-            "heading": "Our Mission",
-            "heading_size": "h1"
-          }
-        },
-        "text_LNam4D": {
-          "type": "text",
-          "settings": {
+            "title": "Our Mission",
             "text": "<p>We are committed to being the driving force behind our clients' success, providing innovative solutions that not only meet but exceed their evolving needs.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTfDr8",
-        "text_LNam4D"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 72,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_mnFV8F": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_kbxnda": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Vision",
-            "heading_size": "h1"
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_Ui7VQD": {
-          "type": "text",
+        "column_TXKpBJ": {
+          "type": "column",
           "settings": {
+            "title": "Our Vision",
             "text": "<p>To be the foremost and unrivaled provider of industrial and machinery products in the Philippines, synonymous with power, innovation, and reliability.</p>",
-            "text_style": "body"
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_kbxnda",
-        "text_Ui7VQD"
+        "column_thXjrz",
+        "column_TXKpBJ"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -222,17 +191,20 @@
         "column_jcBGaQ",
         "column_k97AUY"
       ],
+      "custom_css": [
+        ".multicolumn .title-wrapper-with-link h2 {width: 100% !important; text-align: center; color: #fff;}"
+      ],
       "settings": {
         "title": "The Zekoki Code",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-e1b3e13f-0a25-4dde-99a6-cd69fea7173a",
+        "color_scheme": "scheme-8f4f910d-58a7-4f99-86df-5b459d94c4d4",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 72,
@@ -334,8 +306,7 @@
     "get_in_touch_WhJLQA",
     "image_banner_YwpjL9",
     "image_with_text_DK4beF",
-    "image_with_text_xdtJn9",
-    "image_with_text_mnFV8F",
+    "multicolumn_xnXDWf",
     "multicolumn_QjzRpH",
     "image_with_text_ceDFUr",
     "newsletter_JCXVgV",
