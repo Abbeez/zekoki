@@ -90,7 +90,7 @@
   <div class="custom-blurp__container blurp-second animate--slide-in">
     {% for block in section.blocks %}
       <div class="blurp-items">
-        <span>{{ block.settings.sub_category_subheading | strip_html }}</span>
+        <span>{{ block.settings.sub_category_image | strip_html }}</span>
         <h3>{{ block.settings.sub_category_title | strip_html }}</h3>
         <p>{{ block.settings.sub_category_description | strip_html }}</p>
       </div>
@@ -177,10 +177,9 @@
       "limit": 4,
       "settings": [
         {
-          "type": "text",
-          "id": "sub_category_subheading",
-          "label": "Sub Heading",
-          "default": "Quality Lorem Ipsum"
+          "type": "image_picker",
+          "id": "sub_category_image",
+          "label": "Category Image"
         },
         {
           "type": "text",
