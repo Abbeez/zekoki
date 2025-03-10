@@ -34,13 +34,21 @@
         "heading_mgpt9e": {
           "type": "heading",
           "settings": {
-            "heading": "About Zekoki",
+            "heading": "The Zekoki Story",
             "heading_size": "h0"
+          }
+        },
+        "text_BnrrYX": {
+          "type": "text",
+          "settings": {
+            "text": "The future does not wait, and neither do we. For decades, Zekoki has been pushing the boundaries of professional-grade tools to set new standards. This is our story, built for those who build.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_mgpt9e"
+        "heading_mgpt9e",
+        "text_BnrrYX"
       ],
       "settings": {
         "image": "shopify://shop_images/Zekoki_Page_Background.png",
@@ -62,14 +70,14 @@
         "heading_MDmAJ9": {
           "type": "heading",
           "settings": {
-            "heading": "Powering Progress. Building the Future.",
+            "heading": "We Challenge the Future",
             "heading_size": "h1"
           }
         },
         "text_z9cgAM": {
           "type": "text",
           "settings": {
-            "text": "<p>Since <strong>2006</strong>, <strong>Zekoki</strong> has been at the forefront of industrial and machinery innovation, delivering <strong>high-performance solutions</strong> that drive businesses forward. Built on a foundation of <strong>strength, boldness, and cutting-edge technology</strong>, we are more than just a machinery provider—we are a <strong>partner in progress</strong>, empowering industries with reliable and innovative tools engineered for excellence.</p>",
+            "text": "<p>Since 2006, Zekoki has been a pioneering force in the industrial and machinery sector, committed to providing cutting-edge solutions that empower the Philippines.</p><p>Our presence signifies a relentless pursuit of excellence. We aim to set new standards in quality, service, and innovation, positioning Zekoki as a benchmark for industrial and machinery solutions.</p>",
             "text_style": "body"
           }
         }
@@ -106,7 +114,7 @@
         "text_LNam4D": {
           "type": "text",
           "settings": {
-            "text": "<p>At Zekoki, we are committed to <strong>delivering solutions that exceed expectations</strong>. We understand that industries are constantly evolving, and we are dedicated to staying ahead—<strong>providing machinery that enhances productivity, efficiency, and long-term success</strong>.</p>",
+            "text": "<p>We are committed to being the driving force behind our clients' success, providing innovative solutions that not only meet but exceed their evolving needs.</p>",
             "text_style": "body"
           }
         }
@@ -143,7 +151,7 @@
         "text_Ui7VQD": {
           "type": "text",
           "settings": {
-            "text": "<p>To be the <strong>leading and most trusted provider</strong> of industrial and machinery products in the Philippines—<strong>synonymous with power, innovation, and reliability</strong>.</p>",
+            "text": "<p>To be the foremost and unrivaled provider of industrial and machinery products in the Philippines, synonymous with power, innovation, and reliability.</p>",
             "text_style": "body"
           }
         }
@@ -173,8 +181,8 @@
         "column_cNMnYz": {
           "type": "column",
           "settings": {
-            "title": "Uncompromising Excellence",
-            "text": "<p>Every product is built to <strong>meet the highest standards</strong> of quality and durability.</p>",
+            "title": "Excellence",
+            "text": "<p>Striving for the highest standards in quality and service.</p>",
             "link_label": "",
             "link": ""
           }
@@ -182,8 +190,8 @@
         "column_RVFbET": {
           "type": "column",
           "settings": {
-            "title": "Integrity in Every Step",
-            "text": "<p>We operate with <strong>honesty, transparency, and accountability</strong>, ensuring trust in every transaction.</p>",
+            "title": "Integrity",
+            "text": "<p>Conducting business with honesty, transparency, and accountability.</p>",
             "link_label": "",
             "link": ""
           }
@@ -191,8 +199,8 @@
         "column_jcBGaQ": {
           "type": "column",
           "settings": {
-            "title": "Relentless Innovation",
-            "text": "<p>We continuously push <strong>technological advancements</strong> to keep our solutions future-ready.</p>",
+            "title": "Innovation",
+            "text": "<p>Pioneering advancements to meet evolving industry needs.</p>",
             "link_label": "",
             "link": ""
           }
@@ -200,8 +208,8 @@
         "column_k97AUY": {
           "type": "column",
           "settings": {
-            "title": "Customer-Centric Approach",
-            "text": "<p>Every product is designed with the end-user in mind, ensuring <strong>efficiency, ease of use, and long-term reliability</strong>.</p>",
+            "title": "Customer-Centric",
+            "text": "<p>Prioritizing customer satisfaction and success.</p>",
             "link_label": "",
             "link": ""
           }
@@ -214,7 +222,7 @@
         "column_k97AUY"
       ],
       "settings": {
-        "title": "The Zekoki Difference",
+        "title": "The Zekoki Code",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -236,14 +244,14 @@
         "heading_4yF3MR": {
           "type": "heading",
           "settings": {
-            "heading": "Designed for Strength. Engineered for Success.",
+            "heading": "The Future is Zekoki",
             "heading_size": "h1"
           }
         },
         "text_7FFEPw": {
           "type": "text",
           "settings": {
-            "text": "<p>Zekoki products are built to <strong>withstand the toughest challenges</strong>, delivering <strong>unmatched performance, durability, and efficiency</strong>. Our solutions are designed with a deep understanding of industry needs—ensuring that every machine is a <strong>step forward in innovation</strong>.</p><p>As we continue to grow, we remain committed to <strong>empowering industries, improving workflows, and setting new benchmarks for quality and performance</strong>.</p>",
+            "text": "<p>Our journey is not just about tools. It is about Ka-GenZ—the professionals and DIY enthusiasts who trust Zekoki and the standards it upholds. We are here to fuel ambition, drive progress, and power the next era of makers.</p><p>Innovation begins with those who dare to build. Ka-GenZ is leading the way, and Zekoki is right there—delivering the tools that turn ambition into achievement.</p>",
             "text_style": "body"
           }
         }
@@ -307,12 +315,12 @@
         "gradient-background": "shopify://shop_images/467594302_565166179745693_809812912035642104_n.jpg",
         "gradient_start": "#000000",
         "gradient_end": "#000000",
-        "calltoaction-heading": "Call To Action Heading",
-        "calltoaction-subtext": "<p>Call to action subtext here.</p>",
-        "calltoaction_button_text_primary": "Learn More",
-        "calltoaction_button_url_primary": "",
-        "calltoaction_button_text_secondary": "Shop Now",
-        "calltoaction_button_url_secondary": "",
+        "calltoaction-heading": "Build with the Best Tools!",
+        "calltoaction-subtext": "<p>Be part of a community that builds, creates, and innovates with Zekoki. The future is in your hands—make it unstoppable.</p>",
+        "calltoaction_button_text_primary": "Shop Now",
+        "calltoaction_button_url_primary": "shopify://collections/all",
+        "calltoaction_button_text_secondary": "Learn More",
+        "calltoaction_button_url_secondary": "shopify://pages/faqs",
         "show_newsletter": false,
         "padding_top": 20,
         "padding_bottom": 20
