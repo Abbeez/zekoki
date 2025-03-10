@@ -3736,4 +3736,15 @@ transform:rotate(-35deg);
   section#shopify-section-template--24173682884974__custom_liquid_AJkG9e {
       display: none;
   }
+
+    /* Theme collection  */
+  .custom_product__list > div:last-child {
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      left: 0;
+  }
+  /* end theme Collection */
 }
+
+
