@@ -115,7 +115,7 @@
     </div>
 
     {% assign centers_list = shop.metaobjects.service_centers.values %}
-
+    {{ centers_list.count  }}
     {% if centers_list.count > 0 %}
       <table class="custom-servicecenters__table">
         <thead>
