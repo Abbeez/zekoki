@@ -9,60 +9,6 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tools Built for the Next Generation ",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Zekoki is redefining the standard for professional-grade tools and accessories. Built for the next generation of builders and doers, our gear sets the bar higher for strength, efficiency, and reliability. Because the future of work demands more.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Zekoki Tools",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "Service Centers",
-            "button_link_2": "shopify://pages/service-centers",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "custom_css": [
-        ".banner__buttons {display: inline-flex; flex-wrap: wrap; gap: 1rem; max-width: none !important; word-break: break-word;}",
-        ".banner__buttons.banner__buttons--multiple a:last-child {background: var(--zekoki-primary);}",
-        "@media screen and (max-width: 990px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(4.3rem - 1vw); }}",
-        "@media screen and (max-width: 750px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(3rem - 1vw); }}"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Zekoki_Tools.png",
-        "image_overlay_opacity": 60,
-        "image_height": "large",
-        "desktop_content_position": "top-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "image_behavior": "fixed",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "image_banner_T8Rwja": {
       "type": "image-banner",
       "blocks": {
@@ -110,6 +56,60 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tools Built for the Next Generation ",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Zekoki is redefining the standard for professional-grade tools and accessories. Built for the next generation of builders and doers, our gear sets the bar higher for strength, efficiency, and reliability. Because the future of work demands more.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Zekoki Tools",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "Service Centers",
+            "button_link_2": "shopify://pages/service-centers",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "custom_css": [
+        ".banner__buttons {display: inline-flex; flex-wrap: wrap; gap: 1rem; max-width: none !important; word-break: break-word;}",
+        ".banner__buttons.banner__buttons--multiple a:last-child {background: var(--zekoki-primary);}",
+        "@media screen and (max-width: 990px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(4.3rem - 1vw); }}",
+        "@media screen and (max-width: 750px) {h2.banner__heading.inline-richtext.h0 {font-size: calc(3rem - 1vw); }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Zekoki_Tools.png",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-5",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
       }
     },
     "custom_collection_list_tkQB8y": {
@@ -259,14 +259,14 @@
         "category_button_url_secondary": "shopify://pages/about-us"
       }
     },
-    "custom_product_list_A3jbBy": {
+    "custom_product_list_DQ8Gk7": {
       "type": "custom-product-list",
       "settings": {
-        "collection": "accessories",
+        "collection": "power-tools",
         "products_to_show": 10,
-        "title": "Zekoki Accessories ",
+        "title": "<strong>Zekoki Power Tools</strong>",
         "heading_size": "h1",
-        "description": "<p>Equip your tools with the right add-ons for any job. </p>",
+        "description": "<p>Own the strength to build more. Grab the right power tools for the job.</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 5,
@@ -305,14 +305,14 @@
         "banner_button_url_secondary": "shopify://pages/statins"
       }
     },
-    "custom_product_list_DQ8Gk7": {
+    "custom_product_list_A3jbBy": {
       "type": "custom-product-list",
       "settings": {
-        "collection": "power-tools",
+        "collection": "accessories",
         "products_to_show": 10,
-        "title": "<strong>Zekoki Power Tools</strong>",
+        "title": "Zekoki Accessories ",
         "heading_size": "h1",
-        "description": "<p>Own the strength to build more. Grab the right power tools for the job.</p>",
+        "description": "<p>Equip your tools with the right add-ons for any job. </p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 5,
@@ -408,13 +408,13 @@
     }
   },
   "order": [
-    "image_banner",
     "image_banner_T8Rwja",
+    "image_banner",
     "custom_collection_list_tkQB8y",
     "custom_blurp_section_NJcKyq",
-    "custom_product_list_A3jbBy",
-    "custom_banner_3WPHj7",
     "custom_product_list_DQ8Gk7",
+    "custom_banner_3WPHj7",
+    "custom_product_list_A3jbBy",
     "custom_about_section_V8UCVN",
     "custom_store_branches_pX6QHt",
     "custom_footer_cta_Hjk7yp",
