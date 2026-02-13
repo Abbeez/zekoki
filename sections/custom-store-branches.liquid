@@ -65,12 +65,14 @@
       </div>
     </div>
 
-    <div class="custom-branch__body" id="branchContainer">
+    {% assign branch_limit = section.settings.branch_limit %}
+    {% assign all_branches = shop.metaobjects.zekoki_store_branches.values %}
+    {% assign branches = all_branches | slice: 0, branch_limit %}
 
-      {% assign branches = shop.metaobjects.zekoki_store_branches.values %}
+    <div class="custom-branch__body">
 
       {% for branch in branches %}
-        <div class="custom-branch__items branch-item {% if forloop.index > 9 %}is-hidden{% endif %}">
+        <div class="custom-branch__items branch-item">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
               <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
@@ -83,9 +85,9 @@
           <a
             href="
               {% if page.handle == 'statins' %}
-                  zekoki-store-branches/{{ branch.system.handle }}
+                zekoki-store-branches/{{ branch.system.handle }}
               {% else %}
-                  pages/zekoki-store-branches/{{ branch.system.handle }}
+                pages/zekoki-store-branches/{{ branch.system.handle }}
               {% endif %}
             "
             class="button button--primary"
@@ -97,7 +99,7 @@
 
     </div>
 
-    {% if branches.size > 9 %}
+    {% if branch_limit > 9 %}
       <div style="text-align:center; margin-top:30px;">
         <button id="loadMoreBtn" class="button button--secondary">
           Load More
@@ -108,13 +110,14 @@
   </div>
 </section>
 
+{% if branch_limit > 9 %}
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
   const items = document.querySelectorAll(".branch-item");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
 
-  let currentlyVisible = 9;
+  let currentlyVisible = {{ branch_limit }};
   const loadStep = 6;
 
   if (!loadMoreBtn) return;
@@ -125,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     items.forEach((item, index) => {
       if (index < nextItems) {
-        item.classList.remove("is-hidden");
+        item.style.display = "block";
       }
     });
 
@@ -139,54 +142,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
-
-{% schema %}
-{
-  "name": "Custom Branches Section",
-  "settings": [
-    {
-      "type": "header",
-      "content": "Section Spacing"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "label": "Padding Top",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "label": "Padding Bottom",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "default": 20
-    },
-    {
-      "type": "header",
-      "content": "branch Details"
-    },
-    {
-      "type": "text",
-      "id": "custom-branch__title",
-      "label": "branch Title",
-      "default": "Quality Products"
-    },
-    {
-      "type": "textarea",
-      "id": "custom-branch__description",
-      "label": "branch Description",
-      "default": "Product that you will truly love"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Custom Store Branches Section"
-    }
-  ]
-}
-{% endschema %}
+{% endif %}
