@@ -41,6 +41,10 @@
         flex: 0 0 30%;
     }
 }
+
+.is-hidden {
+    display: none;
+}
 {%- endstyle -%}
 
 <section
@@ -51,6 +55,7 @@
   "
 >
   <div class="custom-branch__container">
+
     <div class="custom-branch__header">
       <div class="custom_branch__header--container">
         <h2 class="h1 title">{{ section.settings['custom-branch__title'] }}</h2>
@@ -60,16 +65,21 @@
       </div>
     </div>
 
-    <div class="custom-branch__body">
-      {% for branch in shop.metaobjects.zekoki_store_branches.values limit: section.settings.branch_limit %}
-        <div class="custom-branch__items">
+    <div class="custom-branch__body" id="branchContainer">
+
+      {% assign branches = shop.metaobjects.zekoki_store_branches.values %}
+
+      {% for branch in branches %}
+        <div class="custom-branch__items branch-item {% if forloop.index > 9 %}is-hidden{% endif %}">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
               <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
             {% endif %}
             <h3 style="color: var(--zekoki-white);">{{ branch.title }}</h3>
           </div>
+
           <p>{{ branch.location }}</p>
+
           <a
             href="
               {% if page.handle == 'statins' %}
@@ -84,9 +94,51 @@
           </a>
         </div>
       {% endfor %}
+
     </div>
+
+    {% if branches.size > 9 %}
+      <div style="text-align:center; margin-top:30px;">
+        <button id="loadMoreBtn" class="button button--secondary">
+          Load More
+        </button>
+      </div>
+    {% endif %}
+
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const items = document.querySelectorAll(".branch-item");
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+  let currentlyVisible = 9;
+  const loadStep = 6;
+
+  if (!loadMoreBtn) return;
+
+  loadMoreBtn.addEventListener("click", function() {
+
+    let nextItems = currentlyVisible + loadStep;
+
+    items.forEach((item, index) => {
+      if (index < nextItems) {
+        item.classList.remove("is-hidden");
+      }
+    });
+
+    currentlyVisible = nextItems;
+
+    if (currentlyVisible >= items.length) {
+      loadMoreBtn.style.display = "none";
+    }
+
+  });
+
+});
+</script>
 
 {% schema %}
 {
@@ -129,19 +181,6 @@
       "id": "custom-branch__description",
       "label": "branch Description",
       "default": "Product that you will truly love"
-    },
-    {
-      "type": "header",
-      "content": "Branch Display Settings"
-    },
-    {
-      "type": "range",
-      "id": "branch_limit",
-      "label": "Number of branches to show",
-      "min": 1,
-      "max": 20,
-      "step": 1,
-      "default": 3
     }
   ],
   "presets": [
