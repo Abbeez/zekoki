@@ -19,6 +19,7 @@
 .custom-branch__items {
     flex: 1 0 100%;
     text-align:center;
+    text-decoration:none;
 }
 
 .custom-branch__items_wrapper img {
@@ -67,7 +68,7 @@
 
     <div class="custom-branch__body">
       {% for branch in shop.metaobjects.zekoki_store_branches.values limit: section.settings.branch_limit %}
-       <a class="custom-branch__items"href="{{ branch.google_map }}" target="_blank">
+       <a class="custom-branch__items" href="{{ branch.google_map }}" target="_blank">
         <div class="">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
