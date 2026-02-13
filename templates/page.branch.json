@@ -59,7 +59,8 @@
         "padding_top": 70,
         "padding_bottom": 70,
         "custom-branch__title": "",
-        "custom-branch__description": ""
+        "custom-branch__description": "",
+        "branch_limit": 4
       }
     }
   },
