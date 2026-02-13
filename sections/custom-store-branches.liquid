@@ -69,7 +69,7 @@
     </div>
 
     <div class="custom-branch__body">
-      {% for branch in shop.metaobjects.zekoki_store_branches.values  %}
+      {% for branch in shop.metaobjects.zekoki_store_branches.values limit:3  %}
         <div class="custom-branch__items">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
