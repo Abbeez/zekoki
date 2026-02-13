@@ -67,7 +67,7 @@
 
     <div class="custom-branch__body">
       {% for branch in shop.metaobjects.zekoki_store_branches.values limit: section.settings.branch_limit %}
-        <div class="custom-branch__items">
+        <div class="custom-branch__items" href="{{ branch.google_map }}">
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
               <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
@@ -87,12 +87,12 @@
           >
             Branch Details
           </a> {% endcomment %}
-          <a
+          {% comment %} <a
             href="{{ branch.google_map }}"
             class="button button--primary"
           >
-            Branch Details
-          </a>
+            View on Map
+          </a> {% endcomment %}
         </div>
       {% endfor %}
     </div>
