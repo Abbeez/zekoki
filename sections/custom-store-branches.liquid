@@ -75,7 +75,7 @@
             <h3 style="color: var(--zekoki-white);">{{ branch.title }}</h3>
           </div>
           <p>{{ branch.location }}</p>
-          <a
+          {% comment %} <a
             href="
               {% if page.handle == 'statins' %}
                   zekoki-store-branches/{{ branch.system.handle }}
@@ -83,6 +83,12 @@
                   pages/zekoki-store-branches/{{ branch.system.handle }}
               {% endif %}
             "
+            class="button button--primary"
+          >
+            Branch Details
+          </a> {% endcomment %}
+          <a
+            href="{{ branch.google_map }}"
             class="button button--primary"
           >
             Branch Details
