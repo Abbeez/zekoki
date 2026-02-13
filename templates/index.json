@@ -341,23 +341,6 @@
         "custom-branch__description": "Explore our extensive range of quality tools today!"
       }
     },
-    "custom_footer_cta_Hjk7yp": {
-      "type": "custom-footer-cta",
-      "disabled": true,
-      "settings": {
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "margin_top": 20,
-        "margin_bottom": 0,
-        "custom-cta_background": "shopify://shop_images/Try_Zekoki_Tools.png",
-        "custom-cta__title": "Discover Your Next Power Tool",
-        "custom-cta__description": "Explore our extensive range of quality tools today!",
-        "cta_button_text_primary": "Learn More",
-        "cta_button_url_primary": "",
-        "cta_button_text_secondary": "Shop Now",
-        "cta_button_url_secondary": ""
-      }
-    },
     "custom_calltoaction_zXwdHX": {
       "type": "custom-calltoaction",
       "settings": {
@@ -386,7 +369,6 @@
     "custom_product_list_A3jbBy",
     "custom_about_section_V8UCVN",
     "custom_store_branches_pX6QHt",
-    "custom_footer_cta_Hjk7yp",
     "custom_calltoaction_zXwdHX"
   ]
 }
