@@ -1,45 +1,45 @@
 {%- style -%}
 .custom-branch__header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .custom-branch__body {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .custom-branch__items {
-  flex: 1 0 100%;
-  text-align: center;
+    flex: 1 0 100%;
+    text-align:center;
 }
 
-.custom-branch__items_wrapper {
-  position: relative;
-  padding: 1rem;
-  background: var(--zekoki-primary);
-  border-radius: 1rem;
+.custom-branch__items_wrapper{
+    position: relative;
+    padding: 1rem;
+    background: var(--zekoki-primary);
+    border-radius: 1rem;
 }
 
 .custom-branch__items_wrapper h2 {
-  background: var(--zekoki-primary);
-  color: var(--zekoki-white);
-  padding: 20px;
-  width: 100%;
-  margin: 0 !important;
+    background: var(--zekoki-primary);
+    color: var(--zekoki-white);
+    padding: 20px;
+    width:100%;
+    margin: 0 !important;
 }
 
 @media screen and (min-width: 750px) {
-  .custom-branch__items {
-    flex: 0 0 30%;
-  }
+    .custom-branch__items {
+        flex: 0 0 30%;
+    }
 }
 {%- endstyle -%}
 
@@ -51,12 +51,9 @@
   "
 >
   <div class="custom-branch__container">
-
     <div class="custom-branch__header">
       <div class="custom_branch__header--container">
-        <h2 class="h1 title">
-          {{ section.settings['custom-branch__title'] }}
-        </h2>
+        <h2 class="h1 title">{{ section.settings['custom-branch__title'] }}</h2>
       </div>
       <div class="custom_branch__header--container">
         <p>{{ section.settings['custom-branch__description'] }}</p>
@@ -64,47 +61,29 @@
     </div>
 
     <div class="custom-branch__body">
-
-      {% assign branches = shop.metaobjects.zekoki_store_branches.values %}
-
-      {% unless section.settings.show_all_branches %}
-        {% assign branches = branches | slice: 0, section.settings.branch_limit %}
-      {% endunless %}
-
-      {% for branch in branches %}
+      {% for branch in shop.metaobjects.zekoki_store_branches.values limit: section.settings.branch_limit %}
         <div class="custom-branch__items">
-
           <div class="custom-branch__items_wrapper">
             {% if branch.photo != blank %}
-              <img 
-                src="{{ branch.photo | image_url: width: 500 }}" 
-                alt="{{ branch.title }}"
-                loading="lazy"
-              >
+              <img src="{{ branch.photo | image_url }}" alt="{{ branch.title }}">
             {% endif %}
-            <h3 style="color: var(--zekoki-white);">
-              {{ branch.title }}
-            </h3>
+            <h3 style="color: var(--zekoki-white);">{{ branch.title }}</h3>
           </div>
-
           <p>{{ branch.location }}</p>
-
           <a
             href="
               {% if page.handle == 'statins' %}
-                zekoki-store-branches/{{ branch.system.handle }}
+                  zekoki-store-branches/{{ branch.system.handle }}
               {% else %}
-                pages/zekoki-store-branches/{{ branch.system.handle }}
+                  pages/zekoki-store-branches/{{ branch.system.handle }}
               {% endif %}
             "
             class="button button--primary"
           >
             Branch Details
           </a>
-
         </div>
       {% endfor %}
-
     </div>
   </div>
 </section>
@@ -163,12 +142,6 @@
       "max": 20,
       "step": 1,
       "default": 3
-    },
-    {
-      "type": "checkbox",
-      "id": "show_all_branches",
-      "label": "Show all branches",
-      "default": false
     }
   ],
   "presets": [
