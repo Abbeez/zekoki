@@ -12,7 +12,7 @@
   <!--
     <div class="custom-blog--header">
       <div class="custom_blog--header--container">
-        <span class="custom-blog--subtitle">Learn More about - {{ page_title] }}</span>
+        <span class="custom-blog--subtitle">Learn More about - {{ page_title }}</span>
         <h1 class="h0 title">{{ page.title }}</h1>
         <p>{{ page_description }}</p>
       </div>
@@ -97,3 +97,13 @@
     color: #fff;
   }
 </style>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ page_title] }}"
+  to: "{{ page_title }}"
+  position: 379..395
+{% endcomment %}
